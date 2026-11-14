@@ -2,6 +2,8 @@
 
 [点击安装或更新油猴脚本](https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js)
 
+直链无法打开时：[备用安装／更新入口（GitHub 官方发行版附件）](https://github.com/coldpaper1234/chaoxing-ai-assistant-userscript/releases/latest/download/chaoxing-ai-assistant.user.js)。
+
 先安装 Tampermonkey（油猴），再打开以上链接，确认安装。已经手动安装旧文件的用户，请用此链接安装一次，接入本仓库更新源。
 
 在油猴中保持此脚本的更新检查开启，后续发布更高版本后即可自动检查更新，也可在油猴中手动检查更新。脚本内“检查更新”也使用本仓库的正式发行版。更新频率由油猴设置决定。

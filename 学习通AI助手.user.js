@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.9
+// @version      1.33.10
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.9';
+    const ASSISTANT_VERSION = '1.33.10';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2967,7 +2967,7 @@ Typr["U"] = {
         if (questions.some(q => GARBLED.test(q.question) || q.options.some(o => GARBLED.test(o.text)))) {
             throw createCxError('CX-PAR-005',{module:'parser',operation:'font'});
         }
-        return { version: '1.33.9', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.10', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -3054,6 +3054,9 @@ Typr["U"] = {
 
     function normalize(raw, questions) {
         const context={...requestContextForResponse(raw),module:'model',operation:'answers'};
+        if(Array.isArray(raw))raw={answers:raw};
+        else if(raw&&typeof raw.id==='string'&&Object.prototype.hasOwnProperty.call(raw,'answer')&&!Object.prototype.hasOwnProperty.call(raw,'answers'))raw={answers:[raw]};
+        if(raw&&Array.isArray(raw.answers))raw={...raw,answers:raw.answers.map(entry=>entry&&typeof entry==='object'&&typeof entry.answer==='string'?{...entry,answer:[entry.answer]}:entry)};
         if (!raw || !Array.isArray(raw.answers)) throw createCxError('CX-RES-002',context,{legacyCode:'BAD_RESPONSE'});
         const answers = new Map(), expected = new Set(questions.map(q=>String(q.id)));
         for (const entry of raw.answers) {
@@ -3490,6 +3493,7 @@ Typr["U"] = {
                     if (fatal || signal?.aborted) { setError(record, fatal || error, 'cancelled'); return; }
                     if (analysisFatalError(error)) { setError(record, error, 'failed'); stop(error); return; }
                     onError(error);
+                    if(error.answerFormatFailure){gate.paused=true;gate.code=normalizeCxError(error).code;gate.reason='AI 答案格式重试后仍不符合协议，已暂停后续请求，可重试未完成题目';}
                     const policy = analysisRetryPolicy(error, retryTransient);
                     setError(record, error, error.analysisPaused ? 'cancelled' : 'failed');
                     if (error.analysisPaused) return;
@@ -4045,13 +4049,59 @@ Typr["U"] = {
         if(!text.trim())throw createCxError('CX-RES-003',{...configuredResponseContext(response,settings),module:'provider',operation:'detect',hasContent:false},{legacyCode:'EMPTY_REPLY'});
         return text.trim().slice(0,200);
     }
+    function answerServiceFailureCode(code) {
+        return /^(CX-HTTP-|CX-NET-|CX-CFG-)/.test(code||'')||['CX-RES-001','CX-RES-002','CX-RES-004','CX-RES-005','CX-RES-006','CX-RES-007','CX-RES-008','CX-RES-009'].includes(code);
+    }
+    function configuredBusinessError(value) {
+        if(!value||typeof value!=='object'||Array.isArray(value))return false;
+        if(value.error)return true;
+        if(Array.isArray(value.answers))return false;
+        return value.success===false||value.ok===false||[value.code,value.status_code,value.status].some(status=>(typeof status==='number'||typeof status==='string'&&/^\d{3}$/.test(status))&&Number(status)>=400&&Number(status)<=599);
+    }
+    function parseConfiguredJSON(text,context) {
+        const fail=()=>createCxError('CX-RES-005',{...context,module:'provider',operation:'answer',json:false});
+        const input=text.trim();
+        if(!input||input.length>1000000)throw fail();
+        const structured=value=>value!==null&&typeof value==='object';
+        try {const value=JSON.parse(input);if(structured(value))return value;}catch{}
+        // Recover a single complete JSON value without executing text or guessing answers.
+        const candidates=[];let start=-1,stack=[],quoted=false,escaped=false,attempts=0;
+        for(let i=0;i<input.length;i++) {
+            const char=input[i];
+            if(start<0){if(char==='{'||char==='['){start=i;stack=[char];quoted=false;escaped=false;if(++attempts>32)throw fail();}continue;}
+            if(quoted){if(escaped)escaped=false;else if(char==='\\')escaped=true;else if(char==='"')quoted=false;continue;}
+            if(char==='"'){quoted=true;continue;}
+            if(char==='{'||char==='['){stack.push(char);if(stack.length>64)throw fail();continue;}
+            if(char!=='}'&&char!==']')continue;
+            const opening=stack.pop();
+            if(opening!==(char==='}'?'{':'[')){start=-1;stack=[];continue;}
+            if(!stack.length){try{const value=JSON.parse(input.slice(start,i+1));if(structured(value))candidates.push(value);}catch{}start=-1;if(candidates.length>1)throw fail();}
+        }
+        if(start>=0||candidates.length!==1)throw fail();
+        return candidates[0];
+    }
     async function askConfiguredModel(settings,questions,evidence,preparedMedia = new Map(),signal) {
         assertConfiguredCredentials(settings);
         if(questions.some(question=>questionImageIds(question).length) && !modelSupportsImages(settings.model,settings))
             throw createCxError('CX-CFG-004',{module:'provider',operation:'answer',images:true});
-        const payload=buildConfiguredAnswerPayload(settings,questions,evidence,preparedMedia);
-        const {parsed,usage}=await configuredModelJSON(settings,payload,signal);
-        return {answers:normalize(parsed,questions),mediaAnalysis:normalizeMediaAnalysis(parsed,questions,preparedMedia),usage:usage || null};
+        let payload=buildConfiguredAnswerPayload(settings,questions,evidence,preparedMedia);
+        for(let attempt=0;attempt<2;attempt++) {
+            let normalizing=false;
+            try {
+                const {parsed,usage}=await configuredModelJSON(settings,payload,signal);
+                normalizing=true;
+                return {answers:normalize(parsed,questions),mediaAnalysis:normalizeMediaAnalysis(parsed,questions,preparedMedia),usage:usage || null};
+            } catch(error) {
+                throwIfAborted(signal || settings.signal);
+                const code=normalizeCxError(error).code;
+                const format=['CX-RES-005','CX-RES-006'].includes(code)||normalizing&&code==='CX-RES-002';
+                if(!format)throw error;
+                if(attempt){error.answerFormatFailure=true;throw error;}
+                settings.beforeAnswerFormatRetry?.();settings.onModelRetry?.();
+                const hint='上一轮返回结构未通过校验。请重新给出完整答案，仅返回一个 JSON 对象，禁止 Markdown 和前后说明。格式为 {"answers":[{"id":"原题ID","answer":["答案字符串"],"reason":"解析"}]}。每题必须原样保留 id，不得遗漏、重复或按题号替换 id；answer 必须是字符串数组。';
+                payload={...payload,messages:payload.messages.map((message,index)=>index===0&&typeof message.content==='string'?{...message,content:message.content+'\n'+hint}:message)};
+            }
+        }
     }
 
     async function configuredModelJSON(settings,payload,signal) {
@@ -4062,22 +4112,29 @@ Typr["U"] = {
         const response=await requestJSON({method:'POST',url:configuredEndpoint(settings,'chat/completions'),key:settings.key,
             data:payload,timeout:settings.thinking?180000:90000,signal:signal || settings.signal,diagnosticTaskId:settings.diagnosticTaskId});
         throwIfAborted(signal || settings.signal);
-        if(response?.error)throw createCxError('CX-RES-007',{...configuredResponseContext(response,settings),module:'provider',operation:'answer',hasBusinessError:true},{legacyCode:'MODEL_ERROR'});
-        const choice=response?.choices?.[0];
-        if(!choice || !choice.message || typeof choice.message!=='object' || typeof choice.finish_reason!=='string' || !Object.prototype.hasOwnProperty.call(choice.message,'content'))
-            throw createCxError('CX-RES-002',{...configuredResponseContext(response,settings),module:'provider',operation:'answer',hasMessage:Boolean(choice?.message && typeof choice.message==='object')},{legacyCode:'BAD_RESPONSE'});
+        const context=configuredResponseContext(response,settings);
+        if(configuredBusinessError(response))throw createCxError('CX-RES-007',{...context,module:'provider',operation:'answer',hasBusinessError:true},{legacyCode:'MODEL_ERROR'});
+        const choice=response?.choices?.[0],message=choice?.message;
+        const hasParsed=message?.parsed!==null&&typeof message?.parsed==='object';
+        if(!choice || !message || typeof message!=='object' || typeof choice.finish_reason!=='string' || !Object.prototype.hasOwnProperty.call(message,'content')&&!hasParsed)
+            throw createCxError('CX-RES-002',{...context,module:'provider',operation:'answer',hasMessage:Boolean(message)},{legacyCode:'BAD_RESPONSE'});
         if(choice.finish_reason==='length' || choice.finish_reason==='max_tokens')
-            throw createCxError('CX-RES-004',{...configuredResponseContext(response,settings),module:'provider',operation:'answer',truncated:true});
-        if(choice.finish_reason!=='stop')throw createCxError('CX-RES-005',{...configuredResponseContext(response,settings),module:'provider',operation:'answer'});
-        const text=choice.message?.content;
-        if(text!==null && typeof text!=='string')throw createCxError('CX-RES-005',{...configuredResponseContext(response,settings),module:'provider',operation:'answer'});
-        if(typeof text!=='string' || !text.trim())throw createCxError('CX-RES-003',{...configuredResponseContext(response,settings),module:'provider',operation:'answer',hasContent:false},{legacyCode:'EMPTY_REPLY'});
+            throw createCxError('CX-RES-004',{...context,module:'provider',operation:'answer',truncated:true});
+        if(choice.finish_reason==='content_filter'||typeof message.refusal==='string'&&message.refusal.trim())
+            throw createCxError('CX-RES-007',{...context,module:'provider',operation:'answer',hasBusinessError:true},{legacyCode:'MODEL_ERROR'});
+        if(['tool_calls','function_call'].includes(choice.finish_reason))throw createCxError('CX-RES-002',{...context,module:'provider',operation:'answer'},{legacyCode:'BAD_RESPONSE'});
+        if(!['stop','end_turn','completed'].includes(choice.finish_reason))throw createCxError('CX-RES-005',{...context,module:'provider',operation:'answer'});
         let parsed;
-        const jsonText=text.trim().replace(/^```(?:json)?\s*\n?([\s\S]*?)\n?```$/i,'$1').trim();
-        try {parsed=JSON.parse(jsonText);}
-        catch {throw createCxError('CX-RES-005',{...configuredResponseContext(response,settings),module:'provider',operation:'answer',json:false});}
-        if(!parsed || typeof parsed!=='object' || Array.isArray(parsed))throw createCxError('CX-RES-005',{...configuredResponseContext(response,settings),module:'provider',operation:'answer'});
-        if(typeof requestContextForResponse==='function')requestContextForResponse(parsed,configuredResponseContext(response,settings));
+        if(hasParsed)parsed=message.parsed;
+        else {
+            const content=message.content;
+            const text=typeof content==='string'?content:Array.isArray(content)?content.filter(part=>['text','output_text'].includes(part?.type)&&typeof part.text==='string').map(part=>part.text).join('\n'):null;
+            if(text===null&&content!==null)throw createCxError('CX-RES-005',{...context,module:'provider',operation:'answer'});
+            if(!text?.trim())throw createCxError('CX-RES-003',{...context,module:'provider',operation:'answer',hasContent:false},{legacyCode:'EMPTY_REPLY'});
+            parsed=parseConfiguredJSON(text,context);
+        }
+        if(configuredBusinessError(parsed))throw createCxError('CX-RES-007',{...context,module:'provider',operation:'answer',hasBusinessError:true},{legacyCode:'MODEL_ERROR'});
+        requestContextForResponse(parsed,context);
         return {parsed,usage:response.usage || null};
     }
     // Key 输入就地显示；闭合 Shadow DOM 不向课程页面暴露输入节点。
@@ -7444,7 +7501,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.9');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.10');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -10167,7 +10224,7 @@ Typr["U"] = {
                         let answers;
                         try { answers=await race(solveQuestionBatches(snapshot,{...settings,diagnosticTaskId,courseContext:snapshot.courseContext,signal:context.abort.signal},message=>emit(message,'generating'),
                             {retryTransient:true,onProgress:result=>{guard();ctl.output({...data,...result,model:settings.model});}})); }
-                        catch(error) {guard();chapter.issues.push(...data.questions.map(q=>({number:q.number,reason:`未完成分析：${error.message}`})));throw error;}
+                        catch(error) {guard();chapter.issues.push(...data.questions.map(q=>({number:q.number,reason:`未完成分析：${error.message}`})));if(answerServiceFailureCode(normalizeCxError(error).code))error.courseAnswerRequired=true;throw error;}
                         guard();if(verification.passes!==verificationPasses)throw courseVerificationWaitError();checkSnapshot(snapshot);
                         const payload={...data,...answers,model:settings.model};ctl.output(payload);
                         const byId=new Map(answers.answers.map(a=>[a.id,a])),units=questionAnswerSnapshot(snapshot).questions;
@@ -10177,6 +10234,8 @@ Typr["U"] = {
                         guard();if(verification.passes!==verificationPasses)throw courseVerificationWaitError();checkSnapshot(snapshot);ctl.output({...payload,prefill:summary});
                         if(!answers.analysisComplete) {
                             chapter.issues.push(...answers.analysisFailures.map(item=>({number:questionAnswerSnapshot(snapshot).questions.find(q=>q.id===item.id)?.number || null,reason:`${item.reason}（${item.code}）`})));
+                            const failure=answers.analysisFailures.find(item=>answerServiceFailureCode(item.code));
+                            if(failure){const error=createCxError(failure.code,{module:'course',operation:'answers'});error.message='模型请求未完成（'+cxCatalogMessage(failure.code)+'），已停止自动答题，成功答案已保留；请检查接口或重试未完成题目';error.courseAnswerRequired=true;throw error;}
                             throw Object.assign(new Error('部分题目未完成分析，已保留成功答案'),{code:'COURSE_MANUAL_ANSWER_REQUIRED'});
                         }
                         const invalid=units.filter(q=>!questionCanAutoAnswer(q,byId.get(q.id)?.answerPolicy) || !q.capabilities.prefill || !byId.get(q.id)?.answer?.length);
@@ -14859,7 +14918,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.9</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIEklEQVR42u2XWYyeZRXHf+d5t+/7Zt87MEtn2kIZ2boIiNACYkTwAmPGEC5MTIhoNNELRIPKpBGMJhg1IHGroVwoaQnBRA2mIAitaADL1ukAnel0ZjpLpzPT+Wa+5d2e48U300WWVG+84Vy+y3n+5zzn/M/5w4f2fzZ5vxf9/bud/n7Yswf27Dmolac77Lm5HTAVHx+R0z4+n54zKlU9C5jrgGNg+8CAu+r8/Q7ePjDgOqbyz1mRipxTBkRVRURs05a7vt3d3bVlbGxs/4mX//IMlBbg8IQj8F2rZoegICuZURlQ5D4jNlWASzrANjVu+tS2tb1rt4+Ojh2Yf+WB+1XViIgC+h5Atrv9u9UB6PjYd37y2LNHNbWJvvDSIX1w59P6rR8+NtF75d2PwievBDCymuoBY06FsX1rzxV3PXLXD34/8eDOvbrvpUFNbKJ7nh/XzmvufRBgQNXAdvddwa866bjqnp8+8tyUji9rFEeLkWqYqKpVDXVmLq/3/+KppPeGHbtgyzojUMnsJb091927676H/xRPzi6qaqSqmkZJKUmTfDRZ0HDX32a08+p7HjrzLICVm/pMTp2em7u33f6Ve7735a9v3Hhe7EZF98hU0ewfzIvREM9Rbar3k2u3XmBu/vS1l59wW255Y9+hP0J1zW13f3/vb3985/W3XreBmpwkg6N52T84J/sGl8WAUXC82oZkY99FV705Ud18ctz10a5jcDQSgE23/uihTNvWr5Iu8MCOz9n5+Uh6myzd9RFjswnFMGVyIUZE6G1x6FvbFE2GTvCFr+18DdV018/v2Hx+kIaHjs75Q5MJvW0+TbUuWVfwPZhcDnj7uKG21tdvDjxucGuJ51771atP3n2nAViOgy00X5qmSRqKRbK+4DrCG6Ml/vF2kWKkXNSRYev6HLE1PH1gxq9xSK/cdu1lV227ZnOdS7r3XzN+OTFcvbGKmqxhZDrkzweWGJ4OMUbI+oIoYm0S0XJ5uhwHWwBcgCTVUqlQcHxUXRccRwhj5YoLcrQ3JiSpMrWQUJqJqK9yaK3zKMcYtZpahXKMaavzKCfK60dKGANdLT7dLT4ttYbRk4rrgOeCggkLy45NtXgKAIpBDIigCtaC5wjjsxGvj0W01jqsqXdpqnGYXkyZno9Y0w6KNaqVjppbTqjJuWzdkGV+qXJlh8ZDLlsb0NiYwSrYlQY0xqCIOQVAjGJET/WFCKSqZALh4xurKEeWtyZD3p4MOb/Jo7PZw3dBVVAUz6lEXAiVF4eKZHxh3ZqA9WsCGqsNw/O68m3FuYjirJS/CxAnaKQenqZntKVwIp/y1mSZxhqHpmqHhvaAKLYMT4dU16+ym1COYWQ6orc94NK1WeLE8s5UiLVKZ7OLEwTISoCiKaF1Kcd6GkBofcnPH6c2yBF4kHoQp8qG9oCanEdqlVJkOXo8JE6hq9kjlwFVRRWyAXQ2exyZiXAEfN/Q0eiRDQyt9Q7DJ5SMB4EHjpcjPz9LjH8agOO4lBfGcdbWI1Jx7DrC8FTIm2MRngM9bT6dzT65wHBkukxduUIoFqUYwlIp5eKuDIWyZfpkwuBEmcA1rI88XC9Aowr/urlGwrEJjLhnZCBKNDUKmqBaqYE4tly2NuDiziyLRcvwTMRbkyECtNU5VAeQKqBCxquw+eujZXKB0NPqs7Ejw/xSimMsoVYOFwBNiRMwcXIaALJaf5VCcR0hGziVkhWlrsawuSYDwMKS5fBkmUIExggohHHl7w3nBcSpcuR4RL5o8V3h4m4fteDFqyVuViaROQMABhE5NTLzywkvDyXsk5QLOz1aaw2dTULGUxpqhI9uyFIwlXYVIOtBapXDUyFt9Q6XdGeoy7kkuEzMpQwdS/F8panJRYycjvc0D1SqyaBYheHjlum8YtUwU1aMTXFIqPKFmzYH9LQAFlTBGChElo4ml47WLFPzcGA04bWxGNeznFhWrAqtdUp9QyXHesY0dgHUWgFIFPIlWC4pqTpYBSNKa6MgTo75fMrDe8tc0KrcdmMVge9grdJUZXj+sMPO50oaiytVOQdjDEuLlkK5woDFCJbKK2QEqNrTAALfsUtJrN3N8M+DCU88Mw/GURGkJueg4hF4ZXraPRrrAvYPxwxPjmuxUBAjcO+uo7x6rIq2RldcSSlNJSTWY3G5rCfzsYiATVNiG2hvG7w6FGqtZ+wpAHWZcu7G6y+VI28esC8eetaUyyGOAIitzVpcR21rVx8HR6oNTiKtDRkZWXZk3x+eRFC23nKH1tdVcWy2SFiK1NWCnR07KAqyVKpQXmrh1+NDtGcX9NabNsmBF56qml7pDKHrjlu23PjZR/NpQ0OhWMQxhjS1oBBFZcKlOVzPpyZjaW2q06DhvGR5bsLp6V4DIowcmSDX0JnG+Rl3du6kLJeFJInwso14QQYxguMYrLXkcjnqvMXFV55+4osc/c2TsgJCobWXbF8LXlohbqhMpCS0ud5P3OBmGvriONrk+LV9dQ3VpqO9zg6N5K2mKRvXN5hjUyfN4mJBk2hp0HfdA0m4MFQc/uteNDAgilS2RWJHKB08AbPDrC5UMGBEdlj0PbbFsy3nXvilvlxNy+2dPeu/MT5yWFSha916xkdHflY8efx3yTu/PAgUPlAHCKgOGNhh5exdflDeRyQA/fC4SdFViNdscdddFAAkwwcj+PvLp47otw7sqQiC97Q+PXeN8a4ABgz9ux35z6gGKhvyB4md/0oZnZv6OTNje9IPheb/Yv8G+SfcWs8Po4kAAAAASUVORK5CYII=" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.10</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -15731,7 +15790,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.9',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.10',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,
@@ -15831,7 +15890,9 @@ Typr["U"] = {
                 },
                 execute:async record=>{
                     const question=record.questions[0],model=resolveQuestionModel(settings.model,question);record.model=model;
-                    const config={...settings,model,signal:abort.signal};
+                    const config={...settings,model,signal:abort.signal,
+                        onModelRequest:()=>{check();record.requestAttempts=(record.requestAttempts||0)+1;settings.onModelRequest?.();},
+                        beforeAnswerFormatRetry:()=>{check();if(gate.paused)throw analysisPausedError(gate);report('AI 返回格式未通过校验，正在重新请求标准答案…','generating');}};
                     record.phase='solve';record.restoredUsage=null;
                     assertConfiguredRequestSize(config,buildConfiguredAnswerPayload(config,record.questions,record.evidence,prepared));
                     if(settings.search && !record.evidence[question.id]) {
@@ -15846,7 +15907,6 @@ Typr["U"] = {
                     }
                     await waitAnalysisGate(gate,abort.signal,check);
                     report(`正在分析第 ${question.number} 题…`,'generating');
-                    record.requestAttempts=(record.requestAttempts || 0)+1;
                     const result=await askConfiguredModel(config,record.questions,record.evidence,prepared,abort.signal);
                     check();
                     if(result.answers.length!==record.questions.length||new Set(result.answers.map(a=>a.id)).size!==record.questions.length

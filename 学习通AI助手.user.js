@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.19
+// @version      1.33.20
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.19';
+    const ASSISTANT_VERSION = '1.33.20';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2967,7 +2967,7 @@ Typr["U"] = {
         if (questions.some(q => GARBLED.test(q.question) || q.options.some(o => GARBLED.test(o.text)))) {
             throw createCxError('CX-PAR-005',{module:'parser',operation:'font'});
         }
-        return { version: '1.33.19', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.20', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -7703,7 +7703,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.19');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.20');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -15161,7 +15161,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.19</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.20</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -16032,7 +16032,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.19',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.20',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,
@@ -16605,6 +16605,8 @@ const {createClawdWardrobe}=(()=>{
 function createClawdWardrobe({doc,win,root,outer}) {
   const KEY='cx_clawd_wardrobe_v1';
   const targets={big:'大 Clawd',cowboy:'牛仔小 Clawd',shades:'墨镜小 Clawd',wizard:'巫师小 Clawd'};
+  const kinds={plain:'普通小精灵',cowboy:'牛仔小精灵',shades:'墨镜小精灵',wizard:'巫师小精灵'};
+  const originalRoster=()=>['cowboy','shades','wizard'].map(id=>({id,kind:id}));
   const hats={
     default:['原样',null],none:['无帽子',null],
     cowboy:['牛仔帽',['.....aaaaaa.....','....aaaaaaaa....','....bbbbbbbb....','.aaaaaaaaaaaaaa.']],
@@ -16622,37 +16624,54 @@ function createClawdWardrobe({doc,win,root,outer}) {
   };
   const glasses={default:'原样',none:'无眼镜',sunglasses:'墨镜',round:'圆框眼镜',square:'方框眼镜',monocle:'单片眼镜',star:'星星眼镜'};
   const accessories={none:'无饰品',scarf:'围巾',bow:'领结',tie:'领带',badge:'徽章',heart:'爱心别针',flower:'花朵别针',necklace:'项链',cape:'小披风'};
-  const defaults=()=>({schemaVersion:1,revision:0,mode:'default',pets:Object.fromEntries(Object.keys(targets).map(id=>[id,{hat:'default',glasses:'default',accessory:'none',body:'#d97757',hatColor:id==='cowboy'?'#8b5e3c':id==='wizard'?'#5b8fb9':'#d6a43a',accent:id==='shades'?'#1f1d1b':'#ce5261'}]))});
+  const defaultPet=kind=>({hat:'default',glasses:'default',accessory:'none',body:'#d97757',hatColor:kind==='cowboy'?'#8b5e3c':kind==='wizard'?'#5b8fb9':'#d6a43a',accent:kind==='shades'?'#1f1d1b':'#ce5261'});
+  const defaults=()=>({schemaVersion:2,revision:0,mode:'default',nextId:1,roster:originalRoster(),pets:{big:defaultPet('big'),...Object.fromEntries(originalRoster().map(({id,kind})=>[id,defaultPet(kind)]))}});
   const clone=value=>JSON.parse(JSON.stringify(value));
   const isColor=value=>typeof value==='string'&&/^#[\da-f]{6}$/i.test(value);
   function validate(value){
     if(value===null||value===undefined)return defaults();
-    if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!['schemaVersion','revision','mode','pets'].includes(k))
-      ||value.schemaVersion!==1||!Number.isSafeInteger(value.revision)||value.revision<0||!['default','custom'].includes(value.mode)
-      ||!value.pets||Object.keys(value.pets).length!==4||Object.keys(value.pets).some(k=>!Object.hasOwn(targets,k)))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
-    for(const id of Object.keys(targets)){
-      const p=value.pets[id];
-      if(!p||Object.keys(p).length!==6||Object.keys(p).some(k=>!['hat','glasses','accessory','body','hatColor','accent'].includes(k))
-        ||!Object.hasOwn(hats,p.hat)||!Object.hasOwn(glasses,p.glasses)||!Object.hasOwn(accessories,p.accessory)
-        ||!isColor(p.body)||!isColor(p.hatColor)||!isColor(p.accent))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
+    const bad=()=>{throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');};
+    if(!value||typeof value!=='object'||Array.isArray(value))bad();
+    const legacy=value.schemaVersion===1;
+    const allowed=legacy?['schemaVersion','revision','mode','pets']:['schemaVersion','revision','mode','nextId','roster','pets'];
+    if(Object.keys(value).length!==allowed.length||Object.keys(value).some(k=>!allowed.includes(k))
+      ||!legacy&&value.schemaVersion!==2||!Number.isSafeInteger(value.revision)||value.revision<0||!['default','custom'].includes(value.mode))bad();
+    const roster=legacy?originalRoster():value.roster;
+    if(!Array.isArray(roster))bad();
+    const ids=new Set(['big']);let lastId=0;
+    for(const entry of roster){
+      if(!entry||typeof entry!=='object'||Array.isArray(entry)||Object.keys(entry).length!==2||!Object.hasOwn(entry,'id')||!Object.hasOwn(entry,'kind')
+        ||typeof entry.id!=='string'||!/^(cowboy|shades|wizard|pet-[1-9]\d*)$/.test(entry.id)||ids.has(entry.id)||!Object.hasOwn(kinds,entry.kind))bad();
+      ids.add(entry.id);
+      if(entry.id.startsWith('pet-')){const number=Number(entry.id.slice(4));if(!Number.isSafeInteger(number))bad();lastId=Math.max(lastId,number);}
     }
-    return clone(value);
+    if(!legacy&&(!Number.isSafeInteger(value.nextId)||value.nextId<=lastId||value.nextId<1))bad();
+    if(!value.pets||typeof value.pets!=='object'||Array.isArray(value.pets)||Object.keys(value.pets).length!==ids.size||Object.keys(value.pets).some(id=>!ids.has(id)))bad();
+    for(const id of ids){
+      const p=value.pets[id];
+      if(!p||typeof p!=='object'||Array.isArray(p)||Object.keys(p).length!==6||Object.keys(p).some(k=>!['hat','glasses','accessory','body','hatColor','accent'].includes(k))
+        ||!Object.hasOwn(hats,p.hat)||!Object.hasOwn(glasses,p.glasses)||!Object.hasOwn(accessories,p.accessory)
+        ||!isColor(p.body)||!isColor(p.hatColor)||!isColor(p.accent))bad();
+    }
+    return clone(legacy?{...value,schemaVersion:2,nextId:1,roster}:value);
   }
   function readRaw(){return typeof GM_getValue==='function'?GM_getValue(KEY,null):JSON.parse(win.localStorage.getItem(KEY)||'null');}
   const token=value=>JSON.stringify(value??null);
   let current=defaults(),invalid='',disposed=false,refresh=()=>{},baseline='null',draft=defaults(),dirty=false,listener=null,writing=false;
   try{current=validate(readRaw());}catch(error){invalid=error.message;}
   const custom=()=>current.mode==='custom';
-  const style=id=>current.pets[id];
+  const kindMaps=new WeakMap();
+  const kindOf=(id,value=current)=>{if(id==='big')return 'big';let map=kindMaps.get(value);if(!map){map=new Map(value.roster.map(p=>[p.id,p.kind]));kindMaps.set(value,map);}return map.get(id)||'plain';};
+  const style=id=>current.pets[id]||defaultPet(kindOf(id));
   const darken=(hex,f=.72)=>'#'+[1,3,5].map(i=>Math.round(parseInt(hex.slice(i,i+2),16)*f).toString(16).padStart(2,'0')).join('');
   const bodyShade=hex=>hex.toLowerCase()==='#d97757'?'#bf684c':darken(hex,.88);
-  const hatName=(id,p)=>p.hat==='default'?(id==='cowboy'?'cowboy':id==='wizard'?'wizard':'none'):p.hat;
-  const glassesName=(id,p)=>p.glasses==='default'?(id==='shades'?'sunglasses':'none'):p.glasses;
+  const hatName=(id,p,value=current)=>p.hat==='default'?(kindOf(id,value)==='cowboy'?'cowboy':kindOf(id,value)==='wizard'?'wizard':'none'):p.hat;
+  const glassesName=(id,p,value=current)=>p.glasses==='default'?(kindOf(id,value)==='shades'?'sunglasses':'none'):p.glasses;
   function pixels(id,p,eyeY=1){
     const out=[],put=(x,y,c)=>out.push([x,y,c]);
     const grid=(rows,ox,oy,palette)=>rows?.forEach((row,y)=>[...row].forEach((ch,x)=>{if(ch!=='.')put(x+ox,y+oy,palette[ch]||ch);}));
     const hat=hatName(id,p),rows=hats[hat]?.[1];
-    const standard=defaults().pets[id];
+    const standard=defaultPet(kindOf(id));
     if(id==='big'||p.hat!=='default'||p.hatColor!==standard.hatColor)
       grid(rows,0,-(rows?.length||0),{a:p.hatColor,b:darken(p.hatColor),w:'#fff2ce'});
     const g=glassesName(id,p),ink=p.accent,glass='#d8ebef',black='#241e24';
@@ -16686,39 +16705,43 @@ function createClawdWardrobe({doc,win,root,outer}) {
   }
   const sheetStyle=doc.createElement('style');sheetStyle.textContent='.cx-clawd-dress-layer{position:absolute;left:var(--cx-clawd-dress-x,0px);top:var(--cx-clawd-dress-y,18px);width:3px;height:3px;pointer-events:none;background:transparent;z-index:6}.cx-clawd-dress-layer[hidden]{display:none!important}';root.append(sheetStyle);
   const menu=doc.createElement('section');menu.className='cx-wardrobe';menu.hidden=true;menu.setAttribute('role','dialog');menu.setAttribute('aria-label','小精灵装扮');
-  menu.innerHTML='<header><strong>小精灵装扮</strong><button type="button" data-close>关闭</button></header><label class="cx-line"><input type="checkbox" data-mode>启用自选装扮</label><label>选择小精灵<select data-target></select></label><canvas width="96" height="112" aria-label="装扮预览"></canvas><div class="cx-fields"><label>帽子<select data-hat></select></label><label>眼镜<select data-glasses></select></label><label>饰品<select data-accessory></select></label></div><div class="cx-colors"><label>身体颜色<input type="color" data-body></label><label>帽子颜色<input type="color" data-hatColor></label><label>饰品颜色<input type="color" data-accent></label></div><p class="cx-note">选择后点击应用。关闭不会保存未应用的选择。</p><div class="cx-actions"><button type="button" data-apply>应用装扮</button><button type="button" data-reset-one>这只恢复默认</button><button type="button" data-reset-all>全部恢复默认</button></div><p data-message role="status"></p>';
+  menu.innerHTML='<header><strong>小精灵装扮</strong><button type="button" data-close>关闭</button></header><p data-count></p><div class="cx-fields cx-roster"><label>添加类型<select data-kind></select></label><button type="button" data-add>添加小精灵</button></div><label>选择小精灵<select data-target></select></label><div class="cx-actions"><button type="button" data-remove>删除选中小精灵</button><button type="button" data-reset-count>恢复默认数量</button></div><label class="cx-line"><input type="checkbox" data-mode>启用自选装扮</label><canvas width="96" height="112" aria-label="装扮预览"></canvas><div class="cx-fields"><label>帽子<select data-hat></select></label><label>眼镜<select data-glasses></select></label><label>饰品<select data-accessory></select></label></div><div class="cx-colors"><label>身体颜色<input type="color" data-body></label><label>帽子颜色<input type="color" data-hatColor></label><label>饰品颜色<input type="color" data-accent></label></div><p class="cx-note">增减数量、换装和恢复默认后，均需点击应用。关闭不会保存未应用的选择。大 Clawd 为主精灵，数量单独保留。</p><div class="cx-actions"><button type="button" data-apply>应用装扮与数量</button><button type="button" data-reset-one>这只恢复默认装扮</button><button type="button" data-reset-all>全部恢复默认装扮</button></div><p data-message role="status"></p>';
   const uiStyle=doc.createElement('style');uiStyle.textContent='.cx-wardrobe{position:absolute;right:0;top:10px;width:min(340px,calc(100vw - 40px));max-height:calc(100vh - 124px);overflow:auto;box-sizing:border-box;padding:14px;border:1px solid #d9e2ed;border-radius:10px;background:#fff;color:#26354a;box-shadow:0 10px 32px #18304933;pointer-events:auto;z-index:50;font:13px/1.6 "Microsoft YaHei",sans-serif}.cx-wardrobe[hidden]{display:none!important}.cx-wardrobe header,.cx-line,.cx-actions,.cx-colors{display:flex;gap:8px;align-items:center}.cx-wardrobe header{justify-content:space-between;margin-bottom:8px}.cx-wardrobe label{display:grid;gap:3px;margin:6px 0}.cx-wardrobe .cx-line{display:flex}.cx-wardrobe select{width:100%;padding:6px;border:1px solid #cbd6e2;border-radius:5px;background:#fff;color:#26354a}.cx-wardrobe button{padding:5px 8px;border:1px solid #bfcddd;border-radius:5px;background:#f0f5fc;color:#315fbd;cursor:pointer;font:inherit}.cx-wardrobe button:disabled{opacity:.5;cursor:default}.cx-fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.cx-colors{justify-content:space-between}.cx-colors label{flex:1;min-width:0}.cx-colors input{width:100%;height:30px;border:1px solid #cbd6e2;border-radius:4px;padding:2px;background:#fff}.cx-wardrobe canvas{display:block;margin:0 auto;image-rendering:pixelated;background:#f7f9fc;border-radius:8px}.cx-wardrobe .cx-note{font-size:12px;color:#6c7b90}.cx-actions{flex-wrap:wrap}.cx-wardrobe [data-message]{margin:7px 0 0;font-size:12px;overflow-wrap:anywhere}';root.append(uiStyle,menu);
   const entry=doc.createElement('button');entry.type='button';entry.id='cx-clawd-dress-toggle';entry.textContent='装扮';entry.title='小精灵装扮';entry.setAttribute('aria-expanded','false');entry.style.cssText='flex:none;min-width:44px;width:auto;min-height:28px;font-size:12px;padding:4px 6px';
   const el=name=>menu.querySelector('[data-'+name+']');
   const fill=(select,entries)=>{for(const [value,label]of entries){const option=doc.createElement('option');option.value=value;option.textContent=label;select.append(option);}};
-  fill(el('target'),Object.entries(targets));fill(el('hat'),Object.entries(hats).map(([k,v])=>[k,v[0]]));fill(el('glasses'),Object.entries(glasses));fill(el('accessory'),Object.entries(accessories));
+  fill(el('kind'),Object.entries(kinds));fill(el('hat'),Object.entries(hats).map(([k,v])=>[k,v[0]]));fill(el('glasses'),Object.entries(glasses));fill(el('accessory'),Object.entries(accessories));
+  function targetChoices(selected=el('target').value){
+    el('target').replaceChildren();fill(el('target'),[['big',targets.big],...draft.roster.map(({id,kind})=>[id,targets[id]||kinds[kind]+' '+id.slice(4)])]);
+    el('target').value=Object.hasOwn(draft.pets,selected)?selected:'big';
+  }
   const message=text=>{el('message').textContent=text;};
   function preview(){
     let context;try{context=menu.querySelector('canvas').getContext('2d');}catch{return;}if(!context)return;
     context.clearRect(0,0,96,112);
-    const id=el('target').value,p=draft.pets[id],shown=draft.mode==='custom'?p:defaults().pets[id];
+    const id=el('target').value,p=draft.pets[id],shown=draft.mode==='custom'?p:defaultPet(kindOf(id,draft));
     const body=[];for(let y=0;y<8;y++)for(let x=2;x<14;x++)body.push([x,y,shown.body]);
     for(const x of [3,5,10,12]){body.push([x,8,shown.body],[x,9,shown.body]);}
     for(const x of [4,11]){body.push([x,2,'#241d18'],[x,3,'#241d18']);}
     // Preview includes each target's original hat/glasses when their choice is "original".
-    const sample={...shown,hat:hatName(id,shown),glasses:glassesName(id,shown)};
+    const sample={...shown,hat:hatName(id,shown,draft),glasses:glassesName(id,shown,draft)};
     for(const [x,y,color]of [...body,...pixels('big',sample,2)]){context.fillStyle=color;context.fillRect(16+x*4,48+y*4,4,4);}
   }
-  function fields(){const id=el('target').value,p=draft.pets[id];el('mode').checked=draft.mode==='custom';for(const k of ['hat','glasses','accessory','body','hatColor','accent']){el(k).value=p[k];el(k).disabled=draft.mode!=='custom'||!!invalid;}for(const k of ['apply','reset-one','reset-all'])el(k).disabled=!!invalid;preview();}
+  function fields(){targetChoices();const id=el('target').value,p=draft.pets[id];el('count').textContent='主精灵 1 只 · 小精灵 '+draft.roster.length+' 只';el('mode').checked=draft.mode==='custom';el('mode').disabled=!!invalid;for(const k of ['hat','glasses','accessory','body','hatColor','accent']){el(k).value=p[k];el(k).disabled=draft.mode!=='custom'||!!invalid;}for(const k of ['apply','reset-one','reset-all','add','reset-count','kind'])el(k).disabled=!!invalid;el('remove').disabled=id==='big'||!!invalid;preview();}
   function reload(){try{const raw=readRaw();current=validate(raw);baseline=token(raw);invalid='';}catch(error){invalid=error.message;}draft=clone(current);dirty=false;fields();message(invalid);}
-  function save(next,remove=false){
+  function save(next){
     let attempted=false;
     try{
       if(invalid)throw Error(invalid);
       const raw=readRaw();validate(raw);
       if(token(raw)!==baseline)throw Error('装扮已在其他页面修改，请关闭后重新打开；当前选择尚未保存');
-      const value=remove?null:validate({...next,revision:validate(raw).revision+1});
+      const value=validate({...next,revision:validate(raw).revision+1});
       attempted=true;writing=true;
       if(typeof GM_setValue==='function'){
-        if(remove&&typeof GM_deleteValue==='function')GM_deleteValue(KEY);else GM_setValue(KEY,value);
-      }else if(remove)win.localStorage.removeItem(KEY);else win.localStorage.setItem(KEY,JSON.stringify(value));
+        GM_setValue(KEY,value);
+      }else win.localStorage.setItem(KEY,JSON.stringify(value));
       const stored=readRaw();if(token(stored)!==token(value))throw Error('保存结果已变化，请重新打开确认');
-      current=validate(stored);baseline=token(stored);draft=clone(current);dirty=false;refresh();fields();message(remove?'已恢复默认装扮':'装扮已保存');
+      current=validate(stored);baseline=token(stored);draft=clone(current);dirty=false;refresh();fields();message('装扮与数量已保存');
     }catch(error){
       if(attempted){try{const raw=readRaw();current=validate(raw);baseline=token(raw);refresh();}catch{}}
       message((attempted?'保存未确认，请重新打开核对：':'未应用：')+error.message);
@@ -16739,8 +16762,17 @@ function createClawdWardrobe({doc,win,root,outer}) {
   el('target').onchange=fields;
   for(const k of ['hat','glasses','accessory','body','hatColor','accent'])el(k).onchange=()=>{draft.pets[el('target').value][k]=el(k).value;dirty=true;preview();message('选择尚未应用');};
   el('apply').onclick=()=>save(draft);
-  el('reset-one').onclick=()=>{const next=clone(current);next.pets[el('target').value]=defaults().pets[el('target').value];save(next);};
-  el('reset-all').onclick=()=>save(defaults(),true);
+  const changed=text=>{dirty=true;kindMaps.delete(draft);fields();message(text+'，点击应用后生效');};
+  el('add').onclick=()=>{
+    if(invalid)return;
+    if(!Number.isSafeInteger(draft.nextId+1)){message('小精灵编号已用尽，原设置未修改');return;}
+    const id='pet-'+draft.nextId++,kind=el('kind').value;
+    draft.roster.push({id,kind});draft.pets[id]=defaultPet(kind);targetChoices(id);changed('已添加小精灵');
+  };
+  el('remove').onclick=()=>{const id=el('target').value;if(id==='big'||invalid)return;draft.roster=draft.roster.filter(p=>p.id!==id);delete draft.pets[id];targetChoices('big');changed('已删除选中小精灵');};
+  el('reset-count').onclick=()=>{if(invalid)return;draft.roster=originalRoster();draft.pets={big:draft.pets.big,...Object.fromEntries(draft.roster.map(({id,kind})=>[id,draft.pets[id]||defaultPet(kind)]))};changed('已恢复默认的三只小精灵');};
+  el('reset-one').onclick=()=>{if(invalid)return;const id=el('target').value;draft.pets[id]=defaultPet(kindOf(id,draft));changed('已恢复当前装扮');};
+  el('reset-all').onclick=()=>{if(invalid)return;draft.mode='default';draft.pets={big:defaultPet('big'),...Object.fromEntries(draft.roster.map(({id,kind})=>[id,defaultPet(kind)]))};changed('已恢复全部装扮，小精灵数量保留');};
   const storageChanged=()=>{
     if(disposed||writing)return;
     try{const raw=readRaw();current=validate(raw);invalid='';refresh();if(!menu.hidden){if(dirty)message('其他页面已修改装扮，当前选择未保存；请重新打开');else{baseline=token(raw);draft=clone(current);fields();}}}
@@ -16752,8 +16784,11 @@ function createClawdWardrobe({doc,win,root,outer}) {
   return {
     start(onChange){refresh=onChange;(outer.querySelector('.head-actions')||outer.querySelector('.head')||outer).prepend(entry);if(typeof GM_addValueChangeListener==='function')listener=GM_addValueChangeListener(KEY,storageChanged);else win.addEventListener('storage',localStorageChanged);},
     bigPalette(){return custom()?{body:style('big').body,shade:bodyShade(style('big').body)}:{};},
-    hatOverride(id){return custom()&&(style(id).hat!=='default'||style(id).hatColor!==defaults().pets[id].hatColor);},
-    glassesOverride(id){return custom()&&(style(id).glasses!=='default'||style(id).accent!==defaults().pets[id].accent);},
+    pileNames(){return current.roster.map(p=>p.id);},
+    pileKind(id){return kindOf(id);},
+    pilePalette(id){return custom()?{body:style(id).body,shade:bodyShade(style(id).body)}:{};},
+    hatOverride(id){return custom()&&(style(id).hat!=='default'||style(id).hatColor!==defaultPet(kindOf(id)).hatColor);},
+    glassesOverride(id){return custom()&&(style(id).glasses!=='default'||style(id).accent!==defaultPet(kindOf(id)).accent);},
     decoratePile(base,{name,by,eyes}){
       if(!custom())return base;
       const p=style(name),painted=base.map(([x,y,c])=>[x,y,c==='#'?p.body:c==='s'?bodyShade(p.body):c]);
@@ -19035,7 +19070,7 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
   const WIZARD = ['...........b....', '..........Bb....', '.........BBB....', '.......BBBBB....', '......ByBBBBB...', '.....BBBBBByBB..', '..BBBBBBBBBBBB..'];
   const WAND = { rest: [[0, 3, 'n'], [1, 2, 'n'], [2, 1, 'n'], [2, -1, '.y.'], [2, 0, 'yYy'], [2, 1, '.y.']],
     shine: [[0, 3, 'n'], [1, 2, 'n'], [2, 1, 'n'], [2, -1, '.Y.'], [2, 0, 'YwY'], [2, 1, '.Y.']] };
-  const NAMES = ['cowboy', 'shades', 'wizard'];
+  let NAMES = wardrobe?.pileNames() || ['cowboy', 'shades', 'wizard'];
   const BODY_W = 16 * PX, LIFT = 7 * PX, GAP = 2 * PX, EDGE = 14;   // 叠上去抬高 7 格；两只之间至少空 GAP；离输入框左右边 EDGE
   const BIG_W = 48, BIG_REST = 27;   // 大 Clawd：一格 3px，身子 16 格宽；站着头顶离脚底 30px，叠上去的坐在 27px（压进去一格）
   const STEP_MS = 160;                                              // 走路一步 160ms、1 格
@@ -19057,19 +19092,20 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
     for(const k of Object.values(K)) look(k);
   }
   function cells(name, eyes, pose, face) {
+    const id=name; name=wardrobe?.pileKind(id)||name;
     const up = pose === 'crouch' ? 0 : pose.startsWith('dangle') ? 3 : 2, by = TOP + 7 - up;
     if(costume)return costume(name,eyes,pose,face,by,doc.documentElement.dataset.claudeIntegratedTheme==='night');
     let c = [];
-    if (!wardrobe?.hatOverride(name) && name === 'cowboy') c = c.concat(grid(COWBOY, 0, by - 4));
-    if (!wardrobe?.hatOverride(name) && name === 'wizard') c = c.concat(grid(WIZARD, 0, by - 7));
+    if (!wardrobe?.hatOverride(id) && name === 'cowboy') c = c.concat(grid(COWBOY, 0, by - 4));
+    if (!wardrobe?.hatOverride(id) && name === 'wizard') c = c.concat(grid(WIZARD, 0, by - 7));
     let body = grid(BODY, 0, by);
     if (face) { const dark = face > 0 ? 2 : 13; body = body.map(([x, y, ch]) => [x, y, x === dark ? 's' : ch]); }
     c = c.concat(body);
     if (pose === 'stand' || pose.startsWith('dangle')) c = c.concat(grid(LEGS[pose], 0, by + 8));
-    if (!wardrobe?.glassesOverride(name) && name === 'shades') c = c.concat(eyes === 'open' ? spans(EYES.open, face, by).concat(spans(GLASSES.down, face, by)) : spans(GLASSES.on, face, by));
+    if (!wardrobe?.glassesOverride(id) && name === 'shades') c = c.concat(eyes === 'open' ? spans(EYES.open, face, by).concat(spans(GLASSES.down, face, by)) : spans(GLASSES.on, face, by));
     else c = c.concat(spans(EYES[eyes], face, by));
-    if (!wardrobe?.hatOverride(name) && name === 'wizard') c = c.concat(spans(eyes === 'open' ? WAND.shine : WAND.rest, 15, by));
-    return wardrobe?wardrobe.decoratePile(c,{name,eyes,pose,face,by}):c;
+    if (!wardrobe?.hatOverride(id) && name === 'wizard') c = c.concat(spans(eyes === 'open' ? WAND.shine : WAND.rest, 15, by));
+    return wardrobe?wardrobe.decoratePile(c,{name:id,eyes,pose,face,by}):c;
   }
   /* 2.0.227：每只画成一张小图（canvas 转图片），按最近邻放大，缩放屏上不会裂缝。每种样子只画一次，缓存起来。
      被拎着蹬腿的两帧横着拼成一条，Web Animations 换帧，不改 DOM。 */
@@ -19116,14 +19152,17 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
   let pile = null, form = null, style = null, ro = null, zTimer = 0, zi = 0, destroyed = false;
   let sparks = [], zs = [];
   const timers = new Set();
-  const later = (k, fn, ms) => { const t = win.setTimeout(() => { timers.delete(t); k.timers.delete(t); fn(); }, ms); timers.add(t); k.timers.add(t); return t; };
+  const later = (k, fn, ms) => { if(destroyed||k.retired)return 0;const t = win.setTimeout(() => { timers.delete(t); k.timers.delete(t); if(!destroyed&&!k.retired)fn(); }, ms); timers.add(t); k.timers.add(t); return t; };
   const clear = k => { for (const t of k.timers) { win.clearTimeout(t); timers.delete(t); } k.timers.clear(); };
 
   /* ===== 位置 ===== */
   const width = () => pile?.clientWidth || 0;
   function bounds() { return { min: EDGE, max: Math.max(EDGE, width() - EDGE - BODY_W) }; }
   function clampX(x) { const b = bounds(); return Math.round(Math.min(b.max, Math.max(b.min, x)) / PX) * PX; }
-  function homeLayout() { const r = width() - EDGE - 60; return { cowboy: { x: r, on: [] }, shades: { x: r + 28, on: [] }, wizard: { x: r + 14, on: ['cowboy', 'shades'] } }; }
+  function homeLayout() {
+    const r=width()-EDGE-60,b=bounds(),original={cowboy:{x:r,on:[]},shades:{x:r+28,on:[]},wizard:{x:r+14,on:NAMES.includes('cowboy')&&NAMES.includes('shades')?['cowboy','shades']:[]}};
+    return Object.fromEntries(NAMES.map((name,index)=>[name,original[name]||{x:clampX(b.min+(b.max-b.min)*(index+.5)/Math.max(1,NAMES.length)),on:[]}]));
+  }
   /* 2.0.292（Lulu：欢迎页摆好，进对话就位移）：位置存「离输入框中线多远」。欢迎页和对话页的输入框都居中、只是宽度不同，
      按中线算，换页面时小 Clawd 在屏幕上原地不动，间距也不变（以前按比例算，会左右跑、那一堆还会被挤扁）。 */
   function save(keepHome) {
@@ -19132,11 +19171,17 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
     try { preferencesFor(win).setItem(STORE, JSON.stringify(Object.fromEntries(NAMES.map(n => [n, { dx: Math.round(K[n].x - w / 2), on: K[n].on }])))); } catch { /* 存不了就不记 */ }
   }
   function load() {
-    const w = width(); if (!w) return null;
-    try {
-      const s = JSON.parse(preferencesFor(win).getItem(STORE) || 'null'); if (!s) return null;
-      return Object.fromEntries(NAMES.map(n => [n, { x: clampX(w / 2 + (+s[n]?.dx || 0)), on: Array.isArray(s[n]?.on) ? s[n].on.filter(m => (NAMES.includes(m) || m === 'big') && m !== n) : [] }]));
-    } catch { return null; }
+    const w=width();if(!w)return null;
+    try{
+      const saved=JSON.parse(preferencesFor(win).getItem(STORE)||'null');if(!saved||typeof saved!=='object'||Array.isArray(saved))return null;
+      const home=homeLayout(),out=Object.fromEntries(NAMES.map(name=>{
+        const item=saved[name],present=item&&typeof item==='object'&&!Array.isArray(item);
+        return [name,{x:present&&Number.isFinite(item.dx)?clampX(w/2+item.dx):clampX(home[name].x),on:present&&Array.isArray(item.on)?[...new Set(item.on.filter(n=>(NAMES.includes(n)||n==='big')&&n!==name))]:home[name].on}];
+      }));
+      const reaches=(from,target)=>{const pending=[from],seen=new Set();while(pending.length){const n=pending.pop();if(n===target)return true;if(n==='big'||seen.has(n))continue;seen.add(n);pending.push(...(out[n]?.on||[]));}return false;};
+      for(const name of NAMES)out[name].on=out[name].on.filter(n=>!reaches(n,name));
+      return out;
+    }catch{return null;}
   }
   /* 大 Clawd 在这里只是一个「支撑」：它坐在哪只头上（bigOn）由 index.js 落地时告诉这边（bigSat），位置从页面上量。 */
   let bigOn = null;
@@ -19175,6 +19220,8 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
 
   /* ===== 画 ===== */
   function look(k) {
+    if(destroyed||k.retired)return;
+    const palette=wardrobe?.pilePalette(k.name)||{};k.legEls.forEach((leg,index)=>{leg.style.backgroundColor=(index%2?palette.shade:palette.body)||'';});
     const el = k.el, ps = k.ps, walking = k.pose === 'walk', dangle = k.pose === 'dangle';
     const frames = walking ? ['raised'] : dangle ? ['dangleA', 'dangleB'] : [k.pose];
     el.classList.toggle('clawd-pile-sleep', k.mode === 'sleep' && k.pose === 'crouch');
@@ -19199,6 +19246,7 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
     k.legAnims = k.legEls.map((leg, i) => leg.animate(kf, { duration: 2 * STEP_MS, iterations: Infinity, delay: -(i % 2 ? STEP_MS : 0) }));
   }
   function place(k) {
+    if(destroyed||k.retired)return;
     const l = lift(k);
     k.el.style.left = `${k.x}px`; k.el.style.top = `${-H * PX - l}px`; k.el.style.zIndex = String(1 + Math.round(l / LIFT));
     k.el.classList.toggle('clawd-pile-up', !!k.on.length);   // 叠在别人头上的：滚动时跟着往下，不切
@@ -19340,7 +19388,7 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
     const was = k.mode, eyes = k.eyes;
     const w = endWalk(k); if (w) { k.pose = 'stand'; k.face = 0; }   // 走到一半：停在当前这一格，看你一眼
     k.eyes = 'open'; look(k);
-    if (!calm()) { k.hop?.cancel(); k.hop = k.b.animate?.(HOP, { duration: 460 }); if (k.name === 'wizard') sparkle(k); }
+    if (!calm()) { k.hop?.cancel(); k.hop = k.b.animate?.(HOP, { duration: 460 }); if ((wardrobe?.pileKind(k.name)||k.name) === 'wizard') sparkle(k); }
     later(k, () => {
       if (k.mode === 'held') return;
       if (w) { k.face = w.dir; look(k); later(k, () => { if (k.mode === 'walk') steps(k, w.target, w.done); }, 300); return; }
@@ -19356,16 +19404,19 @@ function createClawdPile({ doc, win, big = null, wardrobe = null }) {
     let sx = 0, sy = 0, down = false, drag = false, ox = 0, oy = 0, id = null;
     const stop = e => { e.stopPropagation(); };
     k.el.addEventListener('pointerdown', e => {
+      if(destroyed||k.retired)return;
       if (e.button) return; stop(e); e.preventDefault();
       down = true; drag = false; sx = e.clientX; sy = e.clientY; id = e.pointerId;
       try { k.el.setPointerCapture(id); } catch { /* 有的 WebView 不支持就算了 */ }
     });
     k.el.addEventListener('pointermove', e => {
+      if(destroyed||k.retired)return;
       if (!down || e.pointerId !== id) return; stop(e);
       if (!drag && Math.hypot(e.clientX - sx, e.clientY - sy) > 4) { drag = true; const r = k.el.getBoundingClientRect(); ox = sx - r.left; oy = sy - r.top; pickUp(k); }
       if (drag) { k.hit.style.clipPath = ''; const p = pile.getBoundingClientRect(); k.el.style.left = `${e.clientX - p.left - ox}px`; k.el.style.top = `${e.clientY - p.top - oy}px`; }
     });
     const up = e => {
+      if(destroyed||k.retired)return;
       if (!down || e.pointerId !== id) return; stop(e); down = false;
       if (!drag) { if (e.type === 'pointerup') poke(k); return; }
       const p = pile.getBoundingClientRect(); drop(k, e.clientX - p.left - ox + BODY_W / 2, e.clientY - p.top);
@@ -19619,8 +19670,43 @@ html[data-claude-motion="off"] .clawd-pile *{animation:none!important}
     for (const n of NAMES) sleep(K[n], true);
     relayout();
   }
+
+  // Change only the mini roster. Existing survivors keep their live position/behaviour.
+  function syncRoster(){
+    const next=wardrobe?.pileNames()||['cowboy','shades','wizard'];
+    if(JSON.stringify(next)===JSON.stringify(NAMES))return;
+    if(!pile){NAMES=next;return;}
+    const keep=new Set(next),gone=NAMES.filter(name=>!keep.has(name)),added=next.filter(name=>!K[name]);
+    const moved=[],oldBigHeight=bigOn?supportTop(bigOn):null,oldBigX=bigOn?K[bigOn].x:null;
+    for(const name of gone){
+      const k=K[name];if(!k)continue;
+      clear(k);endWalk(k);k.retired=true;
+      const animations=new Set([k.kick,k.hop,...(k.legAnims||[]),...(k.el.getAnimations?.({subtree:true})||[]),...(k.sh.getAnimations?.()||[])]);
+      for(const animation of animations)if(animation){animation.onfinish=null;animation.oncancel=null;animation.cancel?.();}
+      k.el.remove();k.sh.remove();
+    }
+    for(const name of NAMES){
+      const k=K[name];if(!keep.has(name)||!k)continue;
+      const on=k.on.filter(n=>n==='big'||keep.has(n));
+      if(on.length!==k.on.length){const walk=endWalk(k);k.on=on;if(!on.length)moved.push(k);if(walk)arrive(k,()=>doze(k));}
+    }
+    NAMES=next;for(const name of gone)delete K[name];
+    for(const name of added)make(name);
+    const home=homeLayout();
+    for(const name of added){const k=K[name];k.x=clampX(home[name].x);k.on=[];moved.push(k);}
+    // The large Clawd may be sitting on a removed support; lower it using current seats.
+    const removedSeat=bigOn&&!keep.has(bigOn);
+    if(removedSeat)lowerBig();
+    for(const k of moved){const x=nearestFree(k.x,k.name);if(x!==null)k.x=x;}
+    if(laid){stackX();for(const name of NAMES)if(K[name].mode!=='held')place(K[name]);}
+    if(!removedSeat&&bigOn&&(supportTop(bigOn)!==oldBigHeight||K[bigOn].x!==oldBigX))lowerBig();
+    for(const name of added)sleep(K[name],true);
+    atHome=false;imgCache.clear();save(true);readQuickReplyRects();
+  }
+
   function ensure() {
     if (destroyed) return null;
+    syncRoster();
     const f = doc.querySelector('#send_form');
     if (!f) return null;
     if (!style || !style.isConnected) { style = doc.createElement('style'); style.id = 'clawd-pile-style'; style.textContent = CSS; doc.head.append(style); }
@@ -19715,7 +19801,7 @@ html[data-claude-motion="off"] .clawd-pile *{animation:none!important}
     for (const n of NAMES) if (K[n]) K[n].el.style.translate = '';
     stackX(); for (const n of NAMES) place(K[n]); save(true);
   }
-  return { setCostume, refreshAppearance(){imgCache.clear();for(const k of Object.values(K))look(k);}, ensure, left, destroy, hush, peek, seats, trackSeats, seatLive, bigSat, blocks, riderCount, unloadBig, follow, followEnd, restack };
+  return { setCostume, refreshAppearance(){if(destroyed)return;syncRoster();imgCache.clear();for(const k of Object.values(K))look(k);}, ensure, left, destroy, hush, peek, seats, trackSeats, seatLive, bigSat, blocks, riderCount, unloadBig, follow, followEnd, restack };
 }
 
 return {createClawdPile};

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
+import {withPileRoster} from './pile-roster.mjs';
 const dir=path.dirname(fileURLToPath(import.meta.url));
 const read=name=>fs.readFileSync(path.join(dir,name),'utf8');
 const upstream=read('upstream/index.js').split('\n');
@@ -37,7 +38,8 @@ function pileWithWardrobe(source){
   cells=swap(cells,"if (name === 'shades')","if (!wardrobe?.glassesOverride(name) && name === 'shades')");
   cells=swap(cells,'    return c;','    return wardrobe?wardrobe.decoratePile(c,{name,eyes,pose,face,by}):c;');
   source=source.slice(0,start)+cells+source.slice(end);
-  return swap(source,'return { setCostume, ensure,','return { setCostume, refreshAppearance(){imgCache.clear();for(const k of Object.values(K))look(k);}, ensure,');
+  source=swap(source,'return { setCostume, ensure,','return { setCostume, refreshAppearance(){imgCache.clear();for(const k of Object.values(K))look(k);}, ensure,');
+  return withPileRoster(source,swap);
 }
 const module=(name,returns,transform=s=>s)=>`\nconst {${returns}}=(()=>{\n`+transform(read('upstream/'+name).replace(/^import[^\r\n]*[\r\n]+/gm,'').replace(/\bexport (?=(?:function|const)\b)/g,''))+`\nreturn {${returns}};\n})();\n`;
 const modules='\nconst {createClawdWardrobe}=(()=>{\n'+read('wardrobe.js').replace(/^export /gm,'')+'\nreturn {createClawdWardrobe};\n})();\n'
@@ -47,7 +49,7 @@ const modules='\nconst {createClawdWardrobe}=(()=>{\n'+read('wardrobe.js').repla
 const header=`// ==UserScript==
 // @name         学习通 AI 助手 · Clawd 小精灵
 // @namespace    local.chaoxing.clawd
-// @version      0.1.4
+// @version      0.1.5
 // @description  将本机 Claude Web 2.0.161 的普通 Clawd 动作与交互移植到学习通 AI 助手面板
 // @author       local adaptation; original Clawd runtime by lulu
 // @match        *://*.chaoxing.com/*
@@ -81,7 +83,7 @@ if(process.argv[2]){
 fs.writeFileSync(path.join(dir,'provenance.json'),JSON.stringify({
   source:'https://github.com/claudenoshujin/claude-web',version:JSON.parse(read('upstream/manifest.json')).version,
   ranges,mainSource,upstreamFiles:Object.fromEntries(['index.js','clawd-rig.js','clawd-pile.js','clawd-rhythm.js','preferences.js'].map(name=>[name,crypto.createHash('sha256').update(read('upstream/'+name)).digest('hex')])),
-  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Recognize the relocated quiz panel and rebind its owner document','Built-in wardrobe with per-pet colors and restore-default controls','Versioned cosmetic preference storage; question exports unchanged','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
+  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Recognize the relocated quiz panel and rebind its owner document','Built-in wardrobe with per-pet colors and restore-default controls','Editable mini roster with stable IDs and independent outfits','Migrate wardrobe v1 to v2; validate and confirm roster/settings in one record','Dispose removed mini timers/animations and detach missing supports','Versioned cosmetic preference storage; question exports unchanged','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
   review:'Static source review only. No syntax checks, automated tests or browser verification executed.'
 },null,2));
 console.log('Generated: '+path.join(dir,'chaoxing-clawd.user.js'));

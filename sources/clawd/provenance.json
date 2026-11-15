@@ -40,8 +40,8 @@
     ]
   ],
   "mainSource": {
-    "version": "1.33.18",
-    "sha256": "fbcd2d74e1bfd38250087115ef4008be57ce22bbed360089a746e0fa88577f88"
+    "version": "1.33.20",
+    "sha256": "66b85a579ef7c3c21059ecd557c61af80876f704732d2944ed14b73bb77e35c3"
   },
   "upstreamFiles": {
     "index.js": "c17a3866ca14b3d6fa316eae427b46d7f3e609cc6de10d6f2301f123d1077ff7",
@@ -58,6 +58,9 @@
     "Dispose on hide and restore on pageshow",
     "Recognize the relocated quiz panel and rebind its owner document",
     "Built-in wardrobe with per-pet colors and restore-default controls",
+    "Editable mini roster with stable IDs and independent outfits",
+    "Migrate wardrobe v1 to v2; validate and confirm roster/settings in one record",
+    "Dispose removed mini timers/animations and detach missing supports",
     "Versioned cosmetic preference storage; question exports unchanged",
     "Idempotent embedded main-script build",
     "Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code"

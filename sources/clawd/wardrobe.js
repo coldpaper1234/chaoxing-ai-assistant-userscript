@@ -2,6 +2,8 @@
 export function createClawdWardrobe({doc,win,root,outer}) {
   const KEY='cx_clawd_wardrobe_v1';
   const targets={big:'大 Clawd',cowboy:'牛仔小 Clawd',shades:'墨镜小 Clawd',wizard:'巫师小 Clawd'};
+  const kinds={plain:'普通小精灵',cowboy:'牛仔小精灵',shades:'墨镜小精灵',wizard:'巫师小精灵'};
+  const originalRoster=()=>['cowboy','shades','wizard'].map(id=>({id,kind:id}));
   const hats={
     default:['原样',null],none:['无帽子',null],
     cowboy:['牛仔帽',['.....aaaaaa.....','....aaaaaaaa....','....bbbbbbbb....','.aaaaaaaaaaaaaa.']],
@@ -19,37 +21,54 @@ export function createClawdWardrobe({doc,win,root,outer}) {
   };
   const glasses={default:'原样',none:'无眼镜',sunglasses:'墨镜',round:'圆框眼镜',square:'方框眼镜',monocle:'单片眼镜',star:'星星眼镜'};
   const accessories={none:'无饰品',scarf:'围巾',bow:'领结',tie:'领带',badge:'徽章',heart:'爱心别针',flower:'花朵别针',necklace:'项链',cape:'小披风'};
-  const defaults=()=>({schemaVersion:1,revision:0,mode:'default',pets:Object.fromEntries(Object.keys(targets).map(id=>[id,{hat:'default',glasses:'default',accessory:'none',body:'#d97757',hatColor:id==='cowboy'?'#8b5e3c':id==='wizard'?'#5b8fb9':'#d6a43a',accent:id==='shades'?'#1f1d1b':'#ce5261'}]))});
+  const defaultPet=kind=>({hat:'default',glasses:'default',accessory:'none',body:'#d97757',hatColor:kind==='cowboy'?'#8b5e3c':kind==='wizard'?'#5b8fb9':'#d6a43a',accent:kind==='shades'?'#1f1d1b':'#ce5261'});
+  const defaults=()=>({schemaVersion:2,revision:0,mode:'default',nextId:1,roster:originalRoster(),pets:{big:defaultPet('big'),...Object.fromEntries(originalRoster().map(({id,kind})=>[id,defaultPet(kind)]))}});
   const clone=value=>JSON.parse(JSON.stringify(value));
   const isColor=value=>typeof value==='string'&&/^#[\da-f]{6}$/i.test(value);
   function validate(value){
     if(value===null||value===undefined)return defaults();
-    if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!['schemaVersion','revision','mode','pets'].includes(k))
-      ||value.schemaVersion!==1||!Number.isSafeInteger(value.revision)||value.revision<0||!['default','custom'].includes(value.mode)
-      ||!value.pets||Object.keys(value.pets).length!==4||Object.keys(value.pets).some(k=>!Object.hasOwn(targets,k)))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
-    for(const id of Object.keys(targets)){
-      const p=value.pets[id];
-      if(!p||Object.keys(p).length!==6||Object.keys(p).some(k=>!['hat','glasses','accessory','body','hatColor','accent'].includes(k))
-        ||!Object.hasOwn(hats,p.hat)||!Object.hasOwn(glasses,p.glasses)||!Object.hasOwn(accessories,p.accessory)
-        ||!isColor(p.body)||!isColor(p.hatColor)||!isColor(p.accent))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
+    const bad=()=>{throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');};
+    if(!value||typeof value!=='object'||Array.isArray(value))bad();
+    const legacy=value.schemaVersion===1;
+    const allowed=legacy?['schemaVersion','revision','mode','pets']:['schemaVersion','revision','mode','nextId','roster','pets'];
+    if(Object.keys(value).length!==allowed.length||Object.keys(value).some(k=>!allowed.includes(k))
+      ||!legacy&&value.schemaVersion!==2||!Number.isSafeInteger(value.revision)||value.revision<0||!['default','custom'].includes(value.mode))bad();
+    const roster=legacy?originalRoster():value.roster;
+    if(!Array.isArray(roster))bad();
+    const ids=new Set(['big']);let lastId=0;
+    for(const entry of roster){
+      if(!entry||typeof entry!=='object'||Array.isArray(entry)||Object.keys(entry).length!==2||!Object.hasOwn(entry,'id')||!Object.hasOwn(entry,'kind')
+        ||typeof entry.id!=='string'||!/^(cowboy|shades|wizard|pet-[1-9]\d*)$/.test(entry.id)||ids.has(entry.id)||!Object.hasOwn(kinds,entry.kind))bad();
+      ids.add(entry.id);
+      if(entry.id.startsWith('pet-')){const number=Number(entry.id.slice(4));if(!Number.isSafeInteger(number))bad();lastId=Math.max(lastId,number);}
     }
-    return clone(value);
+    if(!legacy&&(!Number.isSafeInteger(value.nextId)||value.nextId<=lastId||value.nextId<1))bad();
+    if(!value.pets||typeof value.pets!=='object'||Array.isArray(value.pets)||Object.keys(value.pets).length!==ids.size||Object.keys(value.pets).some(id=>!ids.has(id)))bad();
+    for(const id of ids){
+      const p=value.pets[id];
+      if(!p||typeof p!=='object'||Array.isArray(p)||Object.keys(p).length!==6||Object.keys(p).some(k=>!['hat','glasses','accessory','body','hatColor','accent'].includes(k))
+        ||!Object.hasOwn(hats,p.hat)||!Object.hasOwn(glasses,p.glasses)||!Object.hasOwn(accessories,p.accessory)
+        ||!isColor(p.body)||!isColor(p.hatColor)||!isColor(p.accent))bad();
+    }
+    return clone(legacy?{...value,schemaVersion:2,nextId:1,roster}:value);
   }
   function readRaw(){return typeof GM_getValue==='function'?GM_getValue(KEY,null):JSON.parse(win.localStorage.getItem(KEY)||'null');}
   const token=value=>JSON.stringify(value??null);
   let current=defaults(),invalid='',disposed=false,refresh=()=>{},baseline='null',draft=defaults(),dirty=false,listener=null,writing=false;
   try{current=validate(readRaw());}catch(error){invalid=error.message;}
   const custom=()=>current.mode==='custom';
-  const style=id=>current.pets[id];
+  const kindMaps=new WeakMap();
+  const kindOf=(id,value=current)=>{if(id==='big')return 'big';let map=kindMaps.get(value);if(!map){map=new Map(value.roster.map(p=>[p.id,p.kind]));kindMaps.set(value,map);}return map.get(id)||'plain';};
+  const style=id=>current.pets[id]||defaultPet(kindOf(id));
   const darken=(hex,f=.72)=>'#'+[1,3,5].map(i=>Math.round(parseInt(hex.slice(i,i+2),16)*f).toString(16).padStart(2,'0')).join('');
   const bodyShade=hex=>hex.toLowerCase()==='#d97757'?'#bf684c':darken(hex,.88);
-  const hatName=(id,p)=>p.hat==='default'?(id==='cowboy'?'cowboy':id==='wizard'?'wizard':'none'):p.hat;
-  const glassesName=(id,p)=>p.glasses==='default'?(id==='shades'?'sunglasses':'none'):p.glasses;
+  const hatName=(id,p,value=current)=>p.hat==='default'?(kindOf(id,value)==='cowboy'?'cowboy':kindOf(id,value)==='wizard'?'wizard':'none'):p.hat;
+  const glassesName=(id,p,value=current)=>p.glasses==='default'?(kindOf(id,value)==='shades'?'sunglasses':'none'):p.glasses;
   function pixels(id,p,eyeY=1){
     const out=[],put=(x,y,c)=>out.push([x,y,c]);
     const grid=(rows,ox,oy,palette)=>rows?.forEach((row,y)=>[...row].forEach((ch,x)=>{if(ch!=='.')put(x+ox,y+oy,palette[ch]||ch);}));
     const hat=hatName(id,p),rows=hats[hat]?.[1];
-    const standard=defaults().pets[id];
+    const standard=defaultPet(kindOf(id));
     if(id==='big'||p.hat!=='default'||p.hatColor!==standard.hatColor)
       grid(rows,0,-(rows?.length||0),{a:p.hatColor,b:darken(p.hatColor),w:'#fff2ce'});
     const g=glassesName(id,p),ink=p.accent,glass='#d8ebef',black='#241e24';
@@ -83,39 +102,43 @@ export function createClawdWardrobe({doc,win,root,outer}) {
   }
   const sheetStyle=doc.createElement('style');sheetStyle.textContent='.cx-clawd-dress-layer{position:absolute;left:var(--cx-clawd-dress-x,0px);top:var(--cx-clawd-dress-y,18px);width:3px;height:3px;pointer-events:none;background:transparent;z-index:6}.cx-clawd-dress-layer[hidden]{display:none!important}';root.append(sheetStyle);
   const menu=doc.createElement('section');menu.className='cx-wardrobe';menu.hidden=true;menu.setAttribute('role','dialog');menu.setAttribute('aria-label','小精灵装扮');
-  menu.innerHTML='<header><strong>小精灵装扮</strong><button type="button" data-close>关闭</button></header><label class="cx-line"><input type="checkbox" data-mode>启用自选装扮</label><label>选择小精灵<select data-target></select></label><canvas width="96" height="112" aria-label="装扮预览"></canvas><div class="cx-fields"><label>帽子<select data-hat></select></label><label>眼镜<select data-glasses></select></label><label>饰品<select data-accessory></select></label></div><div class="cx-colors"><label>身体颜色<input type="color" data-body></label><label>帽子颜色<input type="color" data-hatColor></label><label>饰品颜色<input type="color" data-accent></label></div><p class="cx-note">选择后点击应用。关闭不会保存未应用的选择。</p><div class="cx-actions"><button type="button" data-apply>应用装扮</button><button type="button" data-reset-one>这只恢复默认</button><button type="button" data-reset-all>全部恢复默认</button></div><p data-message role="status"></p>';
+  menu.innerHTML='<header><strong>小精灵装扮</strong><button type="button" data-close>关闭</button></header><p data-count></p><div class="cx-fields cx-roster"><label>添加类型<select data-kind></select></label><button type="button" data-add>添加小精灵</button></div><label>选择小精灵<select data-target></select></label><div class="cx-actions"><button type="button" data-remove>删除选中小精灵</button><button type="button" data-reset-count>恢复默认数量</button></div><label class="cx-line"><input type="checkbox" data-mode>启用自选装扮</label><canvas width="96" height="112" aria-label="装扮预览"></canvas><div class="cx-fields"><label>帽子<select data-hat></select></label><label>眼镜<select data-glasses></select></label><label>饰品<select data-accessory></select></label></div><div class="cx-colors"><label>身体颜色<input type="color" data-body></label><label>帽子颜色<input type="color" data-hatColor></label><label>饰品颜色<input type="color" data-accent></label></div><p class="cx-note">增减数量、换装和恢复默认后，均需点击应用。关闭不会保存未应用的选择。大 Clawd 为主精灵，数量单独保留。</p><div class="cx-actions"><button type="button" data-apply>应用装扮与数量</button><button type="button" data-reset-one>这只恢复默认装扮</button><button type="button" data-reset-all>全部恢复默认装扮</button></div><p data-message role="status"></p>';
   const uiStyle=doc.createElement('style');uiStyle.textContent='.cx-wardrobe{position:absolute;right:0;top:10px;width:min(340px,calc(100vw - 40px));max-height:calc(100vh - 124px);overflow:auto;box-sizing:border-box;padding:14px;border:1px solid #d9e2ed;border-radius:10px;background:#fff;color:#26354a;box-shadow:0 10px 32px #18304933;pointer-events:auto;z-index:50;font:13px/1.6 "Microsoft YaHei",sans-serif}.cx-wardrobe[hidden]{display:none!important}.cx-wardrobe header,.cx-line,.cx-actions,.cx-colors{display:flex;gap:8px;align-items:center}.cx-wardrobe header{justify-content:space-between;margin-bottom:8px}.cx-wardrobe label{display:grid;gap:3px;margin:6px 0}.cx-wardrobe .cx-line{display:flex}.cx-wardrobe select{width:100%;padding:6px;border:1px solid #cbd6e2;border-radius:5px;background:#fff;color:#26354a}.cx-wardrobe button{padding:5px 8px;border:1px solid #bfcddd;border-radius:5px;background:#f0f5fc;color:#315fbd;cursor:pointer;font:inherit}.cx-wardrobe button:disabled{opacity:.5;cursor:default}.cx-fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.cx-colors{justify-content:space-between}.cx-colors label{flex:1;min-width:0}.cx-colors input{width:100%;height:30px;border:1px solid #cbd6e2;border-radius:4px;padding:2px;background:#fff}.cx-wardrobe canvas{display:block;margin:0 auto;image-rendering:pixelated;background:#f7f9fc;border-radius:8px}.cx-wardrobe .cx-note{font-size:12px;color:#6c7b90}.cx-actions{flex-wrap:wrap}.cx-wardrobe [data-message]{margin:7px 0 0;font-size:12px;overflow-wrap:anywhere}';root.append(uiStyle,menu);
   const entry=doc.createElement('button');entry.type='button';entry.id='cx-clawd-dress-toggle';entry.textContent='装扮';entry.title='小精灵装扮';entry.setAttribute('aria-expanded','false');entry.style.cssText='flex:none;min-width:44px;width:auto;min-height:28px;font-size:12px;padding:4px 6px';
   const el=name=>menu.querySelector('[data-'+name+']');
   const fill=(select,entries)=>{for(const [value,label]of entries){const option=doc.createElement('option');option.value=value;option.textContent=label;select.append(option);}};
-  fill(el('target'),Object.entries(targets));fill(el('hat'),Object.entries(hats).map(([k,v])=>[k,v[0]]));fill(el('glasses'),Object.entries(glasses));fill(el('accessory'),Object.entries(accessories));
+  fill(el('kind'),Object.entries(kinds));fill(el('hat'),Object.entries(hats).map(([k,v])=>[k,v[0]]));fill(el('glasses'),Object.entries(glasses));fill(el('accessory'),Object.entries(accessories));
+  function targetChoices(selected=el('target').value){
+    el('target').replaceChildren();fill(el('target'),[['big',targets.big],...draft.roster.map(({id,kind})=>[id,targets[id]||kinds[kind]+' '+id.slice(4)])]);
+    el('target').value=Object.hasOwn(draft.pets,selected)?selected:'big';
+  }
   const message=text=>{el('message').textContent=text;};
   function preview(){
     let context;try{context=menu.querySelector('canvas').getContext('2d');}catch{return;}if(!context)return;
     context.clearRect(0,0,96,112);
-    const id=el('target').value,p=draft.pets[id],shown=draft.mode==='custom'?p:defaults().pets[id];
+    const id=el('target').value,p=draft.pets[id],shown=draft.mode==='custom'?p:defaultPet(kindOf(id,draft));
     const body=[];for(let y=0;y<8;y++)for(let x=2;x<14;x++)body.push([x,y,shown.body]);
     for(const x of [3,5,10,12]){body.push([x,8,shown.body],[x,9,shown.body]);}
     for(const x of [4,11]){body.push([x,2,'#241d18'],[x,3,'#241d18']);}
     // Preview includes each target's original hat/glasses when their choice is "original".
-    const sample={...shown,hat:hatName(id,shown),glasses:glassesName(id,shown)};
+    const sample={...shown,hat:hatName(id,shown,draft),glasses:glassesName(id,shown,draft)};
     for(const [x,y,color]of [...body,...pixels('big',sample,2)]){context.fillStyle=color;context.fillRect(16+x*4,48+y*4,4,4);}
   }
-  function fields(){const id=el('target').value,p=draft.pets[id];el('mode').checked=draft.mode==='custom';for(const k of ['hat','glasses','accessory','body','hatColor','accent']){el(k).value=p[k];el(k).disabled=draft.mode!=='custom'||!!invalid;}for(const k of ['apply','reset-one','reset-all'])el(k).disabled=!!invalid;preview();}
+  function fields(){targetChoices();const id=el('target').value,p=draft.pets[id];el('count').textContent='主精灵 1 只 · 小精灵 '+draft.roster.length+' 只';el('mode').checked=draft.mode==='custom';el('mode').disabled=!!invalid;for(const k of ['hat','glasses','accessory','body','hatColor','accent']){el(k).value=p[k];el(k).disabled=draft.mode!=='custom'||!!invalid;}for(const k of ['apply','reset-one','reset-all','add','reset-count','kind'])el(k).disabled=!!invalid;el('remove').disabled=id==='big'||!!invalid;preview();}
   function reload(){try{const raw=readRaw();current=validate(raw);baseline=token(raw);invalid='';}catch(error){invalid=error.message;}draft=clone(current);dirty=false;fields();message(invalid);}
-  function save(next,remove=false){
+  function save(next){
     let attempted=false;
     try{
       if(invalid)throw Error(invalid);
       const raw=readRaw();validate(raw);
       if(token(raw)!==baseline)throw Error('装扮已在其他页面修改，请关闭后重新打开；当前选择尚未保存');
-      const value=remove?null:validate({...next,revision:validate(raw).revision+1});
+      const value=validate({...next,revision:validate(raw).revision+1});
       attempted=true;writing=true;
       if(typeof GM_setValue==='function'){
-        if(remove&&typeof GM_deleteValue==='function')GM_deleteValue(KEY);else GM_setValue(KEY,value);
-      }else if(remove)win.localStorage.removeItem(KEY);else win.localStorage.setItem(KEY,JSON.stringify(value));
+        GM_setValue(KEY,value);
+      }else win.localStorage.setItem(KEY,JSON.stringify(value));
       const stored=readRaw();if(token(stored)!==token(value))throw Error('保存结果已变化，请重新打开确认');
-      current=validate(stored);baseline=token(stored);draft=clone(current);dirty=false;refresh();fields();message(remove?'已恢复默认装扮':'装扮已保存');
+      current=validate(stored);baseline=token(stored);draft=clone(current);dirty=false;refresh();fields();message('装扮与数量已保存');
     }catch(error){
       if(attempted){try{const raw=readRaw();current=validate(raw);baseline=token(raw);refresh();}catch{}}
       message((attempted?'保存未确认，请重新打开核对：':'未应用：')+error.message);
@@ -136,8 +159,17 @@ export function createClawdWardrobe({doc,win,root,outer}) {
   el('target').onchange=fields;
   for(const k of ['hat','glasses','accessory','body','hatColor','accent'])el(k).onchange=()=>{draft.pets[el('target').value][k]=el(k).value;dirty=true;preview();message('选择尚未应用');};
   el('apply').onclick=()=>save(draft);
-  el('reset-one').onclick=()=>{const next=clone(current);next.pets[el('target').value]=defaults().pets[el('target').value];save(next);};
-  el('reset-all').onclick=()=>save(defaults(),true);
+  const changed=text=>{dirty=true;kindMaps.delete(draft);fields();message(text+'，点击应用后生效');};
+  el('add').onclick=()=>{
+    if(invalid)return;
+    if(!Number.isSafeInteger(draft.nextId+1)){message('小精灵编号已用尽，原设置未修改');return;}
+    const id='pet-'+draft.nextId++,kind=el('kind').value;
+    draft.roster.push({id,kind});draft.pets[id]=defaultPet(kind);targetChoices(id);changed('已添加小精灵');
+  };
+  el('remove').onclick=()=>{const id=el('target').value;if(id==='big'||invalid)return;draft.roster=draft.roster.filter(p=>p.id!==id);delete draft.pets[id];targetChoices('big');changed('已删除选中小精灵');};
+  el('reset-count').onclick=()=>{if(invalid)return;draft.roster=originalRoster();draft.pets={big:draft.pets.big,...Object.fromEntries(draft.roster.map(({id,kind})=>[id,draft.pets[id]||defaultPet(kind)]))};changed('已恢复默认的三只小精灵');};
+  el('reset-one').onclick=()=>{if(invalid)return;const id=el('target').value;draft.pets[id]=defaultPet(kindOf(id,draft));changed('已恢复当前装扮');};
+  el('reset-all').onclick=()=>{if(invalid)return;draft.mode='default';draft.pets={big:defaultPet('big'),...Object.fromEntries(draft.roster.map(({id,kind})=>[id,defaultPet(kind)]))};changed('已恢复全部装扮，小精灵数量保留');};
   const storageChanged=()=>{
     if(disposed||writing)return;
     try{const raw=readRaw();current=validate(raw);invalid='';refresh();if(!menu.hidden){if(dirty)message('其他页面已修改装扮，当前选择未保存；请重新打开');else{baseline=token(raw);draft=clone(current);fields();}}}
@@ -149,8 +181,11 @@ export function createClawdWardrobe({doc,win,root,outer}) {
   return {
     start(onChange){refresh=onChange;(outer.querySelector('.head-actions')||outer.querySelector('.head')||outer).prepend(entry);if(typeof GM_addValueChangeListener==='function')listener=GM_addValueChangeListener(KEY,storageChanged);else win.addEventListener('storage',localStorageChanged);},
     bigPalette(){return custom()?{body:style('big').body,shade:bodyShade(style('big').body)}:{};},
-    hatOverride(id){return custom()&&(style(id).hat!=='default'||style(id).hatColor!==defaults().pets[id].hatColor);},
-    glassesOverride(id){return custom()&&(style(id).glasses!=='default'||style(id).accent!==defaults().pets[id].accent);},
+    pileNames(){return current.roster.map(p=>p.id);},
+    pileKind(id){return kindOf(id);},
+    pilePalette(id){return custom()?{body:style(id).body,shade:bodyShade(style(id).body)}:{};},
+    hatOverride(id){return custom()&&(style(id).hat!=='default'||style(id).hatColor!==defaultPet(kindOf(id)).hatColor);},
+    glassesOverride(id){return custom()&&(style(id).glasses!=='default'||style(id).accent!==defaultPet(kindOf(id)).accent);},
     decoratePile(base,{name,by,eyes}){
       if(!custom())return base;
       const p=style(name),painted=base.map(([x,y,c])=>[x,y,c==='#'?p.body:c==='s'?bodyShade(p.body):c]);

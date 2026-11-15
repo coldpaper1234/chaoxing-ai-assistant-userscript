@@ -19,7 +19,7 @@ const modules=module('preferences.js','preferencesFor')+module('clawd-rig.js','b
 const header=`// ==UserScript==
 // @name         学习通 AI 助手 · Clawd 小精灵
 // @namespace    local.chaoxing.clawd
-// @version      0.1.2
+// @version      0.1.3
 // @description  将本机 Claude Web 2.0.161 的普通 Clawd 动作与交互移植到学习通 AI 助手面板
 // @author       local adaptation; original Clawd runtime by lulu
 // @match        *://*.chaoxing.com/*
@@ -53,7 +53,7 @@ if(process.argv[2]){
 fs.writeFileSync(path.join(dir,'provenance.json'),JSON.stringify({
   source:'https://github.com/claudenoshujin/claude-web',version:JSON.parse(read('upstream/manifest.json')).version,
   ranges,mainSource,upstreamFiles:Object.fromEntries(['index.js','clawd-rig.js','clawd-pile.js','clawd-rhythm.js','preferences.js'].map(name=>[name,crypto.createHash('sha256').update(read('upstream/'+name)).digest('hex')])),
-  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
+  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Recognize the relocated quiz panel and rebind its owner document','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
   review:'Static source review only. No syntax checks, automated tests or browser verification executed.'
 },null,2));
 console.log('Generated: '+path.join(dir,'chaoxing-clawd.user.js'));

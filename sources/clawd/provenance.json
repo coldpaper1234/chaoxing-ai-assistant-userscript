@@ -40,8 +40,8 @@
     ]
   ],
   "mainSource": {
-    "version": "1.33.16",
-    "sha256": "482358a004ac4b5f5e4af818ff596f70b73aad2f621a8604418d658cbbe7daa5"
+    "version": "1.33.17",
+    "sha256": "d61d1722405c7df225f2c2133b9f4b4d27ca92ea401d8fd0d0df229821b21de8"
   },
   "upstreamFiles": {
     "index.js": "c17a3866ca14b3d6fa316eae427b46d7f3e609cc6de10d6f2301f123d1077ff7",
@@ -56,6 +56,7 @@
     "Namespace the pile storage key",
     "Single rig style constant declaration",
     "Dispose on hide and restore on pageshow",
+    "Recognize the relocated quiz panel and rebind its owner document",
     "Idempotent embedded main-script build",
     "Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code"
   ],

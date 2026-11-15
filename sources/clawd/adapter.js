@@ -120,13 +120,15 @@ function mountChaoxingClawd(host) {
     anchor.remove();
   };
   try {sync();}catch(error){destroy();throw error;}
-  return {panel,destroy};
+  return {panel,ownerDocument:doc,destroy};
 }
 
 // Each userscript instance follows its own assistant panel; it never reads credentials,
 // calls model APIs, clicks answers, submits work, or changes the main script's settings.
 const mountedClawds = new Map();
 const watchedClawdHosts = new Map();
+const clawdObservedDocuments = new Set();
+const CLAWD_HOST_SELECTOR = '#cx-ai-study-root,#cx-ai-quiz-panel';
 let discoveryFrame = 0, clawdDiscoveryActive = false;
 function chaoxingClawdPanelVisible(host,panel){
   return host.isConnected&&!host.ownerDocument.hidden&&!panel.hidden&&!host.hidden
@@ -141,19 +143,20 @@ function watchClawdHost(host){
   if(!root){watchedClawdHosts.delete(host);return;}
   const observer=new MutationObserver(scheduleClawdDiscovery);
   observer.observe(root,{childList:true});
-  observer.observe(host,{attributes:true,attributeFilter:['hidden','style','class']});
-  if(panel)observer.observe(panel,{attributes:true,attributeFilter:['hidden','style','class']});
+  observer.observe(host,{attributes:true,attributeFilter:['id','hidden','style','class']});
+  if(panel)observer.observe(panel,{attributes:true,attributeFilter:['hidden','style','class','aria-busy','data-phase']});
   watchedClawdHosts.set(host,{root,panel,observer});
 }
 function discoverChaoxingClawd() {
   discoveryFrame=0;
   if(!clawdDiscoveryActive)return;
-  const hosts=new Set(document.querySelectorAll('#cx-ai-study-root'));
+  const documents=clawdPanelDocuments();observeClawdDocuments(documents);
+  const hosts=new Set(documents.flatMap(doc=>[...doc.querySelectorAll(CLAWD_HOST_SELECTOR)]));
   for(const [host,watch]of watchedClawdHosts)if(!hosts.has(host)){watch.observer.disconnect();watchedClawdHosts.delete(host);}
   for(const host of hosts)watchClawdHost(host);
   for(const [host,api]of mountedClawds){
     const panel=host.shadowRoot?.getElementById('panel');
-    if(!hosts.has(host)||panel!==api.panel||!chaoxingClawdPanelVisible(host,panel)){api.destroy();mountedClawds.delete(host);}
+    if(!hosts.has(host)||panel!==api.panel||host.ownerDocument!==api.ownerDocument||!chaoxingClawdPanelVisible(host,panel)){api.destroy();mountedClawds.delete(host);}
   }
   for(const host of hosts){
     const panel=host.shadowRoot?.getElementById('panel');
@@ -165,12 +168,31 @@ function discoverChaoxingClawd() {
 }
 function scheduleClawdDiscovery(){if(clawdDiscoveryActive&&!discoveryFrame)discoveryFrame=requestAnimationFrame(discoverChaoxingClawd);}
 const clawdDiscoveryObserver=new MutationObserver(records=>{
-  if(records.some(record=>[...record.addedNodes,...record.removedNodes].some(node=>node.nodeType===1&&(node.id==='cx-ai-study-root'||node.querySelector('#cx-ai-study-root')))))scheduleClawdDiscovery();
+  const related=node=>node.nodeType===1&&(node.matches(CLAWD_HOST_SELECTOR)||node.querySelector(CLAWD_HOST_SELECTOR));
+  if(records.some(record=>record.type==='attributes'
+    ? related(record.target)||watchedClawdHosts.has(record.target)||['cx-ai-study-root','cx-ai-quiz-panel'].includes(record.oldValue)
+    : [...record.addedNodes,...record.removedNodes].some(related)))scheduleClawdDiscovery();
 });
+function clawdPanelDocuments(){
+  // The native question panel is adopted into an accessible ancestor document.
+  // Follow that same document chain; never query unrelated windows or cross-origin frames.
+  const documents=[],seen=new Set();let doc=document;
+  for(let depth=0;doc&&depth<12&&!seen.has(doc);depth++){
+    documents.push(doc);seen.add(doc);
+    try{const view=doc.defaultView;if(!view||view.parent===view)break;doc=view.parent.document;}catch{break;}
+  }
+  return documents;
+}
+function observeClawdDocuments(documents){
+  for(const doc of documents)if(doc.documentElement&&!clawdObservedDocuments.has(doc)){
+    clawdDiscoveryObserver.observe(doc.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['id'],attributeOldValue:true});
+    clawdObservedDocuments.add(doc);
+  }
+}
 function startClawdDiscovery(){
   if(!document.documentElement)return;
   clawdDiscoveryActive=true;
-  clawdDiscoveryObserver.observe(document.documentElement,{subtree:true,childList:true});
+  observeClawdDocuments(clawdPanelDocuments());
   scheduleClawdDiscovery();
 }
 if(document.documentElement)startClawdDiscovery();
@@ -178,13 +200,13 @@ else document.addEventListener('DOMContentLoaded',startClawdDiscovery,{once:true
 window.addEventListener('pagehide',()=>{
   clawdDiscoveryActive=false;
   document.removeEventListener('DOMContentLoaded',startClawdDiscovery);
-  clawdDiscoveryObserver.disconnect();if(discoveryFrame)cancelAnimationFrame(discoveryFrame);discoveryFrame=0;
+  clawdDiscoveryObserver.disconnect();clawdObservedDocuments.clear();if(discoveryFrame)cancelAnimationFrame(discoveryFrame);discoveryFrame=0;
   for(const watch of watchedClawdHosts.values())watch.observer.disconnect();watchedClawdHosts.clear();
   for(const api of mountedClawds.values())api.destroy();mountedClawds.clear();
 });
 window.addEventListener('pageshow',startClawdDiscovery);
 document.addEventListener('visibilitychange',()=>{
   if(!clawdDiscoveryActive)return;
-  if(document.hidden){for(const api of mountedClawds.values())api.destroy();mountedClawds.clear();}
+  if(document.hidden){for(const [host,api]of mountedClawds)if(api.ownerDocument.hidden){api.destroy();mountedClawds.delete(host);}}
   else scheduleClawdDiscovery();
 });

@@ -10,6 +10,8 @@
 
 本仓库仅维护完整可安装脚本；本次基于原版 1.33.4 建立独立更新源，发布版本 1.33.5。功能效果未运行测试，请在自己的使用环境中确认。不要上传 API Key、Cookie 或个人配置。
 
+主脚本已内置互动 Clawd 小精灵，支持点击、摸头、拖拽、抛掷和小人堆叠，无需另装配套脚本。互动源码来自 [Claude Web](https://github.com/claudenoshujin/claude-web)，保留作者 lulu 署名；移植源码位于 `sources/clawd/`。
+
 原项目：[zhu-hailin/chaoxing-ai-assistant](https://github.com/zhu-hailin/chaoxing-ai-assistant)，原作者 Hailin；保留 MIT 许可证及脚本内第三方版权声明。
 
 后续维护：更新根目录同名完整脚本，并同步提升脚本元数据、面板等版本号；发布同版本标签和 GitHub Release，并附上完整脚本。不要修改旧版本标签。

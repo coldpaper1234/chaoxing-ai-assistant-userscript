@@ -1,0 +1,63 @@
+{
+  "source": "https://github.com/claudenoshujin/claude-web",
+  "version": "2.0.161",
+  "ranges": [
+    [
+      1420,
+      1467
+    ],
+    [
+      1534,
+      1549
+    ],
+    [
+      1566,
+      1749
+    ],
+    [
+      1792,
+      1799
+    ],
+    [
+      1815,
+      2624
+    ],
+    [
+      3158,
+      3637
+    ],
+    [
+      3648,
+      3741
+    ],
+    [
+      3802,
+      3910
+    ],
+    [
+      6151,
+      6192
+    ]
+  ],
+  "mainSource": {
+    "version": "1.33.15",
+    "sha256": "662c018f0d392c8799680c9d06eeeb71332f05dd749614b790c301b30d5744c3"
+  },
+  "upstreamFiles": {
+    "index.js": "c17a3866ca14b3d6fa316eae427b46d7f3e609cc6de10d6f2301f123d1077ff7",
+    "clawd-rig.js": "40b766d4f525dcbd628fe6679b2bb4b64c6bc20e462c3e132b81ad4caa9d4955",
+    "clawd-pile.js": "a159cf73655f9d0765007fa47cda6b8095aa98cb69a7dbc65687b9bfb2fdacc2",
+    "clawd-rhythm.js": "c6573c2d3844e65dd7be0f36162fcd11ec4ddab65161878b26c7a9c079504a49",
+    "preferences.js": "b7656a85ade16ec5f6de6ffd8e7af7fd26a4879b3f0c7ed82bdcfcd04ecc09f1"
+  },
+  "changes": [
+    "Document/selector bridge into a private ShadowRoot",
+    "Connect begin/end/error/stop to existing assistant DOM state",
+    "Namespace the pile storage key",
+    "Single rig style constant declaration",
+    "Dispose on hide and restore on pageshow",
+    "Idempotent embedded main-script build",
+    "Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code"
+  ],
+  "review": "Static source review only. No syntax checks, automated tests or browser verification executed."
+}

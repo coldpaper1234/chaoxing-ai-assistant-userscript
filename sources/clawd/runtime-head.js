@@ -1,5 +1,6 @@
-function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
+function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
   let destroyed=false,scrollHost=null,suppressManualScrollUntil=0;
+  let wardrobePalette=JSON.stringify(wardrobe?.bigPalette()||{});
   const clawdEnabled=()=>!destroyed;
   const isTypingActive=()=>generationEventActive;
   const BUTTON_CLASS='clawd-signoff-button',READY_CLASS='clawd-interactive-ready',EMPTY_CLASS='claude-empty-assistant',

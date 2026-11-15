@@ -73,9 +73,10 @@ function mountChaoxingClawd(host) {
     if(key==='removeEventListener')return (type,fn,capture)=>{for(const entry of listeners)if(entry[0]===type&&entry[1]===fn)doc.removeEventListener(type,entry[2],capture);};
     const value=Reflect.get(target,key,target);return typeof value==='function'?value.bind(target):value;
   }});
+  const wardrobe=createClawdWardrobe({doc,win,root,outer});
   let runtime;
-  try {runtime = createChaoxingClawdRuntime({hostDocument:documentBridge,hostWindow:win});}
-  catch(error) {for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);anchor.remove();throw error;}
+  try {runtime = createChaoxingClawdRuntime({hostDocument:documentBridge,hostWindow:win,wardrobe});wardrobe.start(()=>runtime.refreshWardrobe());}
+  catch(error) {runtime?.destroy();wardrobe.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);anchor.remove();throw error;}
   const text = root.querySelector('.mes_text');
   function sync() {
     frame=0;if(disposed)return;
@@ -116,7 +117,7 @@ function mountChaoxingClawd(host) {
   const changes=()=>schedule();win.addEventListener('resize',changes);
   const destroy=()=>{if(disposed)return;disposed=true;observer.disconnect();if(frame)win.cancelAnimationFrame(frame);
     outer.removeEventListener('click',captureStop,true);win.removeEventListener('resize',changes);
-    runtime.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);
+    wardrobe.destroy();runtime.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);
     anchor.remove();
   };
   try {sync();}catch(error){destroy();throw error;}

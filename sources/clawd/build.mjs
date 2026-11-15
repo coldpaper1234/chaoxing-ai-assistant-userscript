@@ -12,14 +12,42 @@ if(!image)throw new Error('Pinned upstream image declaration is missing');
 let controller=ranges.map(([lo,hi])=>`\n// Original Claude Web index.js:${lo}-${hi}\n`+upstream.slice(lo-1,hi).join('\n')).join('\n');
 controller=controller.replace('const NORMAL_CLAWD_RIG = buildClawdRig();','const NORMAL_CLAWD_RIG = buildClawdRig();\n    let CLAWD_RIG=NORMAL_CLAWD_RIG,halloween=null,halloweenAirborne=false;');
 controller=controller.replace('const CLAWD_RIG_STYLE_ID = "claude-clawd-rig-style";','const CLAWD_RIG_STYLE_ID = "cx-clawd-rig-style";');
+const swap=(source,before,after)=>{if(source.split(before).length!==2)throw new Error('Pinned wardrobe anchor changed: '+before.slice(0,70));return source.replace(before,after);};
+controller=swap(controller,'const NORMAL_CLAWD_RIG = buildClawdRig();','const NORMAL_CLAWD_RIG = buildClawdRig(wardrobe?.bigPalette());');
+controller=swap(controller,'win: hostWindow,','win: hostWindow,\n      wardrobe,');
+controller=swap(controller,'"setCostume", "ensure",','"setCostume", "refreshAppearance", "ensure",');
+function rigWithWardrobe(source){
+  source=swap(source,'function buildClawdRig() {','function buildClawdRig(palette = {}) {');
+  source=swap(source,"'#': '#d97757',","'#': palette.body || '#d97757',");
+  source=swap(source,"'s': '#bf684c',","'s': palette.shade || '#bf684c',");
+  return swap(source,'    BMP_CACHE.set(key, v);',`    if(part==='body'){
+      const frame=SPR.body[name]||SPR.body.stand,w=Math.max(...frame.rows.map(row=>row.length));
+      v+=';--cx-clawd-dress-x:'+Math.round(ORIGIN.body[0]+frame.ox+w/2-8)*PX+'px;--cx-clawd-dress-y:'+(BOX[1]+frame.oy)*PX+'px';
+    }
+    BMP_CACHE.set(key, v);`);
+}
+function pileWithWardrobe(source){
+  source=source.replaceAll('claude-web-clawd-pile-v3','cx-ai-clawd-pile-v3');
+  source=swap(source,'function createClawdPile({ doc, win, big = null })','function createClawdPile({ doc, win, big = null, wardrobe = null })');
+  const start=source.indexOf('  function cells(name, eyes, pose, face) {'),end=source.indexOf('  /* 2.0.227',start);
+  if(start<0||end<start)throw new Error('Pinned pile cell block changed');
+  let cells=source.slice(start,end);
+  cells=swap(cells,"if (name === 'cowboy')","if (!wardrobe?.hatOverride(name) && name === 'cowboy')");
+  cells=cells.replaceAll("if (name === 'wizard')","if (!wardrobe?.hatOverride(name) && name === 'wizard')");
+  cells=swap(cells,"if (name === 'shades')","if (!wardrobe?.glassesOverride(name) && name === 'shades')");
+  cells=swap(cells,'    return c;','    return wardrobe?wardrobe.decoratePile(c,{name,eyes,pose,face,by}):c;');
+  source=source.slice(0,start)+cells+source.slice(end);
+  return swap(source,'return { setCostume, ensure,','return { setCostume, refreshAppearance(){imgCache.clear();for(const k of Object.values(K))look(k);}, ensure,');
+}
 const module=(name,returns,transform=s=>s)=>`\nconst {${returns}}=(()=>{\n`+transform(read('upstream/'+name).replace(/^import[^\r\n]*[\r\n]+/gm,'').replace(/\bexport (?=(?:function|const)\b)/g,''))+`\nreturn {${returns}};\n})();\n`;
-const modules=module('preferences.js','preferencesFor')+module('clawd-rig.js','buildClawdRig')
-  +module('clawd-pile.js','createClawdPile',s=>s.replaceAll('claude-web-clawd-pile-v3','cx-ai-clawd-pile-v3'))
+const modules='\nconst {createClawdWardrobe}=(()=>{\n'+read('wardrobe.js').replace(/^export /gm,'')+'\nreturn {createClawdWardrobe};\n})();\n'
+  +module('preferences.js','preferencesFor')+module('clawd-rig.js','buildClawdRig',rigWithWardrobe)
+  +module('clawd-pile.js','createClawdPile',pileWithWardrobe)
   +module('clawd-rhythm.js','installClawdRhythm');
 const header=`// ==UserScript==
 // @name         学习通 AI 助手 · Clawd 小精灵
 // @namespace    local.chaoxing.clawd
-// @version      0.1.3
+// @version      0.1.4
 // @description  将本机 Claude Web 2.0.161 的普通 Clawd 动作与交互移植到学习通 AI 助手面板
 // @author       local adaptation; original Clawd runtime by lulu
 // @match        *://*.chaoxing.com/*
@@ -53,7 +81,7 @@ if(process.argv[2]){
 fs.writeFileSync(path.join(dir,'provenance.json'),JSON.stringify({
   source:'https://github.com/claudenoshujin/claude-web',version:JSON.parse(read('upstream/manifest.json')).version,
   ranges,mainSource,upstreamFiles:Object.fromEntries(['index.js','clawd-rig.js','clawd-pile.js','clawd-rhythm.js','preferences.js'].map(name=>[name,crypto.createHash('sha256').update(read('upstream/'+name)).digest('hex')])),
-  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Recognize the relocated quiz panel and rebind its owner document','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
+  changes:['Document/selector bridge into a private ShadowRoot','Connect begin/end/error/stop to existing assistant DOM state','Namespace the pile storage key','Single rig style constant declaration','Dispose on hide and restore on pageshow','Recognize the relocated quiz panel and rebind its owner document','Built-in wardrobe with per-pet colors and restore-default controls','Versioned cosmetic preference storage; question exports unchanged','Idempotent embedded main-script build','Ordinary Clawd only; no Halloween costume or SillyTavern theme/layout code'],
   review:'Static source review only. No syntax checks, automated tests or browser verification executed.'
 },null,2));
 console.log('Generated: '+path.join(dir,'chaoxing-clawd.user.js'));

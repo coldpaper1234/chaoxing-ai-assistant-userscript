@@ -47,7 +47,17 @@
     settle(outcome,arrived){if(destroyed)return;generationEventActive=false;settleClawdGeneration(outcome,arrived);},
     visible(on){hostDocument.body.style.visibility=on?'visible':'hidden';},
     readFrom(element){if(scrollHost===element)return;scrollHost?.removeEventListener('scroll',readingScroll);scrollHost=element;scrollHost?.addEventListener('scroll',readingScroll,{passive:true});clawdReadingGate.reset(true);},
-    sync(){if(destroyed)return;clawdRhythm?.sync();syncClawdBState();},
+    sync(){if(destroyed)return;clawdRhythm?.sync();syncClawdBState();wardrobe?.syncBig();},
+    refreshWardrobe(){
+      if(destroyed)return;
+      const palette=wardrobe?.bigPalette()||{},key=JSON.stringify(palette);
+      if(key!==wardrobePalette){
+        wardrobePalette=key;CLAWD_RIG=buildClawdRig(palette);installClawdRigStyle();
+        for(const button of clawdVisualNodes())button.removeAttribute('data-clawd-clip');
+        renderClawdTracks();clawdRhythm?.sync();
+      }
+      clawdPile.refreshAppearance();wardrobe?.syncBig(true);
+    },
     destroy:destroyRuntime
   };
 }

@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.17
+// @version      1.33.18
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.17';
+    const ASSISTANT_VERSION = '1.33.18';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2967,7 +2967,7 @@ Typr["U"] = {
         if (questions.some(q => GARBLED.test(q.question) || q.options.some(o => GARBLED.test(o.text)))) {
             throw createCxError('CX-PAR-005',{module:'parser',operation:'font'});
         }
-        return { version: '1.33.17', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.18', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -7703,7 +7703,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.17');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.18');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -15144,7 +15144,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.17</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.18</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -16015,7 +16015,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.17',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.18',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,
@@ -16583,6 +16583,173 @@ Typr["U"] = {
  */
 (()=>{'use strict';
 
+const {createClawdWardrobe}=(()=>{
+// Built-in pixel accessories only. No uploads, executable templates or remote assets.
+function createClawdWardrobe({doc,win,root,outer}) {
+  const KEY='cx_clawd_wardrobe_v1';
+  const targets={big:'大 Clawd',cowboy:'牛仔小 Clawd',shades:'墨镜小 Clawd',wizard:'巫师小 Clawd'};
+  const hats={
+    default:['原样',null],none:['无帽子',null],
+    cowboy:['牛仔帽',['.....aaaaaa.....','....aaaaaaaa....','....bbbbbbbb....','.aaaaaaaaaaaaaa.']],
+    wizard:['巫师帽',['..........a.....','.........aaa....','........aaaaa...','.......aawaaaa..','......aaaaaaaa..','....aaaaaaaaaa..','..aaaaaaaaaaaa..']],
+    crown:['皇冠',['..a....a....a...','..aa..aaa..aa...','..aaaaaaaaaaa...','..aaawaawaaaa...','..aaaaaaaaaaa...']],
+    tophat:['礼帽',['....aaaaaaaa....','....aaaaaaaa....','....aaaaaaaa....','....bbbbbbbb....','..aaaaaaaaaaaa..']],
+    beret:['贝雷帽',['.......aa.......','...aaaaaaaaaa...','..aaaaaaaaaaaa..','...aaaaaaaaaa...','....bbbbbbbb....']],
+    cap:['棒球帽',['....aaaaaaa.....','...aaaaaaaaa....','..aaaaaaaaaaa...','..bbbbbbbbbbbaaa']],
+    party:['派对帽',['.......a........','......aaa.......','.....aawaa......','....aaaaaaa.....','...aawaaaaaa....','..aaaaaaaaaaa...']],
+    santa:['圣诞帽',['........ww......','......aaaaaw....','.....aaaaaaa....','....aaaaaaaa....','...aaaaaaaaaa...','..wwwwwwwwwwww..']],
+    cat:['猫耳',['..a.........a...','..aa.......aa...','..aba.....aba...','..abaa...aaba...','...aa.....aa....']],
+    rabbit:['兔耳',['....aa....aa....','...abaa..aaba...','...abaa..aaba...','...abaa..aaba...','....aa....aa....']],
+    flower:['花环',['...b...b...b....','..bab.bab.bab...','...baabaabaa....','..bbbbbbbbbbbb..']],
+    headphones:['耳机',['...aaaaaaaaaa...','..aa........aa..','.aa..........aa.','.ab..........ba.','.ab..........ba.']]
+  };
+  const glasses={default:'原样',none:'无眼镜',sunglasses:'墨镜',round:'圆框眼镜',square:'方框眼镜',monocle:'单片眼镜',star:'星星眼镜'};
+  const accessories={none:'无饰品',scarf:'围巾',bow:'领结',tie:'领带',badge:'徽章',heart:'爱心别针',flower:'花朵别针',necklace:'项链',cape:'小披风'};
+  const defaults=()=>({schemaVersion:1,revision:0,mode:'default',pets:Object.fromEntries(Object.keys(targets).map(id=>[id,{hat:'default',glasses:'default',accessory:'none',body:'#d97757',hatColor:id==='cowboy'?'#8b5e3c':id==='wizard'?'#5b8fb9':'#d6a43a',accent:id==='shades'?'#1f1d1b':'#ce5261'}]))});
+  const clone=value=>JSON.parse(JSON.stringify(value));
+  const isColor=value=>typeof value==='string'&&/^#[\da-f]{6}$/i.test(value);
+  function validate(value){
+    if(value===null||value===undefined)return defaults();
+    if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).some(k=>!['schemaVersion','revision','mode','pets'].includes(k))
+      ||value.schemaVersion!==1||!Number.isSafeInteger(value.revision)||value.revision<0||!['default','custom'].includes(value.mode)
+      ||!value.pets||Object.keys(value.pets).length!==4||Object.keys(value.pets).some(k=>!Object.hasOwn(targets,k)))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
+    for(const id of Object.keys(targets)){
+      const p=value.pets[id];
+      if(!p||Object.keys(p).length!==6||Object.keys(p).some(k=>!['hat','glasses','accessory','body','hatColor','accent'].includes(k))
+        ||!Object.hasOwn(hats,p.hat)||!Object.hasOwn(glasses,p.glasses)||!Object.hasOwn(accessories,p.accessory)
+        ||!isColor(p.body)||!isColor(p.hatColor)||!isColor(p.accent))throw Error('装扮设置格式不兼容，原设置已保留，请更新脚本后再修改');
+    }
+    return clone(value);
+  }
+  function readRaw(){return typeof GM_getValue==='function'?GM_getValue(KEY,null):JSON.parse(win.localStorage.getItem(KEY)||'null');}
+  const token=value=>JSON.stringify(value??null);
+  let current=defaults(),invalid='',disposed=false,refresh=()=>{},baseline='null',draft=defaults(),dirty=false,listener=null,writing=false;
+  try{current=validate(readRaw());}catch(error){invalid=error.message;}
+  const custom=()=>current.mode==='custom';
+  const style=id=>current.pets[id];
+  const darken=(hex,f=.72)=>'#'+[1,3,5].map(i=>Math.round(parseInt(hex.slice(i,i+2),16)*f).toString(16).padStart(2,'0')).join('');
+  const bodyShade=hex=>hex.toLowerCase()==='#d97757'?'#bf684c':darken(hex,.88);
+  const hatName=(id,p)=>p.hat==='default'?(id==='cowboy'?'cowboy':id==='wizard'?'wizard':'none'):p.hat;
+  const glassesName=(id,p)=>p.glasses==='default'?(id==='shades'?'sunglasses':'none'):p.glasses;
+  function pixels(id,p,eyeY=1){
+    const out=[],put=(x,y,c)=>out.push([x,y,c]);
+    const grid=(rows,ox,oy,palette)=>rows?.forEach((row,y)=>[...row].forEach((ch,x)=>{if(ch!=='.')put(x+ox,y+oy,palette[ch]||ch);}));
+    const hat=hatName(id,p),rows=hats[hat]?.[1];
+    const standard=defaults().pets[id];
+    if(id==='big'||p.hat!=='default'||p.hatColor!==standard.hatColor)
+      grid(rows,0,-(rows?.length||0),{a:p.hatColor,b:darken(p.hatColor),w:'#fff2ce'});
+    const g=glassesName(id,p),ink=p.accent,glass='#d8ebef',black='#241e24';
+    const rectangle=(x,y,w,h,c)=>{for(let a=0;a<w;a++)for(let b=0;b<h;b++)if(!a||a===w-1||!b||b===h-1)put(x+a,y+b,c);};
+    if(id==='big'||p.glasses!=='default'||p.accent!==standard.accent){
+      if(g==='sunglasses'){grid(['aaaa.aaaa','aaaa.aaaa','.aa...aa.'],3,eyeY,{a:ink});put(7,eyeY,ink);put(8,eyeY,ink);}
+      if(g==='round'){grid(['.aa...aa.','a..aaa..a','a..a.a..a','.aa...aa.'],3,eyeY-1,{a:ink});}
+      if(g==='square'){rectangle(2,eyeY-1,5,4,ink);rectangle(9,eyeY-1,5,4,ink);put(7,eyeY,ink);put(8,eyeY,ink);}
+      if(g==='monocle'){rectangle(9,eyeY-1,5,4,ink);put(13,eyeY+3,ink);put(13,eyeY+4,ink);put(12,eyeY+5,ink);put(10,eyeY,glass);}
+      if(g==='star'){grid(['.a....a.','aaa..aaa','.aaaaaa.','aaa..aaa'],3,eyeY-1,{a:ink});}
+    }
+    const a=p.accessory;
+    if(a==='scarf'){grid(['.aaaaaaaaaaaaaa.','....aaa.........','.....aaa........'],0,6,{a:p.accent});}
+    if(a==='bow'){grid(['aaa..aaa','aaaaaaaa','aaa..aaa'],4,6,{a:p.accent});put(7,7,darken(p.accent));}
+    if(a==='tie'){grid(['.aa.','aaaa','.aa.','.aa.','aaaa','.aa.'],6,5,{a:p.accent});}
+    if(a==='badge'){grid(['.a.','aaa','.a.'],10,4,{a:p.accent});put(11,5,'#fff1be');}
+    if(a==='heart'){grid(['aa.aa','aaaaa','.aaa.','..a..'],9,3,{a:p.accent});}
+    if(a==='flower'){grid(['.a.','aaa','.a.'],10,3,{a:p.accent});put(11,4,'#f4ce65');put(11,6,'#5b9b67');}
+    if(a==='necklace'){grid(['a..........a','.a........a.','..aaaaaaaa..','.....aa.....'],2,4,{a:p.accent});}
+    if(a==='cape'){grid(['aa............aa','aa............aa','aaa..........aaa','aaa..........aaa'],0,4,{a:p.accent});}
+    return out;
+  }
+  let bigLayer=null,lastBody=null,lastLayerToken='';
+  function syncBig(force=false){
+    const body=root.querySelector('#send_form > button.clawd-composer-clawd .clr-p-body');
+    if(!body)return;
+    if(body!==lastBody){bigLayer?.remove();bigLayer=doc.createElement('span');bigLayer.className='cx-clawd-dress-layer';body.append(bigLayer);lastBody=body;lastLayerToken='';}
+    const key=JSON.stringify([current.mode,style('big')]);if(!force&&key===lastLayerToken)return;lastLayerToken=key;
+    const cells=custom()?pixels('big',style('big'),2):[];
+    bigLayer.hidden=!cells.length;bigLayer.style.boxShadow=cells.length?cells.map(([x,y,c])=>(x*3)+'px '+(y*3)+'px 0 '+c).join(','):'none';
+  }
+  const sheetStyle=doc.createElement('style');sheetStyle.textContent='.cx-clawd-dress-layer{position:absolute;left:var(--cx-clawd-dress-x,0px);top:var(--cx-clawd-dress-y,18px);width:3px;height:3px;pointer-events:none;background:transparent;z-index:6}.cx-clawd-dress-layer[hidden]{display:none!important}';root.append(sheetStyle);
+  const menu=doc.createElement('section');menu.className='cx-wardrobe';menu.hidden=true;menu.setAttribute('role','dialog');menu.setAttribute('aria-label','小精灵装扮');
+  menu.innerHTML='<header><strong>小精灵装扮</strong><button type="button" data-close>关闭</button></header><label class="cx-line"><input type="checkbox" data-mode>启用自选装扮</label><label>选择小精灵<select data-target></select></label><canvas width="96" height="112" aria-label="装扮预览"></canvas><div class="cx-fields"><label>帽子<select data-hat></select></label><label>眼镜<select data-glasses></select></label><label>饰品<select data-accessory></select></label></div><div class="cx-colors"><label>身体颜色<input type="color" data-body></label><label>帽子颜色<input type="color" data-hatColor></label><label>饰品颜色<input type="color" data-accent></label></div><p class="cx-note">选择后点击应用。关闭不会保存未应用的选择。</p><div class="cx-actions"><button type="button" data-apply>应用装扮</button><button type="button" data-reset-one>这只恢复默认</button><button type="button" data-reset-all>全部恢复默认</button></div><p data-message role="status"></p>';
+  const uiStyle=doc.createElement('style');uiStyle.textContent='.cx-wardrobe{position:absolute;right:0;top:10px;width:min(340px,calc(100vw - 40px));max-height:calc(100vh - 124px);overflow:auto;box-sizing:border-box;padding:14px;border:1px solid #d9e2ed;border-radius:10px;background:#fff;color:#26354a;box-shadow:0 10px 32px #18304933;pointer-events:auto;z-index:50;font:13px/1.6 "Microsoft YaHei",sans-serif}.cx-wardrobe[hidden]{display:none!important}.cx-wardrobe header,.cx-line,.cx-actions,.cx-colors{display:flex;gap:8px;align-items:center}.cx-wardrobe header{justify-content:space-between;margin-bottom:8px}.cx-wardrobe label{display:grid;gap:3px;margin:6px 0}.cx-wardrobe .cx-line{display:flex}.cx-wardrobe select{width:100%;padding:6px;border:1px solid #cbd6e2;border-radius:5px;background:#fff;color:#26354a}.cx-wardrobe button{padding:5px 8px;border:1px solid #bfcddd;border-radius:5px;background:#f0f5fc;color:#315fbd;cursor:pointer;font:inherit}.cx-wardrobe button:disabled{opacity:.5;cursor:default}.cx-fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.cx-colors{justify-content:space-between}.cx-colors label{flex:1;min-width:0}.cx-colors input{width:100%;height:30px;border:1px solid #cbd6e2;border-radius:4px;padding:2px;background:#fff}.cx-wardrobe canvas{display:block;margin:0 auto;image-rendering:pixelated;background:#f7f9fc;border-radius:8px}.cx-wardrobe .cx-note{font-size:12px;color:#6c7b90}.cx-actions{flex-wrap:wrap}.cx-wardrobe [data-message]{margin:7px 0 0;font-size:12px;overflow-wrap:anywhere}';root.append(uiStyle,menu);
+  const entry=doc.createElement('button');entry.type='button';entry.id='cx-clawd-dress-toggle';entry.textContent='装扮';entry.title='小精灵装扮';entry.setAttribute('aria-expanded','false');entry.style.cssText='flex:none;min-width:44px;width:auto;min-height:28px;font-size:12px;padding:4px 6px';
+  const el=name=>menu.querySelector('[data-'+name+']');
+  const fill=(select,entries)=>{for(const [value,label]of entries){const option=doc.createElement('option');option.value=value;option.textContent=label;select.append(option);}};
+  fill(el('target'),Object.entries(targets));fill(el('hat'),Object.entries(hats).map(([k,v])=>[k,v[0]]));fill(el('glasses'),Object.entries(glasses));fill(el('accessory'),Object.entries(accessories));
+  const message=text=>{el('message').textContent=text;};
+  function preview(){
+    let context;try{context=menu.querySelector('canvas').getContext('2d');}catch{return;}if(!context)return;
+    context.clearRect(0,0,96,112);
+    const id=el('target').value,p=draft.pets[id],shown=draft.mode==='custom'?p:defaults().pets[id];
+    const body=[];for(let y=0;y<8;y++)for(let x=2;x<14;x++)body.push([x,y,shown.body]);
+    for(const x of [3,5,10,12]){body.push([x,8,shown.body],[x,9,shown.body]);}
+    for(const x of [4,11]){body.push([x,2,'#241d18'],[x,3,'#241d18']);}
+    // Preview includes each target's original hat/glasses when their choice is "original".
+    const sample={...shown,hat:hatName(id,shown),glasses:glassesName(id,shown)};
+    for(const [x,y,color]of [...body,...pixels('big',sample,2)]){context.fillStyle=color;context.fillRect(16+x*4,48+y*4,4,4);}
+  }
+  function fields(){const id=el('target').value,p=draft.pets[id];el('mode').checked=draft.mode==='custom';for(const k of ['hat','glasses','accessory','body','hatColor','accent']){el(k).value=p[k];el(k).disabled=draft.mode!=='custom'||!!invalid;}for(const k of ['apply','reset-one','reset-all'])el(k).disabled=!!invalid;preview();}
+  function reload(){try{const raw=readRaw();current=validate(raw);baseline=token(raw);invalid='';}catch(error){invalid=error.message;}draft=clone(current);dirty=false;fields();message(invalid);}
+  function save(next,remove=false){
+    let attempted=false;
+    try{
+      if(invalid)throw Error(invalid);
+      const raw=readRaw();validate(raw);
+      if(token(raw)!==baseline)throw Error('装扮已在其他页面修改，请关闭后重新打开；当前选择尚未保存');
+      const value=remove?null:validate({...next,revision:validate(raw).revision+1});
+      attempted=true;writing=true;
+      if(typeof GM_setValue==='function'){
+        if(remove&&typeof GM_deleteValue==='function')GM_deleteValue(KEY);else GM_setValue(KEY,value);
+      }else if(remove)win.localStorage.removeItem(KEY);else win.localStorage.setItem(KEY,JSON.stringify(value));
+      const stored=readRaw();if(token(stored)!==token(value))throw Error('保存结果已变化，请重新打开确认');
+      current=validate(stored);baseline=token(stored);draft=clone(current);dirty=false;refresh();fields();message(remove?'已恢复默认装扮':'装扮已保存');
+    }catch(error){
+      if(attempted){try{const raw=readRaw();current=validate(raw);baseline=token(raw);refresh();}catch{}}
+      message((attempted?'保存未确认，请重新打开核对：':'未应用：')+error.message);
+    }finally{writing=false;}
+  }
+  function placeMenu(){
+    const rect=root.host.getBoundingClientRect(),width=Math.min(340,Math.max(160,win.innerWidth-32));
+    const left=Math.max(8,Math.min(rect.right-width,win.innerWidth-width-8));
+    menu.style.width=width+'px';menu.style.left=(left-rect.left)+'px';menu.style.right='auto';
+    const below=Math.max(40,win.innerHeight-rect.top-24),above=Math.max(40,rect.top-24);
+    if(below<280&&above>below){menu.style.top='auto';menu.style.bottom='10px';menu.style.maxHeight=above+'px';}
+    else{menu.style.top='10px';menu.style.bottom='auto';menu.style.maxHeight=below+'px';}
+  }
+  const close=()=>{menu.hidden=true;entry.setAttribute('aria-expanded','false');};
+  entry.onclick=()=>{if(!menu.hidden){close();return;}reload();menu.hidden=false;placeMenu();entry.setAttribute('aria-expanded','true');el('target').focus();};
+  el('close').onclick=close;
+  el('mode').onchange=()=>{draft.mode=el('mode').checked?'custom':'default';dirty=true;fields();};
+  el('target').onchange=fields;
+  for(const k of ['hat','glasses','accessory','body','hatColor','accent'])el(k).onchange=()=>{draft.pets[el('target').value][k]=el(k).value;dirty=true;preview();message('选择尚未应用');};
+  el('apply').onclick=()=>save(draft);
+  el('reset-one').onclick=()=>{const next=clone(current);next.pets[el('target').value]=defaults().pets[el('target').value];save(next);};
+  el('reset-all').onclick=()=>save(defaults(),true);
+  const storageChanged=()=>{
+    if(disposed||writing)return;
+    try{const raw=readRaw();current=validate(raw);invalid='';refresh();if(!menu.hidden){if(dirty)message('其他页面已修改装扮，当前选择未保存；请重新打开');else{baseline=token(raw);draft=clone(current);fields();}}}
+    catch(error){invalid=error.message;message(invalid);fields();}
+  };
+  const localStorageChanged=event=>{if(event.key===KEY)storageChanged();};
+  const escape=event=>{if(event.key==='Escape'&&!menu.hidden){close();entry.focus();event.stopPropagation();}};
+  menu.addEventListener('keydown',escape);
+  return {
+    start(onChange){refresh=onChange;(outer.querySelector('.head-actions')||outer.querySelector('.head')||outer).prepend(entry);if(typeof GM_addValueChangeListener==='function')listener=GM_addValueChangeListener(KEY,storageChanged);else win.addEventListener('storage',localStorageChanged);},
+    bigPalette(){return custom()?{body:style('big').body,shade:bodyShade(style('big').body)}:{};},
+    hatOverride(id){return custom()&&(style(id).hat!=='default'||style(id).hatColor!==defaults().pets[id].hatColor);},
+    glassesOverride(id){return custom()&&(style(id).glasses!=='default'||style(id).accent!==defaults().pets[id].accent);},
+    decoratePile(base,{name,by,eyes}){
+      if(!custom())return base;
+      const p=style(name),painted=base.map(([x,y,c])=>[x,y,c==='#'?p.body:c==='s'?bodyShade(p.body):c]);
+      return painted.concat(pixels(name,p,1).map(([x,y,c])=>[x,y+by,c]));
+    },
+    syncBig,
+    destroy(){if(disposed)return;disposed=true;if(listener!==null&&typeof GM_removeValueChangeListener==='function')GM_removeValueChangeListener(listener);win.removeEventListener('storage',localStorageChanged);menu.removeEventListener('keydown',escape);bigLayer?.remove();entry.remove();menu.remove();sheetStyle.remove();uiStyle.remove();}
+  };
+}
+
+return {createClawdWardrobe};
+})();
+
 const {preferencesFor}=(()=>{
 // Ordinary CW preferences only. Safety/restore records keep their own confirmed
 // persistence path; an in-memory value must never stand in for that confirmation.
@@ -16641,15 +16808,15 @@ const {buildClawdRig}=(()=>{
 
 const RB = 'button.clawd-signoff-button.clawd-composer-clawd';
 
-function buildClawdRig() {
+function buildClawdRig(palette = {}) {
   /* ════════════════════════════════════════════════════════════════════
      1. 调色板 —— 一个字符对应一个颜色，'.' 和空格是透明
      ════════════════════════════════════════════════════════════════════ */
   const PX = 3;          // 一个美术像素 = 3 CSS px（和现网 box-shadow 点阵同格）
   const TICK = 100;      // 统一节拍：所有变化都落在 100ms 一格的网格上（官方 GIF 实测：每次变化间隔的中位数正好 100ms）
   const PAL = {
-    '#': '#d97757',      // 壳体（现网同色）
-    's': '#bf684c',      // 暗部：转面、在身前的钳子。新增的第三个本体色
+    '#': palette.body || '#d97757',      // 壳体（现网同色）
+    's': palette.shade || '#bf684c',      // 暗部：转面、在身前的钳子。新增的第三个本体色
     'o': 'var(--cl-clawd-eye, #000)',   // 眼睛：跟现网 ::before 同一个变量
     'k': 'var(--clr-ink)', // 道具描边、符号：主题正文色掺暖灰，日间暖深棕、夜间浅色（--clr-ink 在 genRestCSS 里定义一次）
     'w': '#fbf8f1', 'c': '#ecdfc6', 'g': '#a8a194',
@@ -17025,6 +17192,10 @@ function buildClawdRig() {
       for (const [cx, cy, ch] of cells) if (!isVarColor(ch)) { g.fillStyle = solidColor(ch); g.fillRect(cx - win.x0, cy - win.y0, 1, 1); }
       const solid = cells.some(([, , ch]) => !isVarColor(ch));
       v = `box-shadow:${shadowOf(cells.filter(([, , ch]) => isVarColor(ch)))};--clr-bmp:${solid ? `url("${cv.toDataURL()}")` : 'none'}`;
+    }
+    if(part==='body'){
+      const frame=SPR.body[name]||SPR.body.stand,w=Math.max(...frame.rows.map(row=>row.length));
+      v+=';--cx-clawd-dress-x:'+Math.round(ORIGIN.body[0]+frame.ox+w/2-8)*PX+'px;--cx-clawd-dress-y:'+(BOX[1]+frame.oy)*PX+'px';
     }
     BMP_CACHE.set(key, v);
     return v;
@@ -18832,7 +19003,7 @@ const {createClawdPile}=(()=>{
      小的能坐到大 Clawd 头上（大 Clawd 走路时驮着走），大 Clawd 也能被丢 / 放到小的头上坐着。拿起下面那只时，上面的平滑地降下来补位，
      睡着的照样睡（以前是掉下来醒一下）。大 Clawd 头上有人时只做安静的小动作；要做别的动作、开始写字、被戳被拎，头上的先跳下来 / 降下来（index.js）。
    像素画和 Clawd 骨架同一套调色板（壳体 #d97757，暗部 #bf684c）。 */
-function createClawdPile({ doc, win, big = null }) {
+function createClawdPile({ doc, win, big = null, wardrobe = null }) {
   const PX = 2, W = 22, H = 18, TOP = 3;            // 每只一张 22×18 格的图，地面在图的下边
   const PAL = { '#': '#d97757', 's': '#bf684c', 'o': '#2b1d17', 'Z': '#1f1d1b', 'w': '#fbf8f1', 'B': '#5b8fb9', 'b': '#3f6f99',
     'y': '#e8b64a', 'Y': '#fff3c4', 'n': '#8b5e3c', 'l': '#cc4f45', 'k': 'var(--clawd-pile-ink)' };
@@ -18872,16 +19043,16 @@ function createClawdPile({ doc, win, big = null }) {
     const up = pose === 'crouch' ? 0 : pose.startsWith('dangle') ? 3 : 2, by = TOP + 7 - up;
     if(costume)return costume(name,eyes,pose,face,by,doc.documentElement.dataset.claudeIntegratedTheme==='night');
     let c = [];
-    if (name === 'cowboy') c = c.concat(grid(COWBOY, 0, by - 4));
-    if (name === 'wizard') c = c.concat(grid(WIZARD, 0, by - 7));
+    if (!wardrobe?.hatOverride(name) && name === 'cowboy') c = c.concat(grid(COWBOY, 0, by - 4));
+    if (!wardrobe?.hatOverride(name) && name === 'wizard') c = c.concat(grid(WIZARD, 0, by - 7));
     let body = grid(BODY, 0, by);
     if (face) { const dark = face > 0 ? 2 : 13; body = body.map(([x, y, ch]) => [x, y, x === dark ? 's' : ch]); }
     c = c.concat(body);
     if (pose === 'stand' || pose.startsWith('dangle')) c = c.concat(grid(LEGS[pose], 0, by + 8));
-    if (name === 'shades') c = c.concat(eyes === 'open' ? spans(EYES.open, face, by).concat(spans(GLASSES.down, face, by)) : spans(GLASSES.on, face, by));
+    if (!wardrobe?.glassesOverride(name) && name === 'shades') c = c.concat(eyes === 'open' ? spans(EYES.open, face, by).concat(spans(GLASSES.down, face, by)) : spans(GLASSES.on, face, by));
     else c = c.concat(spans(EYES[eyes], face, by));
-    if (name === 'wizard') c = c.concat(spans(eyes === 'open' ? WAND.shine : WAND.rest, 15, by));
-    return c;
+    if (!wardrobe?.hatOverride(name) && name === 'wizard') c = c.concat(spans(eyes === 'open' ? WAND.shine : WAND.rest, 15, by));
+    return wardrobe?wardrobe.decoratePile(c,{name,eyes,pose,face,by}):c;
   }
   /* 2.0.227：每只画成一张小图（canvas 转图片），按最近邻放大，缩放屏上不会裂缝。每种样子只画一次，缓存起来。
      被拎着蹬腿的两帧横着拼成一条，Web Animations 换帧，不改 DOM。 */
@@ -19527,7 +19698,7 @@ html[data-claude-motion="off"] .clawd-pile *{animation:none!important}
     for (const n of NAMES) if (K[n]) K[n].el.style.translate = '';
     stackX(); for (const n of NAMES) place(K[n]); save(true);
   }
-  return { setCostume, ensure, left, destroy, hush, peek, seats, trackSeats, seatLive, bigSat, blocks, riderCount, unloadBig, follow, followEnd, restack };
+  return { setCostume, refreshAppearance(){imgCache.clear();for(const k of Object.values(K))look(k);}, ensure, left, destroy, hush, peek, seats, trackSeats, seatLive, bigSat, blocks, riderCount, unloadBig, follow, followEnd, restack };
 }
 
 return {createClawdPile};
@@ -19696,8 +19867,9 @@ function installClawdRhythm({ doc, win, button, enabled, reducedMotion }) {
 return {installClawdRhythm};
 })();
 
-function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
+function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
   let destroyed=false,scrollHost=null,suppressManualScrollUntil=0;
+  let wardrobePalette=JSON.stringify(wardrobe?.bigPalette()||{});
   const clawdEnabled=()=>!destroyed;
   const isTypingActive=()=>generationEventActive;
   const BUTTON_CLASS='clawd-signoff-button',READY_CLASS='clawd-interactive-ready',EMPTY_CLASS='claude-empty-assistant',
@@ -19717,6 +19889,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
     const makeClawdPile = () => createClawdPile({
       doc: hostDocument,
       win: hostWindow,
+      wardrobe,
       big: {
         state: () => ({
           grounded: !A2.held && Math.abs(A2.fy - A2.floor) < .5,
@@ -19725,7 +19898,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
         lower: () => clawdBigLower()
       }
     });
-    const clawdPile = Object.fromEntries([ "setCostume", "ensure", "left", "destroy", "hush", "peek", "seats", "trackSeats", "seatLive", "bigSat", "blocks", "riderCount", "unloadBig", "follow", "followEnd", "restack" ].map(key => [ key, (...args) => {
+    const clawdPile = Object.fromEntries([ "setCostume", "refreshAppearance", "ensure", "left", "destroy", "hush", "peek", "seats", "trackSeats", "seatLive", "bigSat", "blocks", "riderCount", "unloadBig", "follow", "followEnd", "restack" ].map(key => [ key, (...args) => {
       if (key === "destroy") {
         clawdPileInstance?.destroy();
         clawdPileInstance = null;
@@ -19776,7 +19949,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
       settledRound: 0,
       genStartedAt: 0
     };
-    const NORMAL_CLAWD_RIG = buildClawdRig();
+    const NORMAL_CLAWD_RIG = buildClawdRig(wardrobe?.bigPalette());
     let CLAWD_RIG=NORMAL_CLAWD_RIG,halloween=null,halloweenAirborne=false;
 
 // Original Claude Web index.js:1566-1749
@@ -21568,7 +21741,17 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow}) {
     settle(outcome,arrived){if(destroyed)return;generationEventActive=false;settleClawdGeneration(outcome,arrived);},
     visible(on){hostDocument.body.style.visibility=on?'visible':'hidden';},
     readFrom(element){if(scrollHost===element)return;scrollHost?.removeEventListener('scroll',readingScroll);scrollHost=element;scrollHost?.addEventListener('scroll',readingScroll,{passive:true});clawdReadingGate.reset(true);},
-    sync(){if(destroyed)return;clawdRhythm?.sync();syncClawdBState();},
+    sync(){if(destroyed)return;clawdRhythm?.sync();syncClawdBState();wardrobe?.syncBig();},
+    refreshWardrobe(){
+      if(destroyed)return;
+      const palette=wardrobe?.bigPalette()||{},key=JSON.stringify(palette);
+      if(key!==wardrobePalette){
+        wardrobePalette=key;CLAWD_RIG=buildClawdRig(palette);installClawdRigStyle();
+        for(const button of clawdVisualNodes())button.removeAttribute('data-clawd-clip');
+        renderClawdTracks();clawdRhythm?.sync();
+      }
+      clawdPile.refreshAppearance();wardrobe?.syncBig(true);
+    },
     destroy:destroyRuntime
   };
 }
@@ -21648,9 +21831,10 @@ function mountChaoxingClawd(host) {
     if(key==='removeEventListener')return (type,fn,capture)=>{for(const entry of listeners)if(entry[0]===type&&entry[1]===fn)doc.removeEventListener(type,entry[2],capture);};
     const value=Reflect.get(target,key,target);return typeof value==='function'?value.bind(target):value;
   }});
+  const wardrobe=createClawdWardrobe({doc,win,root,outer});
   let runtime;
-  try {runtime = createChaoxingClawdRuntime({hostDocument:documentBridge,hostWindow:win});}
-  catch(error) {for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);anchor.remove();throw error;}
+  try {runtime = createChaoxingClawdRuntime({hostDocument:documentBridge,hostWindow:win,wardrobe});wardrobe.start(()=>runtime.refreshWardrobe());}
+  catch(error) {runtime?.destroy();wardrobe.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);anchor.remove();throw error;}
   const text = root.querySelector('.mes_text');
   function sync() {
     frame=0;if(disposed)return;
@@ -21691,7 +21875,7 @@ function mountChaoxingClawd(host) {
   const changes=()=>schedule();win.addEventListener('resize',changes);
   const destroy=()=>{if(disposed)return;disposed=true;observer.disconnect();if(frame)win.cancelAnimationFrame(frame);
     outer.removeEventListener('click',captureStop,true);win.removeEventListener('resize',changes);
-    runtime.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);
+    wardrobe.destroy();runtime.destroy();for(const [type,,handler,capture]of listeners)doc.removeEventListener(type,handler,capture);
     anchor.remove();
   };
   try {sync();}catch(error){destroy();throw error;}

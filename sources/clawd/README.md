@@ -1,6 +1,6 @@
 # 学习通 AI 助手 · Clawd 移植源码
 
-`chaoxing-ai-assistant-clawd.user.js` 为当前 1.33.15 完整主脚本，直接替换现有学习通 AI 助手即可。主脚本已内置小精灵，不要同时启用 `chaoxing-clawd.user.js` 配套版。
+`chaoxing-ai-assistant-clawd.user.js` 为当前 1.33.16 完整主脚本，直接替换现有学习通 AI 助手即可。小精灵位于面板上沿，主脚本为其及堆叠预留顶部空间。不要同时启用 `chaoxing-clawd.user.js` 配套版。
 
 已移入普通 Clawd 的动作帧、眨眼、点击、摸头、长按、拖拽、抛掷物理、动作冷却、待机/睡眠、输入节奏和三只小 Clawd 的碰撞堆叠。
 

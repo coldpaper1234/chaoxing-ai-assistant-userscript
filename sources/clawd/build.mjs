@@ -19,7 +19,7 @@ const modules=module('preferences.js','preferencesFor')+module('clawd-rig.js','b
 const header=`// ==UserScript==
 // @name         学习通 AI 助手 · Clawd 小精灵
 // @namespace    local.chaoxing.clawd
-// @version      0.1.1
+// @version      0.1.2
 // @description  将本机 Claude Web 2.0.161 的普通 Clawd 动作与交互移植到学习通 AI 助手面板
 // @author       local adaptation; original Clawd runtime by lulu
 // @match        *://*.chaoxing.com/*

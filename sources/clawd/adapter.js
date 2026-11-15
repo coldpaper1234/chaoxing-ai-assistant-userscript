@@ -5,7 +5,7 @@ function mountChaoxingClawd(host) {
   if (!panel || !chaoxingClawdPanelVisible(host,panel) || outer.getElementById('cx-clawd-host')) return null;
   const anchor = doc.createElement('div');
   anchor.id = 'cx-clawd-host';
-  anchor.style.cssText = 'position:absolute;left:16px;right:16px;bottom:-16px;height:1px;z-index:8;pointer-events:none;overflow:visible';
+  anchor.style.cssText = 'position:absolute;left:16px;right:16px;top:0;height:1px;z-index:8;pointer-events:none;overflow:visible';
   const root = anchor.attachShadow({mode:'open'});
   const surface = doc.createElement('div');
   surface.className = 'cx-clawd-surface clawd-interactive-ready';

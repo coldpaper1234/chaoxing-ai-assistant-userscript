@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.26
+// @version      1.33.27
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.26';
+    const ASSISTANT_VERSION = '1.33.27';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2965,7 +2965,7 @@ Typr["U"] = {
         const parsed = parseQuestionDocument(doc, parseContext);
         const questions = parsed.questions;
 
-        return { version: '1.33.26', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.27', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -3391,10 +3391,19 @@ Typr["U"] = {
         if (cxDiagnosticBuffer.length>100) cxDiagnosticBuffer.shift();
         if (object) cxRecordedErrors.set(object,diagnostic);
         cxRecordedErrors.set(diagnostic,diagnostic);
+        // 诊断缓冲在内存里，页面一刷新就没了；停止后用户往往会刷新再复制报告，于是永远看不到原因。
+        try {
+            set('cx_diagnostics_recent',cxDiagnosticBuffer.slice(-20).map(item=>({
+                code:item.code,
+                message:String(item.message ?? '').replace(/[?#][^\s]*/g,'').slice(0,240),
+                at:Date.now()
+            })));
+        } catch {}
         return diagnostic;
     }
     function exportCxDiagnostics() {
-        return JSON.stringify({schemaVersion:1,diagnostics:cxDiagnosticBuffer},null,2);
+        const buffer = cxDiagnosticBuffer.length ? cxDiagnosticBuffer : (get('cx_diagnostics_recent',[]) || []);
+        return JSON.stringify({schemaVersion:2,diagnostics:buffer},null,2);
     }
     const KEY_ANALYSIS_CONCURRENCY = 'cx_analysis_concurrency';
     function analysisConcurrency(value) {
@@ -7705,7 +7714,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.26');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.27');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -9619,7 +9628,7 @@ Typr["U"] = {
                     const video=run.activeVideo||(videos.length===1?videos[0]:null);
                     verification.poll(tree,video);
                     const blocker = courseBlocker(tree.documents, run.videoQuizAuto ? courseVideoQuizCandidate(video) : null, verification);
-                    if (blocker) throw Object.assign(new Error(blocker),{code:'COURSE_NATIVE_BLOCKER'});
+                    if (blocker) throw Object.assign(new Error(blocker),{code:blocker==='章节未解锁或访问受限'?'COURSE_CHAPTER_LOCKED':'COURSE_NATIVE_BLOCKER'});
                     // 提交跳转时当前测验及父 iframe 可短暂不可读；仅在有界提交等待中容许该父链。
                     // 读取等待只暂缓 iframe 不可读；用户换章/换标签、验证码和运行锁仍立即检查。
                     // 平台切章、弹题、提交回读时会短暂替换任务帧，读取也可能瞬时空窗。
@@ -10982,10 +10991,12 @@ Typr["U"] = {
                             run.chapterIndex=targetIndex;chapter=report.chapters[targetIndex];entry=readCourseCatalog(owner)?.entries.find(item=>item.id===chapter.id);
                             if(!entry?.node?.isConnected)throw new Error('课程目录发生变化或章节不存在');
                             entry=await awaitChapterAccess(entry);
-                            save();await processChapter(chapter,entry,location);
+                            save();await processChapter(chapter,entry,location);run.lockStreak=0;
                         }
                         catch(error) {
-                            const continueFailure=canContinueFailure(error,context,chapter);
+                            // 单个章节被平台锁住，不代表后面 70 多章都锁；先记为待解锁跳过，连续 3 章才收手。
+                            const chapterLocked=error.code==='COURSE_CHAPTER_LOCKED' && !context.submitting;
+                            const continueFailure=canContinueFailure(error,context,chapter)||chapterLocked;
                             guardRun(false,continueFailure);
                             if(context.skipped) {
                                 chapter.status='skipped';chapter.reason='用户跳过本章节';
@@ -10996,6 +11007,13 @@ Typr["U"] = {
                                 chapter.issues.push({number:null,reason:error.message});
                                 for(const task of chapter.tasks.filter(task=>task.status==='running')) {task.status='timed-out';task.reason=error.message;}
                                 // 先结束章节、记录失败，再决定是否允许进入下一节。
+                            } else if(chapterLocked) {
+                                chapter.status='waiting-unlock';chapter.reason='当前章节被平台锁定：'+error.message;
+                                chapter.issues.push({number:null,reason:chapter.reason});
+                                for(const task of chapter.tasks.filter(task=>task.status==='running')) {task.status='waiting-unlock';task.reason=chapter.reason;}
+                                run.lockStreak=(run.lockStreak||0)+1;
+                                emitRun(`本章节被锁定，先跳过；连续锁定 ${run.lockStreak}/3`,'course-waiting-unlock');
+                                if(run.lockStreak>=3)throw Object.assign(new Error('连续 3 个章节被平台锁定，请先按平台提示完成前置任务（如单元测验、作业）再重试'),{code:'COURSE_CHAPTER_LOCKED_LIMIT'});
                             } else if(continueFailure) {
                                 context.failed=true;chapter.status='manual-pending';chapter.reason=error.message;
                                 recordFailure(error,chapter);
@@ -11149,7 +11167,7 @@ Typr["U"] = {
             }
             verification.poll(tree,run.activeVideo);
             const blocker=courseBlocker(tree.documents,null,verification);
-            if(blocker)throw Object.assign(new Error(blocker),{code:'COURSE_NATIVE_BLOCKER'});
+            if(blocker)throw Object.assign(new Error(blocker),{code:blocker==='章节未解锁或访问受限'?'COURSE_CHAPTER_LOCKED':'COURSE_NATIVE_BLOCKER'});
             if(!loading&&!run.navigating&&tree.blocking.length)throw Object.assign(new Error('任务框架无法读取，请人工检查'),{code:'COURSE_FRAME_UNAVAILABLE'});
             if(verification.pending&&!allowVerification)throw courseVerificationWaitError();
             return tree;
@@ -11301,6 +11319,8 @@ Typr["U"] = {
                         if(run.chapter.skipped){record.status='skipped';record.reason='用户跳过本章节';}
                         else if(continueOnTimeout&&['COURSE_TIMEOUT','TIMEOUT'].includes(error.code)) {
                             record.status='timed-out';record.reason=error.message;protection.consecutiveFailures++;
+                        } else if(error.code==='COURSE_CHAPTER_LOCKED') {
+                            record.status='waiting-unlock';record.reason='当前章节被平台锁定：'+error.message;
                         } else throw error;
                         for(const task of record.tasks.filter(task=>task.status==='pending'))task.reason ||= record.reason;
                     } finally {
@@ -14232,12 +14252,19 @@ Typr["U"] = {
         return `${hasBatch?`第 ${batchIndex}/${batchCount} 批：`:''}${diagnostic.message}（${diagnostic.code}）`;
     }
     function safeCourseDiagnosticReport(report) {
-        // Strict projection: no title/reason/question/answer/history, URL or account fields.
-        const states=new Set(['running','done','stopped','timed-out','manual-pending','unvisited','already','no-tasks','skipped']);
+        // Strict projection: no chapter titles, question text, answers, history or account fields.
+        // 停止原因必须保留：只去掉 URL 的 query/hash（可能含会话语义）并截断，否则报告只说 stopped，无从定位。
+        const states=new Set(['running','done','stopped','timed-out','manual-pending','unvisited','already','no-tasks','skipped','waiting-unlock','skipped']);
         const counts={};
-        for(const chapter of report?.chapters||[])if(states.has(chapter.status))counts[chapter.status]=(counts[chapter.status]||0)+1;
-        const count=value=>Number.isSafeInteger(value)&&value>=0?value:0;
-        return JSON.stringify({schemaVersion:1,summary:{status:states.has(report?.status)?report.status:'unknown',
+        const chapters=report?.chapters||[];
+        for(const chapter of chapters)if(states.has(chapter.status))counts[chapter.status]=(counts[chapter.status]||0)+1;
+        const count=value=>Array.isArray(value)?value.length:Number.isSafeInteger(value)&&value>=0?value:0;
+        const stoppedAt=chapters.findIndex(chapter=>chapter.status==='stopped'||chapter.status==='waiting-unlock');
+        const reason=String(report?.reason ?? '').replace(/[?#][^\s]*/g,'').replace(/\s+/g,' ').trim().slice(0,240);
+        return JSON.stringify({schemaVersion:2,summary:{status:states.has(report?.status)?report.status:'unknown',
+            stopCode:report?.stopCode||null,
+            stoppedAtChapter:stoppedAt>=0?stoppedAt+1:null,
+            stopReason:reason||null,
             chapters:counts,videos:count(report?.videos),documents:count(report?.documents),quizzes:count(report?.quizzes)},
             diagnostics:JSON.parse(exportCxDiagnostics())},null,2);
     }
@@ -15282,7 +15309,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.26</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.27</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -16153,7 +16180,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.26',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.27',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,

@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.22
+// @version      1.33.23
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.22';
+    const ASSISTANT_VERSION = '1.33.23';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2965,7 +2965,7 @@ Typr["U"] = {
         const parsed = parseQuestionDocument(doc, parseContext);
         const questions = parsed.questions;
 
-        return { version: '1.33.22', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.23', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -7705,7 +7705,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.22');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.23');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -15245,7 +15245,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.22</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.23</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -16116,7 +16116,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.22',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.23',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,
@@ -19083,6 +19083,60 @@ function buildClawdRig(palette = {}) {
     writeFrom(c, S);
   }
 
+/* 学习通版新增动作（本地扩展，不属于 Claude Web 上游快照）
+   由 build.mjs 在动作表末尾、pool 汇总之前注入 buildClawdRig 作用域。
+   规则沿用上游：非循环动作首尾必须与待机静止画面一致。 */
+
+  /* ── 挥钳打招呼：抬起左钳左右挥两下，笑眼、冒音符 ───────── */
+  {
+    const c = def(new Clip('wave', '挥钳打招呼', 2000, { group: 'idle', smooth: ['clawL'] }));
+    c.beat(0, '抬头看你').beat(200, '举起左钳').beat(500, '左右挥两下').beat(1500, '放下');
+    c.at(100, 'eyes', { y: -1 });
+    raise(c, 300, 'clawL');
+    c.at(400, 'eyes', { f: 'happy' });
+    c.at(500, 'clawL', { x: 2 }).at(700, 'clawL', { x: -1 })
+     .at(900, 'clawL', { x: 2 }).at(1100, 'clawL', { x: -1 });
+    sym(c, 500, 'note', { x: 4, dur: 900 });
+    c.at(1500, 'clawL', { x: 0 });
+    lower(c, 1500, 'clawL');
+    c.at(1600, 'eyes', { f: 'open', y: 0 });
+  }
+
+  /* ── 打喷嚏：仰头 → 后仰 → 猛地前倾 → 擦一下 ───────────── */
+  {
+    const c = def(new Clip('sneeze', '打喷嚏', 1800, { group: 'idle' }));
+    c.beat(0, '仰头，鼻子发痒').beat(300, '越仰越高').beat(500, '「阿嚏」猛地前倾').beat(700, '弹回来').beat(900, '抹一下脸');
+    c.at(0, 'eyes', { f: 'half' });
+    c.at(100, 'upper', { y: -1 });
+    c.at(200, 'eyes', { f: 'shut' });
+    c.at(300, 'upper', { y: -2 });
+    c.at(500, 'upper', { y: 1 }).at(500, 'legs', { f: 'crouch' });
+    c.flex(500, { sx: 1.12, sy: .88 });
+    sym(c, 500, 'bang', { x: 5, y: 2, dur: 700 });
+    c.at(700, 'upper', { y: 0 }).at(700, 'legs', { f: 'stand' });
+    c.flex(700, { sx: 1.03, sy: .98 }).flex(850, {});
+    c.at(900, 'eyes', { f: 'squint' });
+    sym(c, 900, 'sweat', { x: 6, dur: 700 });
+    c.at(1200, 'eyes', { f: 'half' });
+    c.at(1500, 'eyes', { f: 'open' });
+  }
+
+  /* ── 打冷颤：抱紧自己抖两下，缩着肩，冒一滴汗 ───────────── */
+  {
+    const c = def(new Clip('shiver', '打冷颤', 1900, { group: 'idle' }));
+    c.beat(0, '把两只钳子抱到身前').beat(400, '冷得抖两下').beat(1200, '缩着肩').beat(1600, '松开');
+    c.at(0, 'clawL', { f: 'front', x: 1 }).at(0, 'clawR', { f: 'front', x: -1 });
+    c.at(100, 'eyes', { f: 'squint' });
+    for (let i = 0; i < 8; i++) c.at(400 + i * 90, 'root', { x: i % 2 ? 1 : -1 });
+    c.at(1150, 'root', { x: 0 });
+    c.at(1200, 'upper', { y: 1 });
+    sym(c, 500, 'sweat', { x: -6, dur: 800 });
+    c.at(1600, 'upper', { y: 0 })
+     .at(1600, 'clawL', { f: 'stub', x: 0 })
+     .at(1600, 'clawR', { f: 'stub', x: 0 });
+    c.at(1700, 'eyes', { f: 'open' });
+  }
+
   const pool = {};
   for (const c of Object.values(CLIPS)) {
     pool[c.id] = { id: c.id, name: c.name, dur: c.dur, loop: c.loop, intro: c.intro, track: c.track, group: c.group, next: c.next, hold: c.hold, after: c.after, from: c.from };
@@ -20143,12 +20197,28 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
     const CLAWD_RIG_STYLE_ID = "cx-clawd-rig-style";
     const CLAWD_RIG_POOL = Object.freeze([ {
       id: "polish",
-      weight: 3,
+      weight: 2,
       cool: 24e4
     }, {
       id: "walk",
-      weight: 3,
+      weight: 2,
       cool: 12e4
+    }, {
+      id: "wave",
+      weight: 1.4,
+      cool: 3e5
+    }, {
+      id: "stretch",
+      weight: 1,
+      cool: 3e5
+    }, {
+      id: "shiver",
+      weight: .9,
+      cool: 6e5
+    }, {
+      id: "sneeze",
+      weight: .9,
+      cool: 6e5
     }, {
       id: "butterfly",
       weight: 1,
@@ -20246,7 +20316,19 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
       turn: "sulk",
       t5: "sulk",
       face: "sulk",
-      rage: "rage"
+      rage: "rage",
+      heart: "heart",
+      wow: "wow",
+      point: "point",
+      scratch: "scratch",
+      crouch: "crouch",
+      spin: "spin",
+      lean: "lean",
+      tramp: "tramp",
+      stretch: "stretch",
+      wave: "wave",
+      shiver: "shiver",
+      sneeze: "sneeze"
     });
     let clawdRigPokeT1 = "poke1";
     const CLAWD_RIG_VARIANTS = Object.freeze({
@@ -20724,7 +20806,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
       clawdTracks.B = "idle";
       clawdTracks.bUntil = 0;
     }
-    const CLAWD_QUIET_WITH_RIDERS = new Set([ "idle", "peek", "peekOut", "walkLoop", "around", "point", "scratch", "facepalm", "press", "neglected", "drowsy", "sleep", "compose", "think", "stream", "sit", "stopped", "error", "errorSlump", "writeSendQuiet" ]);
+    const CLAWD_QUIET_WITH_RIDERS = new Set([ "idle", "peek", "peekOut", "walkLoop", "around", "point", "scratch", "facepalm", "press", "neglected", "drowsy", "sleep", "compose", "think", "stream", "sit", "stopped", "error", "errorSlump", "writeSendQuiet", "wave", "stretch" ]);
     function clawdShakeRiders(value) {
       if (!value) return;
       const base = String(value).replace(/^rig:/, "").replace(/-m$/, "");
@@ -20936,7 +21018,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
       state: "facepalm",
       duration: CLAWD_RIG.clips.facepalm.dur
     } ]);
-    let clawdBAmbientNextAt = Date.now() + 18e3;
+    let clawdBAmbientNextAt = Date.now() + 8e3;
     function clawdPrefersReducedMotion() {
       try {
         return Boolean(hostWindow.matchMedia?.("(prefers-reduced-motion: reduce)").matches);
@@ -20946,7 +21028,7 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
     }
     let clawdBLastAmbient = "";
     function scheduleClawdBAmbient(now = Date.now(), retry = !1) {
-      clawdBAmbientNextAt = now + (retry ? 5e3 : 22e3 + Math.round(Math.random() * 14e3));
+      clawdBAmbientNextAt = now + (retry ? 5e3 : 13e3 + Math.round(Math.random() * 9e3));
     }
     function maybePlayClawdBAmbient(now) {
       if (now < clawdBAmbientNextAt) return;
@@ -21554,6 +21636,14 @@ function createChaoxingClawdRuntime({hostDocument,hostWindow,wardrobe}) {
     }
     let a2LastPoke = "";
     function a2RandomPoke(irr) {
+      const moods = [ "heart", "wow", "point", "scratch", "crouch", "spin", "lean", "tramp", "stretch", "wave", "shiver", "sneeze" ]
+        .filter(id => CLAWD_RIG.clips[id] && id !== A2.lastMoodPoke);
+      if (moods.length && Math.random() < .4) {
+        const id = moods[Math.floor(Math.random() * moods.length)];
+        A2.lastMoodPoke = id;
+        setClawdC(id, CLAWD_RIG.clips[id].dur);
+        return;
+      }
       const pool = (irr >= 3 ? [ "t2", "t3", "t4" ] : [ "t1", "t2", "t3", "t4" ]).filter(t => t !== a2LastPoke);
       const t = pool[Math.random() * pool.length | 0];
       a2LastPoke = t;

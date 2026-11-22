@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.30
+// @version      1.33.31
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2915,10 +2915,11 @@ Typr["U"] = {
 
     // 尽早安装旧鼠标移出监听；只有 runner 的当前视频上下文能激活。
     const backgroundPlaybackGuard = initBackgroundPlayback();
+    const courseKeepAlive = initCourseKeepAlive();
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.28';
+    const ASSISTANT_VERSION = '1.33.31';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -12959,11 +12960,18 @@ Typr["U"] = {
         };
         const skipLearned=s.getElementById('course-skip-learned'),fromCurrent=s.getElementById('course-from-current'),timeoutNext=s.getElementById('course-timeout-next'),muteVideo=s.getElementById('course-mute-video'),skipUnanswerable=s.getElementById('course-skip-unanswerable'),videoQuizAuto=s.getElementById('course-video-quiz-auto'),speedEnabled=s.getElementById('course-speed-enabled');
         const autoSubmit=s.getElementById('course-auto-submit');
-        const forcePlayback=s.getElementById('course-force-playback'),videoPause=s.getElementById('course-video-pause');
+        const forcePlayback=s.getElementById('course-force-playback'),videoPause=s.getElementById('course-video-pause'),keepAlive=s.getElementById('course-keepalive');
         forcePlayback.checked=courseForcePlaybackEnabled();
         forcePlayback.onchange=event=>{
             if(!trustedAssistantActivation(event,forcePlayback,'change')){forcePlayback.checked=courseForcePlaybackEnabled();return;}
             set('cx_course_force_playback',forcePlayback.checked);backgroundPlaybackGuard?.refresh();render();
+        };
+        keepAlive.checked=courseKeepAliveEnabled();
+        keepAlive.onchange=event=>{
+            if(!trustedAssistantActivation(event,keepAlive,'change')){keepAlive.checked=courseKeepAliveEnabled();return;}
+            set('cx_course_keepalive',keepAlive.checked);
+            if(keepAlive.checked)courseKeepAlive?.beat?.();
+            render();
         };
         videoPause.onclick=event=>{
             if(!trustedAssistantActivation(event,videoPause))return;
@@ -13797,6 +13805,59 @@ Typr["U"] = {
     }
     // 课程顶层后台播放保护与独立播放恢复。
     // 字体解密部分源自 wyn665817 的 MIT 脚本；改为文本节点转换和可重入模块。
+    // 页面保活：部分课程按“鼠标/键盘长时间无操作”判定离开，直接暂停视频。
+    // 播放期间定时派发轻微移动事件维持活跃信号；不伪造点击、不伪造可见性、不改动播放器状态。
+    function courseKeepAliveEnabled() { return get('cx_course_keepalive', true) !== false; }
+    function initCourseKeepAlive() {
+        if (window.top !== window.self || !isCourseStudyURL(location)) return null;
+        if (initCourseKeepAlive.instance) return initCourseKeepAlive.instance;
+        let closed = false, timer = null;
+        const move = (doc, x, y) => {
+            const view = doc?.defaultView;
+            if (!view) return;
+            const target = doc.body || doc.documentElement || doc;
+            const make = (Ctor, type, extra) => {
+                try { return new Ctor(type, { bubbles: true, cancelable: true, view, clientX: x, clientY: y, screenX: x, screenY: y, ...extra }); }
+                catch { return null; }
+            };
+            const events = [make(view.MouseEvent, 'mousemove', {})];
+            if (typeof view.PointerEvent === 'function') events.push(make(view.PointerEvent, 'pointermove', { pointerId: 1, pointerType: 'mouse', isPrimary: true }));
+            // 派发在 body 上并冒泡：window / document / body 三处的监听都能收到，覆盖不同版本的检测写法。
+            for (const event of events.filter(Boolean)) {
+                try { target.dispatchEvent(event); } catch { }
+            }
+        };
+        const beat = () => {
+            if (closed || !courseKeepAliveEnabled()) return;
+            // 标签页真的在后台时不做假动作：平台按 visibilitychange 暂停，假装活跃只会干扰自身判断。
+            if (document.visibilityState !== 'visible') return;
+            try {
+                const tree = courseFrameTree(document);
+                if (tree.blocking.length) return;
+                const playing = tree.documents
+                    .flatMap(doc => [...doc.querySelectorAll('video')])
+                    .filter(video => video.isConnected && !video.paused && !video.ended && courseElementVisible(video));
+                if (!playing.length) return;
+                for (const doc of new Set(playing.map(video => video.ownerDocument))) {
+                    const video = playing.find(item => item.ownerDocument === doc);
+                    const rect = video.getBoundingClientRect();
+                    const x = Math.round(rect.left + rect.width / 2) + Math.round(Math.random() * 40 - 20);
+                    const y = Math.round(rect.top + rect.height / 2) + Math.round(Math.random() * 30 - 15);
+                    move(doc, x, y);
+                }
+            } catch { /* 页面切换或帧树不可读时跳过本次，不影响后续心跳。 */ }
+        };
+        // 8–16 秒随机一次：多数平台的空闲阈值在 30 秒以上，留足余量又不形成固定节拍。
+        const schedule = () => { timer = window.setTimeout(() => { try { beat(); } finally { schedule(); } }, 8000 + Math.random() * 8000); };
+        schedule();
+        const manager = {
+            beat,
+            close() { if (closed) return; closed = true; window.clearTimeout(timer); }
+        };
+        window.addEventListener('pagehide', manager.close, { once: true });
+        initCourseKeepAlive.instance = manager;
+        return manager;
+    }
     function initBackgroundPlayback() {
         if (window.top !== window.self || !isCourseStudyURL(location)) return null;
         if (initBackgroundPlayback.instance) return initBackgroundPlayback.instance;
@@ -13851,10 +13912,19 @@ Typr["U"] = {
                 // Capture on Window before document/player blur and visibility handlers.
                 for(const type of ['blur','visibilitychange','webkitvisibilitychange'])view?.addEventListener(type,onFocusLoss,true);
                 for(const type of ['focus','pageshow','resume'])view?.addEventListener(type,onForeground,true);
+                // 播放器在本帧内时，“鼠标离开播放器”也可能被平台当成离开学习而暂停。
+                for(const type of ['mouseout','mouseleave']) {
+                    doc.addEventListener(type,onPlayerExit,true);
+                    view?.addEventListener(type,onPlayerExit,true);
+                }
                 documents.set(doc,()=>{
                     doc.removeEventListener('playing',discover,true);doc.removeEventListener('load',discover,true);
                     for(const type of ['blur','visibilitychange','webkitvisibilitychange'])view?.removeEventListener(type,onFocusLoss,true);
                     for(const type of ['focus','pageshow','resume'])view?.removeEventListener(type,onForeground,true);
+                    for(const type of ['mouseout','mouseleave']) {
+                        doc.removeEventListener(type,onPlayerExit,true);
+                        view?.removeEventListener(type,onPlayerExit,true);
+                    }
                 });
             }
             const found=new Set(tree.documents.slice(1).flatMap(doc=>[...doc.querySelectorAll('video')].filter(courseElementVisible)));
@@ -13938,6 +14008,24 @@ Typr["U"] = {
                 active?.wake?.();
             } catch { /* Do not suppress events when ownership or playback policy is uncertain. */ }
         };
+        // 平台还有一类检测：鼠标离开播放器区域就暂停（不必离开窗口）。
+        // 只在“正在播放 + 强制连续播放 + 当前上下文允许保护”时拦下这一条离开事件；
+        // 播放器内部控件之间、进入题目区域的移动一律放行，避免影响原生交互。
+        function onPlayerExit(event) {
+            if (closed || !courseForcePlaybackEnabled()) return;
+            try {
+                const record = !active && standalone();
+                const context = active || record && { video: record.video, canProtect: () => allowed(record) && !record.manual && !courseVideoForegroundPolicy(record.video).required, onSuppressed: () => { } };
+                const video = context?.video;
+                if (!video || !video.isConnected || video.paused || video.ended || !context.canProtect()) return;
+                const player = video.closest('.video-js,.prism-player,[data-video-player]') || video.parentElement;
+                const target = event.target;
+                if (!player || !video.ownerDocument.contains(video) || !(target === video || target === player)) return;
+                if (event.relatedTarget && player.contains(event.relatedTarget)) return;
+                event.stopImmediatePropagation(); event.stopPropagation();
+                context.onSuppressed?.();
+            } catch { /* 状态无法确认时不拦截。 */ }
+        }
         const manager = {
             installedAt: Date.now(), installedReadyState: document.readyState,
             get controls() {
@@ -15488,7 +15576,7 @@ Typr["U"] = {
                   </section>
                   <section id="chapter-run-page" class="chapter-page" role="tabpanel" aria-labelledby="chapter-tab-run" hidden>
                     <div class="course-run-controls">
-                      <div class="course-run-options"><label class="check-label"><input type="checkbox" id="course-force-playback" checked /> 强制连续播放</label><label class="check-label"><input type="checkbox" id="course-auto-submit" checked /> 自动提交章节测验</label><label class="check-label"><input type="checkbox" id="course-skip-learned" checked /> 自动跳过已学</label><label class="check-label"><input type="checkbox" id="course-from-current" /> 从当前开始</label><label class="check-label"><input type="checkbox" id="course-timeout-next" checked /> 超时是否继续下一节</label><label class="check-label" title="开启后连续三个章节超时将停止本轮；关闭后可跳过的任务错误和超时继续运行，锁定、核验及提交待确认除外"><input type="checkbox" id="course-failure-protection" /> 连续失败保护性停止</label><label class="check-label"><input type="checkbox" id="course-mute-video" checked /> 关闭视频声音</label><span class="course-speed-option"><label class="check-label"><input type="checkbox" id="course-speed-enabled" /> 开启倍速</label><button type="button" id="course-speed-help" class="course-speed-help" aria-label="倍速说明" aria-describedby="course-speed-tooltip">?</button></span><label class="check-label" title="默认开启：本题测验不提交，本章记为待人工并继续下一章；关闭后遇到AI答不出的题目会停止本轮"><input type="checkbox" id="course-skip-unanswerable" checked /> 跳过AI无法作答的题目并继续</label><label class="check-label"><input type="checkbox" id="course-video-quiz-auto" checked /> 自动处理视频弹题（含确认）</label></div><div class="course-video-delay"><label class="check-label"><input type="checkbox" id="course-video-delay-enabled" /> 视频间隔</label><div id="course-video-delay-fields" hidden><select id="course-video-delay-mode" aria-label="视频间隔方式"><option value="fixed">固定</option><option value="random">随机</option></select><output id="course-video-delay-value" aria-live="polite">10 秒</output><input id="course-video-delay-fixed" type="range" min="0" max="60" step="1" value="10" aria-label="固定间隔秒数" /><div id="course-video-delay-random" class="course-delay-range" hidden><input id="course-video-delay-min" type="range" min="0" max="60" step="1" value="5" aria-label="随机间隔最小秒数" /><input id="course-video-delay-max" type="range" min="0" max="60" step="1" value="15" aria-label="随机间隔最大秒数" /></div></div></div><details id="course-queue-results" class="course-queue-results" hidden><summary>课程结果</summary><pre id="course-queue-result-list"></pre></details><span id="course-speed-tooltip" class="course-speed-tooltip" role="tooltip" popover="manual" hidden>根据当前视频播放器提供的档位，自动选择最高且不超过 2 倍的速度；开启视频信息识别时保持原速。</span><details id="course-pending" hidden><summary id="course-pending-summary"></summary><ul id="course-pending-list"></ul></details><button type="button" id="course-retry" class="secondary" hidden>重试未完成</button><div id="course-retry-confirm" hidden><p id="course-retry-message" class="note"></p><button type="button" id="course-retry-accept">确认重试</button><button type="button" id="course-retry-cancel" class="secondary">取消</button></div></div>
+                      <div class="course-run-options"><label class="check-label"><input type="checkbox" id="course-force-playback" checked /> 强制连续播放</label><label class="check-label" title="部分课程会因鼠标长时间不动、或鼠标离开播放器而暂停视频；开启后播放期间每十几秒模拟一次鼠标移动，并拦下这类暂停信号"><input type="checkbox" id="course-keepalive" checked /> 页面保活</label><label class="check-label"><input type="checkbox" id="course-auto-submit" checked /> 自动提交章节测验</label><label class="check-label"><input type="checkbox" id="course-skip-learned" checked /> 自动跳过已学</label><label class="check-label"><input type="checkbox" id="course-from-current" /> 从当前开始</label><label class="check-label"><input type="checkbox" id="course-timeout-next" checked /> 超时是否继续下一节</label><label class="check-label" title="开启后连续三个章节超时将停止本轮；关闭后可跳过的任务错误和超时继续运行，锁定、核验及提交待确认除外"><input type="checkbox" id="course-failure-protection" /> 连续失败保护性停止</label><label class="check-label"><input type="checkbox" id="course-mute-video" checked /> 关闭视频声音</label><span class="course-speed-option"><label class="check-label"><input type="checkbox" id="course-speed-enabled" /> 开启倍速</label><button type="button" id="course-speed-help" class="course-speed-help" aria-label="倍速说明" aria-describedby="course-speed-tooltip">?</button></span><label class="check-label" title="默认开启：本题测验不提交，本章记为待人工并继续下一章；关闭后遇到AI答不出的题目会停止本轮"><input type="checkbox" id="course-skip-unanswerable" checked /> 跳过AI无法作答的题目并继续</label><label class="check-label"><input type="checkbox" id="course-video-quiz-auto" checked /> 自动处理视频弹题（含确认）</label></div><div class="course-video-delay"><label class="check-label"><input type="checkbox" id="course-video-delay-enabled" /> 视频间隔</label><div id="course-video-delay-fields" hidden><select id="course-video-delay-mode" aria-label="视频间隔方式"><option value="fixed">固定</option><option value="random">随机</option></select><output id="course-video-delay-value" aria-live="polite">10 秒</output><input id="course-video-delay-fixed" type="range" min="0" max="60" step="1" value="10" aria-label="固定间隔秒数" /><div id="course-video-delay-random" class="course-delay-range" hidden><input id="course-video-delay-min" type="range" min="0" max="60" step="1" value="5" aria-label="随机间隔最小秒数" /><input id="course-video-delay-max" type="range" min="0" max="60" step="1" value="15" aria-label="随机间隔最大秒数" /></div></div></div><details id="course-queue-results" class="course-queue-results" hidden><summary>课程结果</summary><pre id="course-queue-result-list"></pre></details><span id="course-speed-tooltip" class="course-speed-tooltip" role="tooltip" popover="manual" hidden>根据当前视频播放器提供的档位，自动选择最高且不超过 2 倍的速度；开启视频信息识别时保持原速。</span><details id="course-pending" hidden><summary id="course-pending-summary"></summary><ul id="course-pending-list"></ul></details><button type="button" id="course-retry" class="secondary" hidden>重试未完成</button><div id="course-retry-confirm" hidden><p id="course-retry-message" class="note"></p><button type="button" id="course-retry-accept">确认重试</button><button type="button" id="course-retry-cancel" class="secondary">取消</button></div></div>
                   </section>
                   <section id="chapter-catalog-page" class="chapter-page" role="tabpanel" aria-labelledby="chapter-tab-catalog" hidden>
                     <input id="catalog-search" type="search" placeholder="搜索章节" aria-label="搜索课程目录" />

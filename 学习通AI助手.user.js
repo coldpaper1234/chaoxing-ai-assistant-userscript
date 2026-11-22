@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.27
+// @version      1.33.28
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -2918,7 +2918,7 @@ Typr["U"] = {
 
     const ROOT_ID = 'cx-ai-study-root';
     const UI_HIDDEN_KEY = 'cx_ui_hidden';
-    const ASSISTANT_VERSION = '1.33.27';
+    const ASSISTANT_VERSION = '1.33.28';
     const QUESTION_SELECTOR = '.singleQuesId,.TiMu,.question-item[data-question-id],[data-questionid]';
     const DEEPSEEK_BASE = 'https://api.deepseek.com';
     const DEEPSEEK_SEARCH_URL = `${DEEPSEEK_BASE}/anthropic/v1/messages`;
@@ -2965,7 +2965,7 @@ Typr["U"] = {
         const parsed = parseQuestionDocument(doc, parseContext);
         const questions = parsed.questions;
 
-        return { version: '1.33.27', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
+        return { version: '1.33.28', schemaVersion: parsed.schemaVersion, total: questions.length, questions, media:parsed.media };
     }
 
     // 不缓存旧题目的 AI 结果到不同章节：预填前必须重新校验全部 ID、题干和选项。
@@ -7714,7 +7714,7 @@ Typr["U"] = {
             // 按实际发送者回复，顶层请求不能回到中间 PDF 窗口。
             operate(data,response=>event.source.postMessage(response,event.origin));
         };
-        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.27');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
+        const mark=()=>{doc.documentElement?.setAttribute('data-cx-document-bridge','v1.33.28');doc.documentElement?.setAttribute('data-cx-document-bridge-route','ancestor-v2');};
         mark();if(!doc.documentElement)doc.addEventListener('DOMContentLoaded',mark,{once:true});
         view.addEventListener('message',receive);
         view.addEventListener('pagehide',()=>{
@@ -8026,6 +8026,7 @@ Typr["U"] = {
     }
     function courseTaskEligibility(task, settings) {
         if(task.required===false)return {status:'excluded',reason:'not-required'};
+        if(settings.quizOnly&&task.type!=='quiz')return {status:'excluded',reason:'quiz-only'};
         if((settings.skipLearned||settings.retrying)&&task.completed===true)return {status:'excluded',reason:'already'};
         if(task.type==='quiz'&&!settings.submit)return {status:'excluded',reason:'quiz-disabled'};
         if(task.type==='knowledge-graph')return {status:'excluded',reason:'knowledge-graph'};
@@ -9319,6 +9320,12 @@ Typr["U"] = {
             return `${report.status==='running'?'正在遍历解锁课程':report.status==='done'?'解锁遍历结束':'解锁已停止'}\n已触发 ${count('visited')}，已核验 ${count('verified')}，已完成跳过 ${count('already')+report.chapters.filter(chapter=>chapter.status==='already').length}，待处理 ${count('pending')+report.chapters.filter(chapter=>['pending','timed-out','skipped','unvisited','stopped'].includes(chapter.status)&&!chapter.tasks.some(task=>task.status==='pending')).length}${report.reason?'\n'+report.reason:''}`;
         }
         if (!report) return '尚未开始自动学习';
+        if (report.quizOnly) {
+            const withQuiz=report.chapters.filter(chapter=>(chapter.tasks||[]).some(task=>task.type==='quiz')).length;
+            const answered=report.chapters.filter(chapter=>(chapter.tasks||[]).some(task=>task.type==='quiz'&&task.status==='done')).length;
+            return (report.status==='running'?'正在逐题作答（仅答题）':report.status==='stopped'?'仅答题已停止':'仅答题结束')
+                +'\n已答完测验 '+answered+' 章，本课程有测验 '+withQuiz+' 章'+(report.reason?'\n'+report.reason:'');
+        }
         const pending=coursePendingChapters(report),protection=report.protection;
         const hasManualTasks=report.chapters.some(chapter=>chapter.remainingUnconfirmed===true||chapter.tasks.some(task=>task.status==='manual-pending'&&(task.type==='knowledge-graph'||task.reason?.startsWith('自动提交章节测验已关闭'))));
         const finished = report.chapters.filter(item => ['done','already'].includes(item.status)).length;
@@ -9448,7 +9455,7 @@ Typr["U"] = {
                 current.notify('正在跳过本章节…','course-skipping');
                 return true;
             },
-            async start({ mode='study',submit = false, skipLearned = true, fromCurrent = false, startChapterId = null, continueOnTimeout = true, muteVideo = true, skipUnanswerable = false, videoQuizAuto = true, speedEnabled = false, failureProtectionEnabled = get('cx_course_failure_protection_enabled',false)===true, resume = false, skipCurrent = false, retry = false, retryToken = null, restEnabled = false, studyMinutes = 50, restMinutes = 10, videoDelay = readCourseVideoDelaySettings(), queueContext = null, queuePacing = null } = {}) {
+            async start({ mode='study',submit = false, skipLearned = true, fromCurrent = false, startChapterId = null, quizOnly = false, continueOnTimeout = true, muteVideo = true, skipUnanswerable = false, videoQuizAuto = true, speedEnabled = false, failureProtectionEnabled = get('cx_course_failure_protection_enabled',false)===true, resume = false, skipCurrent = false, retry = false, retryToken = null, restEnabled = false, studyMinutes = 50, restMinutes = 10, videoDelay = readCourseVideoDelaySettings(), queueContext = null, queuePacing = null } = {}) {
                 if (current || courseRunActive(owner)) return;
                 if(mode==='unlock') {
                     if(ctl.state.busy)return;
@@ -9533,6 +9540,7 @@ Typr["U"] = {
                 const report = resume ? previous.report : { status:'running', startedAt:now(), endedAt:null, reason:'', videos:0,documents:0,quizzes:0,
                     chapters:queue.map(item => ({...item,status:'unvisited',issues:[],tasks:[]})) };
                 report.status = 'running'; report.reason = '';
+                if(run.quizOnly)report.quizOnly=true; else delete report.quizOnly;
                 report.runScope=queueContext?'courseQueue':'course';report.queueContext=queueContext;
                 delete report.stopCode;
                 delete report.navigationBoundary;
@@ -9545,7 +9553,7 @@ Typr["U"] = {
                 const savedDelay=resume?previous.videoDelayUntil:null;
                 const protection=courseRunProtection(resume?previous:null,report.chapters,resume?previous.chapterIndex:0,limits.maxConsecutiveChapterFailures,failureProtectionEnabled);
                 report.protection=protection;
-                const run = {id:crypto.randomUUID(),mode:'study',queue,report,settings,protection,queueContext,
+                const run = {id:crypto.randomUUID(),mode:'study',quizOnly:resume?previous.quizOnly===true:quizOnly===true,queue,report,settings,protection,queueContext,
                     retrying:retry||resume&&previous.retrying===true,originalQueue:retry?previous.originalQueue||previous.queue:resume?previous.originalQueue||previous.queue:queue,
                     previousReport:retry?previous.report:resume?previous.previousReport||null:null,submit:resume ? false : submit===true,
                     learning,videoDelay:delaySettings,videoDelayUntil:Number.isFinite(savedDelay)&&savedDelay>=0&&savedDelay<=now()+60000?savedDelay:null,
@@ -9582,7 +9590,7 @@ Typr["U"] = {
                     if(run.claimed && get(key,null)?.ownerId!==run.id)throw new Error('运行锁已失效');
                     if(run.pacing.activeStartedAt!==null){pausePacing();resumePacing();}
                     report.pacing={...run.pacing,restEnabled:run.learning.restEnabled};
-                    set(key,{status:report.status,session,ownerId:run.id,queueContext:run.queueContext,handoff:run.handoff===true,heartbeat:now(),settings:modelConfigurationSignature(settings),submit:run.submit,skipLearned:run.skipLearned,fromCurrent:run.fromCurrent,startChapterId:run.startChapterId,continueOnTimeout:run.continueOnTimeout,muteVideo:run.muteVideo,skipUnanswerable:run.skipUnanswerable,videoQuizAuto:run.videoQuizAuto,speedEnabled:run.speedEnabled,
+                    set(key,{status:report.status,session,ownerId:run.id,queueContext:run.queueContext,handoff:run.handoff===true,heartbeat:now(),settings:modelConfigurationSignature(settings),submit:run.submit,quizOnly:run.quizOnly,skipLearned:run.skipLearned,fromCurrent:run.fromCurrent,startChapterId:run.startChapterId,continueOnTimeout:run.continueOnTimeout,muteVideo:run.muteVideo,skipUnanswerable:run.skipUnanswerable,videoQuizAuto:run.videoQuizAuto,speedEnabled:run.speedEnabled,
                         scope,retrying:run.retrying,protection:{...run.protection},originalQueue:run.originalQueue,previousReport:run.previousReport,
                         learning:run.learning,videoDelay:run.videoDelay,videoDelayUntil:run.videoDelayUntil,pacing:{...run.pacing},rangeStart:run.rangeStart,queue,chapterIndex:run.chapterIndex,tabIndex:run.tabIndex,tabProgress:run.tabProgress,report});
                     run.claimed=true;
@@ -9767,7 +9775,7 @@ Typr["U"] = {
                         item.tasks.forEach((summary,index)=>{
                             const decision=item.decisions[index],manual=['quiz-disabled','knowledge-graph'].includes(decision.reason);
                             chapter.tasks.push({tab:item.tab.id,type:summary.type,status:manual?'manual-pending':decision.reason==='already'?'already':'not-required',
-                                reason:manual?decision.reason==='quiz-disabled'?'自动提交章节测验已关闭，测验已跳过且未提交':'知识图谱已自动跳过，未计为完成':'任务摘要已核实',located:true});
+                                reason:manual?decision.reason==='quiz-disabled'?'自动提交章节测验已关闭，测验已跳过且未提交':'知识图谱已自动跳过，未计为完成':decision.reason==='quiz-only'?'仅答题模式，非测验任务已跳过':'任务摘要已核实',located:true});
                         });
                     }
                 };
@@ -9788,7 +9796,7 @@ Typr["U"] = {
                         const catalog=readCourseCatalog(owner),range=queue.slice(run.chapterIndex).filter(item=>!resume||!['done','no-tasks','already','skipped','timed-out','manual-pending'].includes(report.chapters.find(ch=>ch.id===item.id)?.status))
                             .map(item=>{const found=catalog.entries.find(ch=>ch.id===item.id&&!ch.isGroup);if(!found?.node?.isConnected)throw new Error('课程目录发生变化或章节不存在');return found;});
                         let location;
-                        while(true) {try {location=run.probeBlocked?{entry,probe:{known:false,reason:'submission-unconfirmed'}}:await findNextCourseTask(range,{owner,submit:run.submit,skipLearned:run.skipLearned,retrying:run.retrying,
+                        while(true) {try {location=run.probeBlocked?{entry,probe:{known:false,reason:'submission-unconfirmed'}}:await findNextCourseTask(range,{owner,submit:run.submit,skipLearned:run.skipLearned,retrying:run.retrying,quizOnly:run.quizOnly,
                             startChapterId:entry.id,startTabId:boundary?.tabId==='current'?null:boundary?.tabId,startCardId:boundary?.cardId,
                             startTabIndex:Math.max(run.tabIndex,boundary?.tabIndex||0),check:()=>run.probeCheck(),now,timeoutMs:limits.loadMs,
                             onRequest:()=>report.locator.requests++,onCacheHit:()=>report.locator.cacheHits++,onDeduplicated:()=>report.locator.deduplicated++},context.abort.signal);break;}
@@ -10916,6 +10924,15 @@ Typr["U"] = {
                             ?'包含已跳过的知识图谱，未计为完成，需人工处理':chapter.tasks.some(task=>task.requiresManualSave)
                             ?'富文本答案已预填并同步到表单，等待人工保存或提交':!run.submit?'自动提交章节测验已关闭，测验已跳过且未提交，需人工处理':'包含无法自动答题的测验，已跳过且未提交，需人工处理';save();return;
                     }
+                    if(run.quizOnly) {
+                        const quizTasks=chapter.tasks.filter(task=>task.type==='quiz');
+                        chapter.status=quizTasks.length?'manual-pending':'no-tasks';
+                        chapter.remainingUnconfirmed=Boolean(quizTasks.length);
+                        chapter.reason=quizTasks.length
+                            ?'仅答题模式：本章测验已处理，视频与文档未纳入本轮，整章未计为完成'
+                            :'仅答题模式：本章没有测验任务，已跳过';
+                        courseRecordChapterOutcome(run.protection,chapter,run.chapterIndex);save();return;
+                    }
                     if(rangeTruncated&&!pending()?.completed&&pending()?.pending!==0) {
                         chapter.status='manual-pending';chapter.remainingUnconfirmed=true;
                         chapter.reason='已处理本次起点之后的栏目；起点之前未纳入本轮，保留整章未完成状态';save();return;
@@ -11457,7 +11474,7 @@ Typr["U"] = {
                 continueOnTimeout:options.continueOnTimeout===true,failureProtectionEnabled:options.failureProtectionEnabled===true};
         }
         const result={fromCurrent:false,...courseLearningSettings(options),videoDelay:courseVideoDelaySettings(options.videoDelay)};
-        for(const key of ['submit','skipLearned','continueOnTimeout','muteVideo','skipUnanswerable','videoQuizAuto','speedEnabled','failureProtectionEnabled'])result[key]=options[key]===true;
+        for(const key of ['submit','skipLearned','quizOnly','continueOnTimeout','muteVideo','skipUnanswerable','videoQuizAuto','speedEnabled','failureProtectionEnabled'])result[key]=options[key]===true;
         if(options.queueContext) {
             if(!courseQueueValidContext(options.queueContext))throw new Error('课程队列已停止或课程身份已变化');
             result.queueContext={...options.queueContext};result.queuePacing=courseQueuePacing(options.queuePacing);
@@ -12913,6 +12930,7 @@ Typr["U"] = {
         const canStart=()=>queue?.list?queue.available:Boolean(courseRunController(owner)||home?.available);
         const stopButton=s.getElementById('course-stop');
         const unlockButton=s.getElementById('course-unlock');
+        const quizOnlyButton=s.getElementById('course-quiz');
         let stopRunId=null,stopUntil=0,stopTimer=null,stopCountdownTimer=null;
         const clearStopConfirmation=()=>{
             if(stopTimer!==null)doc.defaultView?.clearTimeout(stopTimer);
@@ -13085,6 +13103,11 @@ Typr["U"] = {
             const hasCommands=Boolean(courseRunController(owner));
             const unavailableReason=queue?.list?(courseListSnapshot()?.ready?'请选择本次课程':doc.documentElement.dataset.cxCourseListReason||'正在加载课程列表'):home?'课程身份或标签页交接能力尚未就绪，请刷新后重试':owner?'请通过课程主页面的助手开始自动学习':'请进入课程首页或学习页面开始刷课';
             setAssistantControlDisabled(s.getElementById('course-start'),!canStart()||locked||home?.pending||home?.active,home?.pending?'正在进入学习页面，可点击“取消启动”':running||queue?.active||home?.active?'自动学习正在进行中':ctl.state.busy?'当前操作进行中，请结束后开始刷课':unavailableReason);
+            if(quizOnlyButton) {
+                quizOnlyButton.hidden=Boolean(queue?.list)||(!home&&owner!==doc);
+                quizOnlyButton.textContent=running?'只答题中…':'只答题';
+                setAssistantControlDisabled(quizOnlyButton,!canStart()||locked||home?.pending||home?.active,home?.pending?'正在进入学习页面，可点击“取消启动”':running||queue?.active||home?.active?'自动学习正在进行中':ctl.state.busy?'当前操作进行中，请结束后开始只答题':unavailableReason);
+            }
             const canUnlock=Boolean((owner===doc&&courseRunController(owner))||home?.available);
             unlockButton.hidden=Boolean(queue?.list)||(!home&&owner!==doc);
             unlockButton.textContent=unlocking?'解锁中…':'解锁课程';
@@ -13117,6 +13140,16 @@ Typr["U"] = {
         s.getElementById('course-start').onclick=event=>{
             if(!trustedAssistantActivation(event,s.getElementById('course-start')) || !canStart() || queue?.active || ctl.state.busy || home?.pending || home?.active)return;
             const options=readRunOptions();
+            if(queue?.list)queue.start(options);else if(home)home.start(options);else courseRunController(owner).start(options);
+        };
+        if(quizOnlyButton)quizOnlyButton.onclick=event=>{
+            if(!trustedAssistantActivation(event,quizOnlyButton)||!canStart()||queue?.active||ctl.state.busy||home?.pending||home?.active)return;
+            if(!submitPreference()) {
+                const allowed=assistantConfirm('「只答题」需要自动提交章节测验才能生效。AI 答案可能错误，是否开启并开始作答？')===true;
+                if(!allowed){ctl.report('只答题需要先开启「自动提交章节测验」','error');return;}
+                set(submitPreferenceKey,true);autoSubmit.checked=true;
+            }
+            const options={...readRunOptions(),quizOnly:true,submit:true,skipLearned:true};
             if(queue?.list)queue.start(options);else if(home)home.start(options);else courseRunController(owner).start(options);
         };
         unlockButton.onclick=event=>{
@@ -15309,7 +15342,7 @@ Typr["U"] = {
           #course-verification-open{flex:none;border:0;background:transparent;color:var(--accent);padding:2px 0;font-size:12px;white-space:nowrap}
         </style>
         <div id="panel" hidden data-active-view="questions">
-          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.27</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
+          <header class="head"><div class="head-title"><img class="head-logo" src="data:image/png;base64,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" width="24" height="24" alt="" aria-hidden="true" draggable="false"><strong>学习通AI助手 v1.33.28</strong><span id="course-mode-badge" class="course-mode-badge" hidden>课程模式</span></div><div class="head-actions">
             <button type="button" id="download-update" class="secondary" title="下载更新" aria-label="下载更新" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg></button>
             <button type="button" id="github" class="secondary" title="GitHub 项目主页" aria-label="GitHub 项目主页"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.543v-2.096c-3.13.68-3.791-1.329-3.791-1.329-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.25.08 1.725 1.25 1.725 1.25 1.005 1.722 2.637 1.254 3.279.936.102-.728.393-1.255.715-1.507-2.499-.284-5.126-1.25-5.126-5.566 0-1.25.44-2.232 1.25-3.02-.116-.285-.503-1.43.111-2.98 0 0 .945-.302 3.094 1.253a10.78 10.78 0 0 1 5.625 0c2.149-1.455 3.092-1.253 3.092-1.253.615 1.55.228 2.695.112 2.98.722.788 1.259 1.79 1.259 3.02 0 4.327-2.631 5.279-5.138 5.558.404.35.763 1.04.763 2.097v3.078c0 .302.203.653.774.542A11.252 11.252 0 0 0 12 .75Z"/></svg></button>
             <button type="button" id="about-toggle" class="secondary" aria-label="项目介绍" aria-haspopup="dialog" aria-controls="about" aria-expanded="false" title="项目介绍">?</button>
@@ -15436,7 +15469,7 @@ Typr["U"] = {
                   </div>
                   <section id="chapter-queue-page" class="chapter-page" role="tabpanel" aria-labelledby="chapter-tab-queue">
                     <details id="course-queue-selection" class="course-queue-selection" open hidden><summary><span>选择课程</span><span id="course-queue-selection-count">已选 0 门</span></summary><label class="check-label course-queue-select-all"><input type="checkbox" id="course-queue-all" /> 全选</label><div id="course-queue-choices" class="course-queue-choices"></div></details>
-                    <div class="course-run-actions"><button type="button" id="course-start">开始刷课</button><button type="button" id="course-unlock" class="secondary" hidden>解锁课程</button><button type="button" id="course-stop" class="secondary" disabled>停止</button><button type="button" id="course-queue-skip" class="secondary" hidden>跳过本课程</button><button type="button" id="course-skip" class="secondary" disabled>跳过本章节</button><button type="button" id="course-video-pause" class="secondary" disabled>暂停</button></div>
+                    <div class="course-run-actions"><button type="button" id="course-start">开始刷课</button><button type="button" id="course-quiz" class="secondary">只答题</button><button type="button" id="course-unlock" class="secondary" hidden>解锁课程</button><button type="button" id="course-stop" class="secondary" disabled>停止</button><button type="button" id="course-queue-skip" class="secondary" hidden>跳过本课程</button><button type="button" id="course-skip" class="secondary" disabled>跳过本章节</button><button type="button" id="course-video-pause" class="secondary" disabled>暂停</button></div>
                     <section class="course-run-preview" aria-label="运行队列预览"><div class="course-preview-heading"><span id="course-preview-scope">本课程</span></div><div class="course-wheel-shell" hidden><ol id="course-preview-list" class="course-wheel" role="listbox" tabindex="0" aria-label="待刷队列" aria-orientation="vertical"></ol></div><div id="course-preview-empty" class="course-preview-empty"><span id="course-preview-empty-text">章节目录加载中…</span><span id="course-list-loading" class="course-list-loading" role="progressbar" aria-label="正在连接课程列表" hidden></span><button type="button" id="course-preview-select" class="secondary" hidden>选择课程</button></div></section>
                   </section>
                   <section id="chapter-run-page" class="chapter-page" role="tabpanel" aria-labelledby="chapter-tab-run" hidden>
@@ -16180,7 +16213,7 @@ Typr["U"] = {
         const total=result.analysisProgress.total;
         const grouped=(task.requestSnapshot||task.snapshot).questions.some(question=>question.ueditorBlankGroup);
         const mediaPreviews=Object.fromEntries([...task.preparedMedia].filter(([,value])=>['svg','canvas'].includes(value.kind) && /^data:image\/png;base64,/.test(value.dataUrl || '')).map(([id,value])=>[id,value.dataUrl]));
-        controller.output({version: '1.33.27',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
+        controller.output({version: '1.33.28',schemaVersion:task.snapshot.schemaVersion,questions:task.snapshot.questions,media:task.snapshot.media,mediaPreviews,
             restoredReadOnly:task.restoredReadOnly===true,
             model:task.configuration.model,thinking:task.configuration.thinking,searchEnabled:task.configuration.search,total:task.snapshot.questions.length,
             ...details,...(answers.length || complete ? {answers} : {}),analysisProgress:{...result.analysisProgress,status:task.status,completed:result.analyzedCount,total,

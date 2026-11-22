@@ -5,7 +5,7 @@
 // @icon         data:image/png;base64,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
 // @updateURL    https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
 // @downloadURL  https://raw.githubusercontent.com/coldpaper1234/chaoxing-ai-assistant-userscript/main/%E5%AD%A6%E4%B9%A0%E9%80%9AAI%E5%8A%A9%E6%89%8B.user.js
-// @version      1.33.28
+// @version      1.33.29
 // @description  字体解密、后台播放优化、多平台 AI 分析与预填、课程自动学习
 // @match        *://*.chaoxing.com/*
 // @match        *://*.xuexitong.com/*
@@ -9537,10 +9537,11 @@ Typr["U"] = {
                 if (resume && JSON.stringify(previous.settings) !== JSON.stringify(modelConfigurationSignature(settings))) {
                     ctl.report('自动学习配置已变化，请重新开始','error'); return;
                 }
+                const quizOnlyRun = resume ? previous.quizOnly===true : quizOnly===true;
                 const report = resume ? previous.report : { status:'running', startedAt:now(), endedAt:null, reason:'', videos:0,documents:0,quizzes:0,
                     chapters:queue.map(item => ({...item,status:'unvisited',issues:[],tasks:[]})) };
                 report.status = 'running'; report.reason = '';
-                if(run.quizOnly)report.quizOnly=true; else delete report.quizOnly;
+                if(quizOnlyRun)report.quizOnly=true; else delete report.quizOnly;
                 report.runScope=queueContext?'courseQueue':'course';report.queueContext=queueContext;
                 delete report.stopCode;
                 delete report.navigationBoundary;
@@ -9553,7 +9554,7 @@ Typr["U"] = {
                 const savedDelay=resume?previous.videoDelayUntil:null;
                 const protection=courseRunProtection(resume?previous:null,report.chapters,resume?previous.chapterIndex:0,limits.maxConsecutiveChapterFailures,failureProtectionEnabled);
                 report.protection=protection;
-                const run = {id:crypto.randomUUID(),mode:'study',quizOnly:resume?previous.quizOnly===true:quizOnly===true,queue,report,settings,protection,queueContext,
+                const run = {id:crypto.randomUUID(),mode:'study',quizOnly:quizOnlyRun,queue,report,settings,protection,queueContext,
                     retrying:retry||resume&&previous.retrying===true,originalQueue:retry?previous.originalQueue||previous.queue:resume?previous.originalQueue||previous.queue:queue,
                     previousReport:retry?previous.report:resume?previous.previousReport||null:null,submit:resume ? false : submit===true,
                     learning,videoDelay:delaySettings,videoDelayUntil:Number.isFinite(savedDelay)&&savedDelay>=0&&savedDelay<=now()+60000?savedDelay:null,
@@ -10752,7 +10753,7 @@ Typr["U"] = {
                             await wait(limits.settleMs);
                             await until(refreshTabs,limits.loadMs,'栏目结构更新后未就绪');
                             tab=nextTab();
-                            if(!tab&&!rangeTruncated&&!chapter.tasks.some(task=>task.status==='manual-pending')) {
+                            if(!tab&&!rangeTruncated&&!run.quizOnly&&!chapter.tasks.some(task=>task.status==='manual-pending')) {
                                 const state=()=>readCourseCatalog(owner)?.entries.find(item=>item.id===entry.id);
                                 if(state()?.pending>0&&!state()?.completed) {
                                     emit('正在核对新增栏目或平台完成确认…','course-running');
@@ -10809,6 +10810,15 @@ Typr["U"] = {
                         }
                         taskFreeOnly=false;
                         let tasks=allTasks.filter(item=>courseTaskRequired(item.node)!==false);
+                        if(run.quizOnly) {
+                            // 只答题：不碰视频与文档，栏目内没有测验就直接跳过，交给下一栏或下一章。
+                            const quizTasks=tasks.filter(item=>item.type==='quiz');
+                            if(!quizTasks.length) {
+                                chapter.tasks.push({tab:id,type:'non-task',status:'not-required',reason:'quiz-only'});
+                                emit('仅答题模式：本栏无测验，跳过…','course-running');markTab();continue;
+                            }
+                            tasks=quizTasks;
+                        }
                         const processed=new Set();
                         const manualNodes=new Set();
                         let videoNumber=0,documentNumber=0;
@@ -10917,21 +10927,23 @@ Typr["U"] = {
                         markTab();
                     }
                     const pending=()=>readCourseCatalog(owner)?.entries.find(item=>item.id===entry.id);
+                    if(run.quizOnly) {
+                        const quizTasks=chapter.tasks.filter(task=>task.type==='quiz');
+                        const failedTask=quizTasks.find(task=>task.status==='manual-pending'&&task.errorCode);
+                        chapter.status=quizTasks.length?'manual-pending':'no-tasks';
+                        chapter.remainingUnconfirmed=Boolean(quizTasks.length);
+                        chapter.reason=quizTasks.length
+                            ?failedTask?`仅答题模式：部分测验执行失败，已继续后续章节：${failedTask.reason}`
+                                :'仅答题模式：本章测验已处理，视频与文档未纳入本轮，整章未计为完成'
+                            :'仅答题模式：本章没有测验任务，已跳过';
+                        courseRecordChapterOutcome(run.protection,chapter,run.chapterIndex);save();return;
+                    }
                     if(taskFreeOnly) {chapter.status='no-tasks';chapter.reason='已遍历全部页面，未发现可见任务点；未计为完成';save();return;}
                     if(chapter.tasks.some(task=>task.status==='manual-pending')&&!pending()?.completed&&pending()?.pending!==0) {
                         const failedTask=chapter.tasks.find(task=>task.status==='manual-pending'&&task.errorCode);
                         chapter.status='manual-pending';chapter.reason=failedTask?`部分任务执行失败，已继续后续任务：${failedTask.reason}`:chapter.tasks.some(task=>task.type==='knowledge-graph'&&task.status==='manual-pending')
                             ?'包含已跳过的知识图谱，未计为完成，需人工处理':chapter.tasks.some(task=>task.requiresManualSave)
                             ?'富文本答案已预填并同步到表单，等待人工保存或提交':!run.submit?'自动提交章节测验已关闭，测验已跳过且未提交，需人工处理':'包含无法自动答题的测验，已跳过且未提交，需人工处理';save();return;
-                    }
-                    if(run.quizOnly) {
-                        const quizTasks=chapter.tasks.filter(task=>task.type==='quiz');
-                        chapter.status=quizTasks.length?'manual-pending':'no-tasks';
-                        chapter.remainingUnconfirmed=Boolean(quizTasks.length);
-                        chapter.reason=quizTasks.length
-                            ?'仅答题模式：本章测验已处理，视频与文档未纳入本轮，整章未计为完成'
-                            :'仅答题模式：本章没有测验任务，已跳过';
-                        courseRecordChapterOutcome(run.protection,chapter,run.chapterIndex);save();return;
                     }
                     if(rangeTruncated&&!pending()?.completed&&pending()?.pending!==0) {
                         chapter.status='manual-pending';chapter.remainingUnconfirmed=true;
